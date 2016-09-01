@@ -1,0 +1,83 @@
+\begin{thebibliography}{15}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{Aartsen et~al.(2016)}]{Aartsen2016161}
+Aartsen, M., et~al., 2016. Neutrino oscillation studies with icecube-deepcore.
+  Nuclear Physics B 908, 161 -- 177, neutrino Oscillations: Celebrating the
+  Nobel Prize in Physics 2015.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0550321316300141}
+
+\bibitem[{Abe et~al.(2013)}]{Abe:2012jj}
+Abe, K., et~al., 2013. {Evidence for the Appearance of Atmospheric Tau
+  Neutrinos in Super-Kamiokande}. Phys. Rev. Lett. 110~(18), 181802.
+
+\bibitem[{Achar et~al.(1965)}]{Achar:1965ova}
+Achar, C.~V., et~al., 1965. {Detection of muons produced by cosmic ray
+  neutrinos deep underground}. Phys. Lett. 18, 196--199.
+
+\bibitem[{Agafonova et~al.(2015)}]{Agafonova:2015jxn}
+Agafonova, N., et~al., 2015. {Discovery of $\tau$ Neutrino Appearance in the
+  CNGS Neutrino Beam with the OPERA Experiment}. Phys. Rev. Lett. 115~(12),
+  121802.
+
+\bibitem[{Ahn et~al.(2006)}]{Ahn:2006zza}
+Ahn, M.~H., et~al., 2006. {Measurement of Neutrino Oscillation by the K2K
+  Experiment}. Phys. Rev. D74, 072003.
+
+\bibitem[{Barr et~al.(2004)Barr, Gaisser, Lipari, Robbins, and
+  Stanev}]{Barr:2004br}
+Barr, G.~D., Gaisser, T.~K., Lipari, P., Robbins, S., Stanev, T., 2004. {A
+  Three - dimensional calculation of atmospheric neutrinos}. Phys. Rev. D70,
+  023006.
+
+\bibitem[{Battistoni et~al.(2003)Battistoni, Ferrari, Montaruli, and
+  Sala}]{Battistoni:2002ew}
+Battistoni, G., Ferrari, A., Montaruli, T., Sala, P.~R., 2003. {The FLUKA
+  atmospheric neutrino flux calculation}. Astropart. Phys. 19, 269--290,
+  [Erratum: Astropart. Phys.19,291(2003)].
+
+\bibitem[{{Beavis} et~al.(1995){Beavis}, {Carroll}, and {Chiang}}]{1995bnl}
+{Beavis}, D., {Carroll}, A., {Chiang}, I., Apr. 1995. {Long baseline neutrino
+  oscillation experiment at the AGS}. Tech. rep.
+
+\bibitem[{Bernardini et~al.(2015)Bernardini, Fogli, Lisi, and
+  Crescenzo}]{DICRESCENZO2015186}
+Bernardini, P., Fogli, G., Lisi, E., Crescenzo, A.~D., 2015. Proceedings of the
+  neutrino oscillation workshop results from the opera experiment. Nuclear and
+  Particle Physics Proceedings 265, 186 -- 188.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S2405601415003892}
+
+\bibitem[{Fukuda et~al.(1998)}]{Fukuda:1998mi}
+Fukuda, Y., et~al., 1998. {Evidence for oscillation of atmospheric neutrinos}.
+  Phys. Rev. Lett. 81, 1562--1567.
+
+\bibitem[{Gaisser and Honda(2002)}]{Gaisser:2002jj}
+Gaisser, T.~K., Honda, M., 2002. {Flux of atmospheric neutrinos}. Ann. Rev.
+  Nucl. Part. Sci. 52, 153--199.
+
+\bibitem[{Honda et~al.(2011)Honda, Kajita, Kasahara, and
+  Midorikawa}]{PhysRevD.83.123001}
+Honda, M., Kajita, T., Kasahara, K., Midorikawa, S., Jun 2011. Improvement of
+  low energy atmospheric neutrino flux calculation using the jam nuclear
+  interaction model. Phys. Rev. D 83, 123001.
+\newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevD.83.123001}
+
+\bibitem[{Hosaka et~al.(2006)}]{Hosaka:2006zd}
+Hosaka, J., et~al., 2006. {Three flavor neutrino oscillation analysis of
+  atmospheric neutrinos in Super-Kamiokande}. Phys. Rev. D74, 032002.
+
+\bibitem[{Kopp(2007)}]{Kopp2007101}
+Kopp, S.~E., 2007. Accelerator neutrino beams. Physics Reports 439~(3), 101 --
+  159.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0370157306004431}
+
+\bibitem[{Reines et~al.(1965)Reines, Crouch, Jenkins, Kropp, Gurr, Smith,
+  Sellschop, and Meyer}]{Reines:1965qk}
+Reines, F., Crouch, M.~F., Jenkins, T.~L., Kropp, W.~R., Gurr, H.~S., Smith,
+  G.~R., Sellschop, J. P.~F., Meyer, B., 1965. {Evidence for high-energy cosmic
+  ray neutrino interactions}. Phys. Rev. Lett. 15, 429--433.
+
+\end{thebibliography}
