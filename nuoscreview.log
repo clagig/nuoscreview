@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.16)  1 SEP 2016 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.16)  14 DEC 2016 12:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -190,12 +190,12 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -205,33 +205,53 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./atm
 ospheric.tex
+<figures/fig7a-c.pdf, id=12, 407.5225pt x 377.41pt>
+File: figures/fig7a-c.pdf Graphic file (type pdf)
+ <use figures/fig7a-c.pdf>
+Package pdftex.def Info: figures/fig7a-c.pdf used on input line 18.
+(pdftex.def)             Requested size: 161.46126pt x 149.52737pt.
 
-LaTeX Warning: File `figures/fig7a-c.pdf' not found on input line 18.
-
-
-! Package pdftex.def Error: File `figures/fig7a-c.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 ...[width=0.9\linewidth]{figures/fig7a-c.pdf}
-                                                  
-? 
-
-LaTeX Warning: File `figures/fig7b-c.pdf' not found on input line 21.
+<figures/fig7b-c.pdf, id=13, 369.38pt x 377.41pt>
+File: figures/fig7b-c.pdf Graphic file (type pdf)
+ <use figures/fig7b-c.pdf>
+Package pdftex.def Info: figures/fig7b-c.pdf used on input line 21.
+(pdftex.def)             Requested size: 161.46126pt x 164.97249pt.
 
 
-! Package pdftex.def Error: File `figures/fig7b-c.pdf' not found.
+Package natbib Warning: Citation `PhysRevD.83.123001' on page 2 undefined on in
+put line 23.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...[width=0.9\linewidth]{figures/fig7b-c.pdf}
-                                                  
-? 
-[2] [3]
+
+Package natbib Warning: Citation `Gaisser:2002jj' on page 2 undefined on input 
+line 28.
+
+
+Package natbib Warning: Citation `PhysRevD.83.123001' on page 2 undefined on in
+put line 28.
+
+
+Package natbib Warning: Citation `Barr:2004br' on page 2 undefined on input lin
+e 28.
+
+
+Package natbib Warning: Citation `Battistoni:2002ew' on page 2 undefined on inp
+ut line 28.
+
+[2]
+
+Package natbib Warning: Citation `Reines:1965qk' on page 3 undefined on input l
+ine 32.
+
+
+Package natbib Warning: Citation `Achar:1965ova' on page 3 undefined on input l
+ine 32.
+
+[3 <./figures/fig7a-c.pdf> <./figures/fig7b-c.pdf>]
+
+Package natbib Warning: Citation `Fukuda:1998mi' on page 4 undefined on input l
+ine 44.
+
+
 Overfull \hbox (72.20282pt too wide) in paragraph at lines 48--50
 []\OT1/cmr/m/n/12 In a two neu-trino sce-nario, the $\OML/cmm/m/it/12 ^^W[]$ \O
 T1/cmr/m/n/12 dis-ap-pear-ance is gov-erned by $[][](2\OML/cmm/m/it/12 ^^R\OT1/
@@ -245,102 +265,172 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
 
+<figures/sk-2006-atm.pdf, id=47, 614.295pt x 794.97pt>
+File: figures/sk-2006-atm.pdf Graphic file (type pdf)
 
-LaTeX Warning: File `figures/sk-2006-atm.pdf' not found on input line 59.
-
-
-! Package pdftex.def Error: File `figures/sk-2006-atm.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 ...th=0.6\linewidth]{figures/sk-2006-atm.pdf}
-                                                  
-? 
-[4] [5]
-
-LaTeX Warning: File `figures/icecube_osc2014_data_mc_LE.pdf' not found on input
- line 80.
+<use figures/sk-2006-atm.pdf>
+Package pdftex.def Info: figures/sk-2006-atm.pdf used on input line 59.
+(pdftex.def)             Requested size: 234.00238pt x 302.83168pt.
 
 
-! Package pdftex.def Error: File `figures/icecube_osc2014_data_mc_LE.pdf' not f
-ound.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.80 ...h]{figures/icecube_osc2014_data_mc_LE.pdf}
-                                                  
-? 
-
-Underfull \hbox (badness 1072) in paragraph at lines 85--85
-[]\OT1/cmr/m/n/10 Figure 3: Dis-tri-bu-tion of at-mo-spheric neu-trino events m
-ea-sured by the Ice-Cube
- []
-
-) (./longbaseline.tex [6]
-
-LaTeX Warning: File `figures/offaxis.pdf' not found on input line 22.
+Package natbib Warning: Citation `Hosaka:2006zd' on page 4 undefined on input l
+ine 66.
 
 
-! Package pdftex.def Error: File `figures/offaxis.pdf' not found.
+Package natbib Warning: Citation `Hosaka:2006zd' on page 4 undefined on input l
+ine 66.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 ...[width=0.6\linewidth]{figures/offaxis.pdf}
-                                                  
-? 
+[4] [5 <./figures/sk-2006-atm.pdf>]
 
+Package natbib Warning: Citation `Aartsen2016161' on page 6 undefined on input 
+line 74.
+
+<figures/icecube_osc2014_data_mc_LE.pdf, id=59, 505.89pt x 433.62pt>
+File: figures/icecube_osc2014_data_mc_LE.pdf Graphic file (type pdf)
+
+<use figures/icecube_osc2014_data_mc_LE.pdf>
+Package pdftex.def Info: figures/icecube_osc2014_data_mc_LE.pdf used on input l
+ine 80.
+(pdftex.def)             Requested size: 234.00238pt x 200.57257pt.
+
+
+Package natbib Warning: Citation `Aartsen2016161' on page 6 undefined on input 
+line 85.
+
+
+Package natbib Warning: Citation `Aartsen2016161' on page 6 undefined on input 
+line 85.
+
+) (./longbaseline.tex
+
+Package natbib Warning: Citation `Kopp2007101' on page 6 undefined on input lin
+e 3.
+
+[6 <./figures/icecube_osc2014_data_mc_LE.pdf>]
+
+Package natbib Warning: Citation `1995bnl' on page 7 undefined on input line 11
+.
+
+<figures/offaxis.pdf, id=286, 569.12625pt x 368.37625pt>
+File: figures/offaxis.pdf Graphic file (type pdf)
+
+<use figures/offaxis.pdf>
+Package pdftex.def Info: figures/offaxis.pdf used on input line 22.
+(pdftex.def)             Requested size: 234.00238pt x 151.46242pt.
+ [7]
 Overfull \hbox (5.165pt too wide) in paragraph at lines 34--47
  [][] 
  []
 
-[7] [8]
+[8 <./figures/offaxis.pdf, page is rotated 90 degrees>]
 
-LaTeX Warning: File `figures/t2k-disapp.pdf' not found on input line 62.
+Package natbib Warning: Citation `Ahn:2006zza' on page 9 undefined on input lin
+e 67.
 
+[9]
 
-! Package pdftex.def Error: File `figures/t2k-disapp.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.62 ...dth=0.6\linewidth]{figures/t2k-disapp.pdf}
-                                                  
-? 
-
-LaTeX Warning: File `figures/atm-contour.pdf' not found on input line 74.
+LaTeX Warning: Reference `fig:t2kdis' on page 10 undefined on input line 72.
 
 
-! Package pdftex.def Error: File `figures/atm-contour.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.74 ...th=0.6\linewidth]{figures/atm-contour.pdf}
-                                                  
-? 
-[9] [10]
-
-LaTeX Warning: File `figures/tau4.pdf' not found on input line 96.
+LaTeX Warning: Reference `fig:t2katm-contour' on page 10 undefined on input lin
+e 72.
 
 
-! Package pdftex.def Error: File `figures/tau4.pdf' not found.
+<figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf, id=340, 569.12625pt x 385.4
+4pt>
+File: figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf Graphic file (type pdf)
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96 ...ics[width=0.6\linewidth]{figures/tau4.pdf}
-                                                  
-? 
-) (./theta13.tex [11] [12]
+ <use figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf>
+Package pdftex.def Info: figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf used
+ on input line 76.
+(pdftex.def)             Requested size: 117.00119pt x 79.2392pt.
+
+<figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf, id=341, 569.12625pt x 38
+5.44pt>
+File: figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf Graphic file (type p
+df)
+ <use figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf>
+Package pdftex.def Info: figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf u
+sed on input line 77.
+(pdftex.def)             Requested size: 117.00119pt x 79.2392pt.
+
+<figures/nu_vs_nubar_datafit_17c_nh.pdf, id=342, 569.12625pt x 317.185pt>
+File: figures/nu_vs_nubar_datafit_17c_nh.pdf Graphic file (type pdf)
+
+<use figures/nu_vs_nubar_datafit_17c_nh.pdf>
+Package pdftex.def Info: figures/nu_vs_nubar_datafit_17c_nh.pdf used on input l
+ine 88.
+(pdftex.def)             Requested size: 234.00238pt x 130.4145pt.
+
+
+LaTeX Warning: Reference `fig:atm-contour' on page 10 undefined on input line 9
+3.
+
+
+Overfull \hbox (11.53064pt too wide) in paragraph at lines 93--94
+[]\OT1/cmr/m/n/12 NO$\OML/cmm/m/it/12 ^^W$\OT1/cmr/m/n/12 A has also re-ported 
+a mea-sure-ment of $\OML/cmm/m/it/12 ^^W[]$ \OT1/cmr/m/n/12 dis-ap-pear-ance us
+-ing 6.05$\OMS/cmsy/m/n/12 ^^B\OT1/cmr/m/n/12 10[]$
+ []
+
+<figures/sinsqth23vsdmsq_react_othexp_nh.pdf, id=343, 569.12625pt x 385.44pt>
+File: figures/sinsqth23vsdmsq_react_othexp_nh.pdf Graphic file (type pdf)
+
+<use figures/sinsqth23vsdmsq_react_othexp_nh.pdf>
+Package pdftex.def Info: figures/sinsqth23vsdmsq_react_othexp_nh.pdf used on in
+put line 97.
+(pdftex.def)             Requested size: 195.0pt x 132.06534pt.
+
+
+LaTeX Warning: Reference `fig:novadiscomparison' on page 10 undefined on input 
+line 104.
+
+
+LaTeX Warning: Reference `fig:t2kdiscomparison' on page 10 undefined on input l
+ine 104.
+
+[10] [11 <./figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf, page is rotated 
+90 degrees> <./figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf, page is ro
+tated 90 degrees> <./figures/nu_vs_nubar_datafit_17c_nh.pdf, page is rotated 90
+ degrees> <./figures/sinsqth23vsdmsq_react_othexp_nh.pdf, page is rotated 90 de
+grees>] <figures/nova_comparison.pdf, id=525, 335.85445pt x 238.47946pt>
+File: figures/nova_comparison.pdf Graphic file (type pdf)
+
+<use figures/nova_comparison.pdf>
+Package pdftex.def Info: figures/nova_comparison.pdf used on input line 108.
+(pdftex.def)             Requested size: 234.00238pt x 166.1594pt.
+File: figures/nova_comparison.pdf Graphic file (type pdf)
+ <use figures/nova_comparison.pdf>
+Package pdftex.def Info: figures/nova_comparison.pdf used on input line 114.
+(pdftex.def)             Requested size: 234.00238pt x 166.1594pt.
+
+
+LaTeX Warning: Reference `fig:opera' on page 12 undefined on input line 123.
+
+
+Package natbib Warning: Citation `Agafonova:2015jxn' on page 12 undefined on in
+put line 125.
+
+
+Package natbib Warning: Citation `Abe:2012jj' on page 12 undefined on input lin
+e 128.
+
+[12 <./figures/nova_comparison.pdf>]
+<figures/tau4.pdf, id=632, 945.5325pt x 675.52374pt>
+File: figures/tau4.pdf Graphic file (type pdf)
+ <use figures/tau4.pdf>
+Package pdftex.def Info: figures/tau4.pdf used on input line 134.
+(pdftex.def)             Requested size: 234.00238pt x 167.17975pt.
+
+
+Package natbib Warning: Citation `DICRESCENZO2015186' on page 13 undefined on i
+nput line 141.
+
+
+Package natbib Warning: Citation `DICRESCENZO2015186' on page 13 undefined on i
+nput line 141.
+
+) (./theta13.tex [13]
 Overfull \hbox (23.27377pt too wide) in alignment at lines 15--22
  [][][] []
  []
@@ -353,14 +443,126 @@ mm/m/it/12 G[]n[]E[] [] \OT1/cmr/m/n/12 =  []7\OML/cmm/m/it/12 :\OT1/cmr/m/n/12
  56 \OMS/cmsy/m/n/12 ^^B
  []
 
-) (./theta13_exp.tex [13]) (./deltacp.tex) (./summaryPMNS.tex) (./anomalies.tex
-) (./future.tex [14]) (./conclusions.tex) (./nuoscreview.bbl
+[14 <./figures/tau4.pdf>]) (./theta13_exp.tex) (./deltacp.tex
+
+LaTeX Warning: Reference `sec:theta13' on page 15 undefined on input line 2.
+
+
+LaTeX Warning: Reference `eq:theta13app' on page 15 undefined on input line 2.
+
+
+Package natbib Warning: Citation `Abe:2013hdq' on page 15 undefined on input li
+ne 4.
+
+
+LaTeX Warning: Reference `fig:t2kapp' on page 15 undefined on input line 4.
+
+
+LaTeX Warning: Reference `fig:novaapp' on page 15 undefined on input line 4.
+
+
+LaTeX Warning: File `plotPhysics/nueapp_ptheta.pdf' not found on input line 8.
+
+
+! Package pdftex.def Error: File `plotPhysics/nueapp_ptheta.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...s[width=8cm]{plotPhysics/nueapp_ptheta.pdf}
+                                                  
+? 
+
+Package natbib Warning: Citation `Abe:2013hdq' on page 15 undefined on input li
+ne 9.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: File `plotPhysics/nueapp_NOVA.pdf' not found on input line 15.
+
+
+! Package pdftex.def Error: File `plotPhysics/nueapp_NOVA.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...cs[width=8cm]{plotPhysics/nueapp_NOVA.pdf}
+                                                  
+? 
+
+Package natbib Warning: Citation `Abe:2013hdq' on page 15 undefined on input li
+ne 16.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15]
+
+LaTeX Warning: Reference `fig:t2kappprob' on page 16 undefined on input line 23
+.
+
+
+LaTeX Warning: File `plotPhysics/papp_prob_2.pdf' not found on input line 27.
+
+
+! Package pdftex.def Error: File `plotPhysics/papp_prob_2.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 ...cs[width=8cm]{plotPhysics/papp_prob_2.pdf}
+                                                  
+? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:t2kappnub' on page 16 undefined on input line 32.
+
+
+[16]
+
+LaTeX Warning: File `plotPhysics/papp_prob.pdf' not found on input line 36.
+
+
+! Package pdftex.def Error: File `plotPhysics/papp_prob.pdf' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 ...ics[width=14cm]{plotPhysics/papp_prob.pdf}
+                                                  
+? 
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 36--37
+ [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `eq:theta13app' on page 17 undefined on input line 41.
+
+
+
+Package natbib Warning: Citation `sec:future' on page 17 undefined on input lin
+e 44.
+
+[17]) (./summaryPMNS.tex) (./anomalies.tex [18]) (./future.tex [19])
+(./conclusions.tex) (./nuoscreview.bbl
 Overfull \hbox (69.1095pt too wide) in paragraph at lines 8--12
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
 le/pii/S0550321316300141 
  []
 
-[15]
+[20]
 Overfull \hbox (69.1095pt too wide) in paragraph at lines 48--52
 \OT1/cmr/m/n/12 URL \OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/artic
 le/pii/S2405601415003892 
@@ -372,35 +574,53 @@ Overfull \hbox (69.1095pt too wide) in paragraph at lines 73--76
 le/pii/S0370157306004431 
  []
 
-) [16] (./nuoscreview.aux) ) 
+)
+
+Package natbib Warning: There were undefined citations.
+
+[21] (./nuoscreview.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2763 strings out of 493089
- 35128 string characters out of 6134841
- 100422 words of memory out of 5000000
- 6155 multiletter control sequences out of 15000+600000
- 12142 words of font info for 47 fonts, out of 8000000 for 9000
+ 2824 strings out of 493089
+ 37099 string characters out of 6134841
+ 98455 words of memory out of 5000000
+ 6207 multiletter control sequences out of 15000+600000
+ 12450 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,30p,1075b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
-.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.
-pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.p
-fb>
-Output written on nuoscreview.pdf (16 pages, 218730 bytes).
+ 38i,9n,30p,1079b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on nuoscreview.pdf (21 pages, 686663 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 715 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

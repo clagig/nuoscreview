@@ -14,13 +14,13 @@ E_\nu = \frac{(1-(m_\mu/m_\pi)^2) E_\pi}{(1+\gamma^2 \theta^2) }
 \end{equation}
 valid in the limit of small angles.
 
-Neutrinos emitted at a small angle with respect to the pion direction have a distinct narrow spectrum peaking at a much lower energy with respect to the on axis beam. This feature that has been used by the T2K and NOvA experiments, offers several advantages because it avoids the large high energy tail of the on axis beam, thereby reducing some background reactions. 
+Neutrinos emitted at a small angle with respect to the pion direction have a distinct narrow spectrum peaking at a much lower energy with respect to the on axis beam. This feature that has been used by the T2K and \nova experiments, offers several advantages because it avoids the large high energy tail of the on axis beam, thereby reducing some background reactions. 
 
 \begin{figure}[htbp]
 \centering
 %\includegraphics[width=0.5\linewidth]{energy_miniboone.eps}
 \includegraphics[width=0.6\linewidth]{figures/offaxis.pdf}
-  \caption{Neutrino energy as a function of the pion energy for on-axis decays and several off-axis angles. For a non-zero off-axis angle, the neutrino energy reaches a maximum. This feature is currently exploited in the T2K and NOvA experiments.}
+  \caption{Neutrino energy as a function of the pion energy for on-axis decays and several off-axis angles. For a non-zero off-axis angle, the neutrino energy reaches a maximum. This feature is currently exploited in the T2K and \nova experiments.}
  \label{fig:offaxis}
  \end{figure}
 
@@ -39,7 +39,7 @@ K2K & 30 & & 250 & 22.5 & \\
 MINOS & 120 & 700 & 790 & 5.4 &\\
 OPERA & 450 & 732 &  & & 1.8 10$^{20}$\\
 T2K & 30 & 750 & 295 & 22.5 & 8 10$^{21}$\\
-NOvA & 120 & 700& 810 & 14 & \\
+\nova & 120 & 700& 810 & 14 & \\
 HK & 30 & & & & \\
 DUNE & 120 & 1200 & 1300 & 40 &\\
   \hline
@@ -47,37 +47,85 @@ DUNE & 120 & 1200 & 1300 & 40 &\\
 \caption{Parameters of recent and future long baseline experiments. Energy and power refer to the primary proton beam, L is the baseline, FD the mass of the far detector. POT (Proton On Target) represents the integrated dataset as of 2016.}
 \end{table}
 
+\subsubsection{Flux and cross-section systematic uncertainties in long-baseline experiments}
+\label{sec:beamsyst}
+The measurement of neutrino oscillations has now entered the precision era. Particularly long-baseline neutrino oscillation experiments require a deep knowledge of the systematic uncertainties related to neutrino fluxes and neutrino cross-sections to perform measurements of oscillation parameters. 
 
-\subsubsection{Results from long-baseline accelerator experiments K2K MINOS T2K NOVA}
+A common strategy to reduce systematic uncertainties, used in most of the long baseline experiments, is the use of a Near Detector complex, located at few hundreds of meters from the beam target where neutrinos are detected before the oscillations. In this way the neutrino spectrum and the flavor composition of the beam can be precisely measured before the oscillations and is used to determine the expected spectra at the far detector if there were no oscillations.
+
+Some long-baseline experiments, as for example MINOS and \nova, uses as near detector a detector that has the same composition as the far detector so that cross-section uncertainties due to the different target nuclei or detector systematic uncertainties are minimized in the extrapolation. Other experiments, as for example K2K and T2K, uses a set of near detector, with different target nuclei, in order to maximize the information on the cross-section models.
+
+In this section, as an example, we will briefly describe how the T2K experiment uses the near detector data to reduce the systematic uncertainties in the oscillation analysis. The T2K near detector, called ND280, is magnetized, with several sub-detectors installed within the ex UA1/NOMAD magnet that provides a 0.2 T magnetic field. For the oscillation analysis the ND280 tracker system is used, comprising 2 Fine Grained Detectors (FGD) interleaved to 3 Time Projection Chambers (TPC). The FGDs act as an active target for neutrino interactions (each with a mass of $\sim1.5~ton$ (check). Particles produced in the FGD enter the TPCs where the charge and the momentum of the tracks is reconstructed as well as the particle identification based on the measurement of the energy loss in the gas. One important point to notice is that one of the two FGD is a fully active detector while in the second one scintillator layers are interleaved with inactive water layers, allowing to select neutrino interactions on carbon and on oxygen that is the same target as the far detector, SK. 
+    
+At T2K energies most of the \num charged current neutrino interactions produce only one track in the final state, the muon. The presence of the magnetic field allows to reconstruct the charge of the muon, distinguishing between negative muons produced by \num and positive leptons produced by \numb interactions.
+In some cases neutrinos give enough energy to the target nuclei producing also pions or protons that can, in some cases, enter the TPC. 
+For \num selections, ND280 distinguishes three cases: only the muon is reconstructed (CC0$\pi$), the muon and one negative pion is also reconstructed (CC1$\pi$) and the other cases in which (CCother). For \numb selections interaction with one track are separated from the interactions with more than one track.
+  
+The same selections are applied to interactions in both the FGD and all the samples are then fit to reduce systematic uncertainties on the flux and cross-section model. 
+The main uncertainty on the flux model is due to the hadron production cross-section. Data from the NA61/SHINE experiment at CERN are used. In NA61/SHINE a proton beam is accelerated to 30 GeV/c and strikes a target. Hadrons produced are measured with a system of TPCs and Time Of Flight detectors, and double differential cross-section (in angle and momentum) are extracted. Thanks to NA61/SHINE data the uncertainties on the neutrino fluxes, prior to the ND280 fits, are reduced to the 10-15\% level.
+
+For the cross-section model, the priors are based, as much as possible, on external experiments such as MiniBooNE and MINERvA with uncertainties large enough to allow the ND280 data to constraint those parameters. Various parameters are defined to describe the theoretical uncertainties on the different neutrino interaction channels important at T2K energies. An important aspect is that, for the first time, effects related to the multi-nucleon emissions are included in this analysis, based on the Nieves model~\cite{Nieves:2011yp}
+
+To reduce flux and cross-section uncertainties, the ND280 samples are binned in the kinematic variables \ptheta according to the muon momentum and angle with respect to the beam direction. Data and Monte Carlo are fitted using a binned likelihood, where the prediction for each bin depends on the flux, cross-section and detector systematic parameters. 
+
+The result of the fit is a set of point estimates and covariance for the systematic scaling factors for the unoscillated neutrino flux at SK. The impact of the ND280 fit on the total error budget in the T2K oscillation analysis is shown in Tab.~\ref{tab:t2ksyst}: a reduction of the systematic uncertainties from $\sim15\%$ to $\sim5\%$ is obtained thanks to the near detector fit.
+
+In the case of \nova, they profit of the fact that the near and the far detector are identical and use a calorimetric approach in which all the energy observed in the event at the near detector is reconstructed and is then unfolded to obtain the expected true neutrino energy. The far to near ratio and the oscillation probabilities are then applied to obtain the expected true energy spectrum at the far detector. This method allow to reduce the total systematic uncertainty to level similar to the ones obtained by T2K.
+
+\subsubsection{Results from long-baseline accelerator experiments K2K MINOS T2K \nova}
 
 K2K (KEK-to-Kamioka) was the first long baseline neutrino beam, using Super-Kamiokande as its far detector at 290 km from the neutrino production. Operating between 1999 and 2004, it has measured the disappearance of $\nu_\mu$: 112 events were observed, while 158.1$^{+9.2}_{-8.6}$ were expected without oscillation, a 4.3 $\sigma$ effect~\cite{Ahn:2006zza}. This measurement has confirmed neutrino oscillation as the explanation for the atmospheric neutrino disappearance. 
 
-Further precision measurements of the $\nu_\mu \rightarrow \nu_\mu$ were reported by MINOS, T2K and NOvA.
+Further precision measurements of the $\nu_\mu \rightarrow \nu_\mu$ were reported by MINOS, T2K and NOvA. In particular, T2K and \nova use a narrow band beam, based on the off-axis design, that is particularly suited for the measurement of \num disappearance once the mass square difference is known. For a given \dmsq and a given baseline distance, in fact, the oscillation probability depends on the neutrino energy that can be tuned by changing the off-axis angle. In the case of T2K (L=295~km) the maximum of the oscillation is at an energy of 600 \mev while in the case of \nova  (L=810~km) the maximum is at 1800 \mev. 
 
-We will here describe in some detail the T2K measurement, the most precise for what concerns the $\theta_{23}$ angle.
+While the most recent analyses published by T2K do a global fits of appearance and disappearance modes to extract the maximum of the information on neutrino oscillations in the PMNS framework, disappearance analyses only have also been done by T2K in order to test the PMNS framework. In the \num disappearance probability in fact there are no CP odd terms so the disappearance probability is expected to be the same for \num and \numb. Previous results from MINOS showed some tensions between neutrinos and antineutrinos. 
+Based on \nupot protons-on-target (POT) collected in neutrino mode and \nubpot POT collected in antineutrino mode, T2K has observed 135 (66) \num (\numb) candidates at SK with 522 (185) events expected in case of no-oscillations and 135.8 (64.2) events expected for maximum disappearance. The reconstructed energy spectrum for both, \num and \numb surviving events are shown in Fig.~\ref{fig:t2kdis}. Thanks to the use of the Near Detector data described in Sect.~\ref{sec:beamsyst}, the systematic uncertainties on these measurements are smaller than 5\% and a precise measurement of \thatm and \dmsq is obtained as shown in Fig.~\ref{fig:t2katm-contour}. The oscillation parameters measured are in excellent agreement between neutrinos and antineutrinos and both are compatible with maximal mixing for \thatm.
 
 \begin{figure}[htbp]
 \centering
-%\includegraphics[width=0.5\linewidth]{energy_miniboone.eps}
-\includegraphics[width=0.6\linewidth]{figures/t2k-disapp.pdf}
+\includegraphics[width=0.3\linewidth]{figures/bestfit_sinsqth23vsdcpvsmh_1rmu_run17.pdf}
+\includegraphics[width=0.3\linewidth]{figures/bestfit_sinsqth23vsdcpvsmh_rhc1rmu_run17.pdf}
   \caption{
-Reconstructed $\nu_\mu$ energy spectrum by the T2K collaboration for data, best-fit prediction, and
-unoscillated prediction. Bottom: Ratio of oscillated to unoscillated events as a function of
-neutrino energy for the data and the best-fit spectrum.
+Reconstructed \num and \numb energy spectrum by the T2K collaboration for data, best-fit prediction, and
+unoscillated prediction. %Bottom: Ratio of oscillated to unoscillated events as a function of
+%neutrino energy for the data and the best-fit spectrum.
 }
  \label{fig:t2kdis}
  \end{figure}
 
 \begin{figure}[htbp]
 \centering
-%\includegraphics[width=0.5\linewidth]{energy_miniboone.eps}
-\includegraphics[width=0.6\linewidth]{figures/atm-contour.pdf}
-  \caption{
-  90\% CL regions in the plane $\Delta m^2 $ versus $\sin^2 (2 \theta_{23}$
-  determined by Super-Kamiokande and IceCube-DeepCore using atmospheric neutrinos, and MINOS and T2K using long baseline neutrino beams. 
-}
+\includegraphics[width=0.6\linewidth]{figures/nu_vs_nubar_datafit_17c_nh.pdf}
+  \caption{$\Delta m^2 $ versus \stt for neutrinos and antineutrinos parameters. The constant $\Delta \chi^2$ critical values in the gaussian approximation are shown.}
  \label{fig:atm-contour}
  \end{figure}
+
+\nova has also reported a measurement of \num disappearance using \novapot POT and by selecting \mmu-like candidates at the far detector. They observed 78 events in the far detector, while $473\pm30$ were expected without oscillations. This result lead to some tensions, especially with the T2K experiment, since maximal mixing is excluded by NOvA at $2.5\sigma$ as shown in Fig.~\ref{fig:atm-contour}. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.5\linewidth]{figures/sinsqth23vsdmsq_react_othexp_nh.pdf}
+%\includegraphics[width=0.6\linewidth]{figures/atm-contour.pdf}
+  \caption{
+Measured $\Delta \chi^2$ distributions as a function of $\sin^2 \theta_{23}$, $\Delta m^2_{32} (\Delta m^2_{13})$ for T2K, Super-K (PoS ICRC2015 (2015) 1062), Minos+ (Neutrino 2014 conference), \nova (Phys.Rev. D93 (2016) 051104, arXiv 1601.05037) and IceCube DeepCore (Phys.Rev. D91 (2015) 072004, arXiv 1410.7227).}
+ \label{fig:atm-contour}
+ \end{figure}
+ 
+The two collaborations are working to understand this difference that could still be simply due to statistical fluctuations. A comparison between reconstructed energy spectrum for the best-fit and the one obtained by imposing maximal mixing in \nova is shown in Fig.~\ref{fig:novadiscomparison}. Something similar is done by T2K comparing their data, the T2K best fit and the spectrum obtained by imposing the NOvA best-fit oscillation parameters as shown in Fig.~\ref{fig:t2kdiscomparison}. Additional data from both, T2K and NOvA will help to clarify the situation. 
+ 
+ \begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\linewidth]{figures/nova_comparison.pdf}
+  \caption{Reconstructed energy spectrum in \nova for data, best fit and best fit assuming maximum mixing} \label{fig:atm-contour}
+ \end{figure}
+
+  \begin{figure}[htbp]
+\centering
+\includegraphics[width=0.6\linewidth]{figures/nova_comparison.pdf}
+  \caption{Reconstructed energy spectrum in \nova for data, best fit and best fit assuming maximum mixing} \label{fig:atm-contour}
+ \end{figure}
+
+ 
  
  
  \subsubsection{Evidence for $\nu_\tau$ appearance}
