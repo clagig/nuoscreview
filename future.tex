@@ -1,32 +1,167 @@
-\section{Perspectives for future experiments 20pg MZ}
+\section{Next steps in the investigation of the PMNS matrix 20pg CG}
 \label{sec:future}
+Following the precise measurement of \thint we know that all the three mixing angles of the PMNS matrix are different from zero, opening the possibility of having CP violation in the leptonic sector. The discovery of such source of CP violation, that correspond to observe that sin\dcp is different from 0, would be a crucial step in our understanding of the Universe and will be the main goals of the long baseline accelerator experiments in the coming years. As of today, data are compatible with most of the values of \dcp, although indications from T2K show a preference for $\dcp\sim-\pi/2$ excluding at more than 3$\sigma$ values of \dcp close to \pipi/2 and excluding CP conservation at 90\% CL. 
+
+In addition to the measurement of \dcp, other questions have still to be addressed before having a complete picture of the neutrino oscillations: in particular, as explained in~\ref{} the mass ordering between the eigenstate $\nu_3$ and the other two is still unknown. The ordering can be normal ($m_3 > m_2 > m_1$) or inverted ($m_2 > m_1 > m_3$) and, knowing the ordering, will have important consequences on the nature of the neutrinos. For example, the sensitivity required for the observation of neutrinoless double beta decay, that would prove that neutrinos are Majorana particles, is much larger if the ordering is normal...
+The mass ordering has also a direct impact on \dcp. As we have shown in Sect.~\ref{}, degeneracies exist in the \nue appearance probability in long-baseline experiments between \dcp and the mass ordering. If this latter parameter will be measured, the degeneracy will be solved and the measurement of \dcp will be easier.
+
+Another important question to be addressed is the precise measurement of \thatm. Currently the value of this mixing angle is compatible with $\pi/4$ that give the so-called maximal disappearance, since the \num disappearance probability is proportional to \sttt. This is known as the octant degeneracy since, values of \thatm of $\pi/4+X$ or $\pi/4-X$ give the same disappearance probability. Nevertheless, precise measurements of different oscillation channels, allow to disentangle among the two solutions and determine in which octant \thatm stands if $X$ is large enough. A value of \thatm of exactly $\pi/4$ is particularly interesting because it might indicate the existence of underlying symmetries.
+
+This section is organized as follow. We will first review the sensitivity of the running long-baseline experiments (T2K and \nova) that might give some indications of CP violation, mass ordering and the \thatm octant in the coming years. We will then review the non-accelerator based experiments (JUNO, PINGU, ORCA and INO) that have some sensitivity to the mass ordering and finally we will describe the future long-baseline accelerator experiments (HyperKamiokande and DUNE) that have the main goal to observe the CP violation in the leptoninc sector, performing a precise measurement of \dcp. 
 
 
-\subsection{Existing projects: T2K NOVA}
+\subsection{Goals of the running experiments: T2K and \nova}
+\label{sec:futuret2knova}
+In the next $\sim10$ years there will be no new long-baseline experiments but the existing ones, T2K and \nova, will greatly increase their statistics, collecting $\sim10$ times more data with respect to what has been collected and analysed so far. 
 
-T2K statx10 + antinu data no MH
+T2K has presented results based on a total of $\sim3\times10^{21}$ protons-on-target (\pot) while the total expected statistics for which the experiment had been approved is $7.8\times10^{21}$ \pot. Such a statistics, that will be collected by 2020, was driven by the need to maximize the sensitivity to small values of \thint that at the time was unknown. Today we know with large precision the value of \thint and its large value imply that the sensitivity to \dcp is enhanced if additional statistics will be taken. For this reason the collaboration has recently submitted a proposal for the so-called T2K phase II~\cite{Abe:2016tii}. During this phase, that will go from 2020 to 2026, a total of  $20\times10^{21}$~\pot will be collected, and this will allow to have to exclude CP conservation at more than 3 sigma if the true value of \dcp is close to values that maximally violate CP.
+\nova has presented results based on $\sim6\times10^20$ \pot while the experiment is expected to collect $36\times10^{20}$ \pot by 2020. 
 
-NOVA MH sensitivity (depends on delta)
+The two experiments are highly complementary thanks to the the different baseline. The longer \nova baseline allow this experiment to have a better sensitivity to the matter effects and so the mass ordering while for T2K, the matter effects are small and the experiment is mostly sensitive to \dcp. In the case of \nova, in fact, the two mass ordering solution lead to a difference in the \nue appearance probability of $\pm19\%$ while the two maximal cases of CP violation, $\dcp=-\pi/2$ and $\pi/2$ lead to a difference in the \nue appearance probability of $\pm22\%$. In the case of T2K instead the mass ordering has an effect of $\pm10\%$ on the appearance probability while the two maximal CP violation cases lead to a difference of $\pm29\%$. 
 
-(where do we add  SK ?)
+With $20\times10^{21}$ \pot, equally split in neutrino and anti-neutrino mode, and some realistic improvements in the analyses, T2K will observe $\sim500$ ($\sim100$) e-like candidates in neutrino (anti-neutrino) mode as well as $\sim2700$ ($\sim1300$) \mmu-like candidates. The sensitivity to \dcp with such statistics is shown in Fig.~\ref{fig:t2k2sensi}, in the two cases of known or unknown mass ordering. The knowledge of the mass ordering would greatly impact the sensitivity to positive values of \dcp (assuming normal ordering). This is due to the degeneracy between the normal ordering and positive values of \dcp since the first tends to increase the number of \nue appearance candidates while the latter tends to reduce it. For negative values of \dcp instead, there is no degeneracy since normal ordering and positive \dcp would both tend to increase the \nue appearance probability. In this sensitivity study an improvement of the systematic uncertainties in the T2K analyses is also assumed. To reach such improvements an updgrade of the Near Detector complex is under discussion within the collaboration~\cite{ndupgrade}. Assuming the mass ordering to be determined by another experiment and that the reduction of the systematic uncertainties is obtained, the fractional region for which \(\sin\delta_{CP}=0\) can be excluded at the 99\% (3\(\sigma\)) C.L.\ is 49\% (36\%) of possible true values of \dcp. Without improvements on the systematic uncertainties, the corresponding fractions are 42$\%$ (21$\%$). These results mildly depend on the value of \stt, being slightly larger for the lower octant and slightly lower for the upper octant.
 
-increased sensitivity to theta23
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[width=8cm]{figures/t2kpre_dcp_point1_100k4check_100ksensi_wreactorthrow_optv2s13off_truedcp_unknownMH_fakesyst_lohidcpExclusive.pdf}
+\includegraphics[width=8cm]{figures/t2kpre_dcp_point1_100k4check_100ksensi_wreactorthrow_optv2s13off_truedcp_fakesyst_lohidcpExclusive.pdf}
+\caption{\label{fig:t2k2sensi} Sensitivity to CP violation as a function of true
+\dcp with three values of \stt (0.43, 0.50, 0.60) and normal hierarchy for the full T2K-II exposure of \twopott and a reduction of the systematic error to 2/3 of the 2016 T2K uncertainties.}
+\end{center}
+\end{figure}
+
+With such statistics T2K will also be able to perform leading measurement of the \stt mixing angle as is shown in Fig.~\ref{fig:t2k2th23}.
+
+\begin{figure} [h!]
+\begin{center}
+\includegraphics[width=8cm]{figures/t2kpre_t23dm32_point1_wreactorthrow.pdf}
+\caption{\label{fig:t2k2sensi} Expected improvements on the 90\% C.L. sensitivity to $\Delta m^2_{32}$ and $\sin^2\theta_{23}$
+for T2K and T2K-II}
+\end{center}
+\end{figure}
+
+The main goal of \nova is instead to profit of the longer baseline with respect to T2K to determine the mass ordering. The advantage of the longer baseline is shown in Fig.~\ref{fig:novaellipse} in which the appearance probability for \nue and \nueb is shown for different values of \dcp in the two mass ordering cases. The elliptical shapes are due to the fact that different values of \dcp lead to enhance one appearance probability  reducing the other while the separation between the two ellipses is due to the fact that the normal ordering increase the \nue appearance probability for all the values of \dcp while the \nueb appearance probability is increased in the inverted ordering scenario.
 
 
-\subsection{middle term}
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+%\includegraphics[width=8cm]{figs/t2kpre_t23dm32_point1_wreactorthrow.pdf}
+\caption{\label{fig:novaellipse} Equiprobabilities curves for T2K and \nova}
+\end{center}
+\end{figure}
 
-JUNO prec measurement of theta12 and Dm21
 
-method NH/IH, critics Parke
+In the experiment the appearance probability of \nue and \nueb is measured with a certain precision depending on the experiment. The mass ordering is determined if the combination of the two probabilities univocally identify one solution. In the case of \nova it is clear from Fig.~\ref{fig:novaellipse} that the capability of the experiment to determine the mass ordering strongly depends on the values of \dcp and of the ordering. For example, if the mass ordering is normal then \nova will have a chance to measure it if \dcp is close to $-\pi/2$ while if \dcp is close to $\pi/2$ the degeneracy with the solution inverted ordering and $\dcp=-\pi/2$ would not be solved and a determination of the mass ordering would be impossible. In case the mass ordering is inverted, the situation is opposite: it will be possible to determine the mass ordering if \dcp=$\pi/2$ while there is no sensitivity for \dcp=$-\pi/2$. This is clearly reflected in the expected sensitivity of \nova to the mass ordering with $36\times10^{20}$~\pot, shown in Fig.~\ref{fig:novasensi}.
+In the two lucky cases of $\dcp=-\pi/2$ and NO or $\dcp=\pi/2$ and IO the mass ordering will be determined at $3\sigma$ by \nova while in the other cases the degeneracies among oscillation parameters will wash out the sensitivity of the experiment to the mass ordering. For these cases the combination with T2K and its different baseline will help at some level to solve the degeneracies but the sensitivity will not be enough to claim a measurement of the mass ordering with the current long-baseline experiments. The sensitivity of \nova to \dcp with  $36\times10^{20}$~\pot is shown in Fig.~\ref{fig:novasensidcp}.
 
-depends on E exp resolution, not demonstrated
 
-PINGU/ORCA discussion sensitivity MH (numu->numu vs showers)
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+%\includegraphics[width=8cm]{figs/t2kpre_t23dm32_point1_wreactorthrow.pdf}
+\caption{\label{fig:novasensi} \nova sensitivity to the mass ordering with $36\times10^20$~\pot.}
+\end{center}
+\end{figure}
+
+
+
+%NOVA MH sensitivity (depends on delta)
+
+%(where do we add  SK ?)
+
+%increased sensitivity to theta23
+
+
+\subsection{Next generation of non-accelerator based experiments}
+While the best technique to measure CP violation in the leptonic sector is by using long-baseline accelerators, measuring \nue and \nueb appearance probabilities, different techniques can be used for the measurement of the mass ordering.
+As we have seen in Sect.~\ref{sec:futuret2knova}, the mass ordering can be measured by exploiting the matter effects in long-baseline experiments as for example \nova and can be measured for any value of \dcp by producing beams with a longer baseline such as the proposed DUNE experiment that will be described in the next section. Other possibilities to measure the mass ordering are provided by the exploitation of matter effects using atmospheric neutrinos (ORCA, PINGU, INO, Hyper-Kamiokande) or by testing the interference between \dmsq and \dmsqtwo.
+
+This latter technique is the one proposed by the JUNO experiment~\cite{}. JUNO (Jiangmen Underground Neutrino Observatory) is a multi-purpose neutrino experiment with the main goal of determining the mass ordering will be a 20 kton liquid scintillator detector that will be installed at a distance of 53~km from two sites hosting nuclear plants in China, where a total of ten power plants will be operated by 2020. The detector will be located into a pit with an overburden of more than 700~m and it will be composed by a liquid scintillator spherical detector submerged into a water pool instrumented with PMTs acting as a shielding from natural radioactivity. On the top of the water pool a tracking detector will also be installed to tag muons. 
+
+In a liquid scintillator detector such as JUNO, neutrinos emitted by reactors are observed via the inverse $\beta$-decay in the scintillator. In this process a positron and a neutron are emitted, with the positron quickly depositing its energy, providing a prompt signal. The neutron is instead captured by a proton after few hundreds of $\mu s$. In the capture process a 2.2 MeV $\gamma$ is released, providing a delayed signal. The coincidence between prompt and delayed signals provides a distinctive signature of the antineutrino interaction.
+At a distance of 53~km from the reactors, the spectrum is severely affected by the neutrino oscillations: a large deficit of \nueb is expected, dominated by the solar parameters \thsol and \dmsqso as shown on Fig.~\ref{fig:junospectrum}. From this figure it is clear that the effect of the ordering of the atmospheric mass-squared difference, being much larger than the solar one, manifests itself as multiple cycles (fast oscillations) in the reactor energy spectrum. The position of these cycles are shifted by an extra effective mass squared $\Delta m_{\phi}$ that can be positive or negative depending on the mass ordering. However, in order to extract the MH information from the spectral distortion, an excellent energy resolution ($3\%/ \sqrt{E}$), a good understanding of the energy response (better than 1\%), and a large statistics ($>100k$ inverse beta decay events) are required.
+ 
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/JUNO_spectrum.pdf}
+\caption{\label{fig:junospectrum} Shape difference of the reactor antineutrino flux for the two mass ordering cases.}
+\end{center}
+\end{figure}
+
+Such a statistics will be obtained thanks to the large size of the JUNO detector while the required precision on the energy resolution and on the energy response will be more difficult to reach and require some improvements with respect to what was done for the Daya Bay experiment. Particularly it is required to have PMT photocathode coverage larger than 75\%, a PMT quantum efficiency larger than 35\% and an attenuation length of the liquid scintillator larger than 20~m at 430~nm. If these requirements are reached, JUNO expect a median sensitivity for the determination of the mass ordering of $3\sigma$ after six years of data taking. The sensitivity can be improved to $\sim4\sigma$ if the precision in the measurement of the atmospheric mass splitting in long baseline experiments will reach the 1\% level.
+The impact of the energy resolution on the determination of the mass ordering is shown in Fig.~\ref{fig:junoeneres}.
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/juno_energyres.pdf}
+\caption{\label{fig:junoeneres} The iso-$\Delta\chi^2$ contour plot to determine the mass ordering as the function of the event statistics (luminosity) and the energy resolution. The vertical dash-dotted line represent the nominal running of six years with 80\% signal efficiency and a 3\% energy resolution.}
+\end{center}
+\end{figure}
+
+
+Besides the determination of the mass ordering, JUNO will perform several precise measurements of the neutrino mixing parameters. While the precision of \thint will still be dominated by Daya Bay thanks to its shorter baseline, the huge number of events collected by JUNO, will allow to dramatically improve the uncertainties on the solar parameters, \thsol and \dmsqso. As we have seen in Sect.~\ref{sec:solar} those parameters are currently measured by KamLAND (dominating the \dmsqso measurement) and SNO (dominating the \thsol measurement) with uncertainties of the order of 2-4\%. JUNO will be able to reduce the uncertainties on these parameters well below 1\%, allowing precise tests of the unitarity of the lepton mixing matrix.
+
+In addition JUNO will also observe galactic supernovae burst, collect $\sim5000$ inverse beta decay, 2000 elastic neutrino-proton scattering and 300 elastic neutrino-electron scattering for a SN explosion at a distance of 10 kpc. The time evolution, energy spectra and flavor contents of SN neutrino can be used to investigate the explosion mechanism. Also neutrinos from the diffuse supernova neutrino background might be observed by JUNO. Finally JUNO will be able to perform precise measurements of the flux of solar neutrinos from $^8B$ and $^7Be$ thanks to the high light yield, exceptional energy resolution, and  low threshold. The statistics collected in JUNO will allow to help solving the solar metallicity problem, and probe the transition region between the vacuum-dominated and MSW-dominated neutrino oscillations 
+
+
+An alternative technique for the measurement of the mass ordering is the one proposed by the PINGU and ORCA collaborations. The strategy of these experiments is to exploit the impact of matter effects in both the \num disappearance and the \nue apperance channels for neutrinos produced by cosmic rays in the atmosphere. The idea of the two experiments is to instrument large volumes of ice in the Antarctica (PINGU) or water in the Mediterranean sea (ORCA) with PMTs to observe the muon track or the electromagnetic showers produced by \num and \nue interactions in the medium. The technique is similar to the one used by ICECUBE and ANTARES to observe high energy neutrinos produced by cosmic rays but, in order to improve the energy and direction reconstruction, a much denser arrays of PMTs will be built, at the price of instrumenting a smaller area of water or ice.   
+
+The mass ordering would be measured by exploiting the different oscillation probabilities due to matter effects for neutrinos crossing the Earth. The oscillation probabilities for the different mass ordering cases are shown in Fig.~\ref{fig:orcaoscprob}: the region most sensitive to the mass ordering is the resonance region ($E_{\nu}\sim 4-8~GeV$) and the effect is opposite for neutrinos and antineutrinos. Detectors such as ORCA or PINGU do not distinguish the charge of the lepton event-by-event but, by exploiting the different interaction probability between neutrinos and antineutrinos, a net asymmetry in the combined ($\nu+\nub$) event rate for \nue and \num can be observed. 
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=12cm]{figures/orca_oscprob.pdf}
+\caption{\label{fig:orcaoscprob} Oscillation probabilities for $\num \rightarrow \num$ (blue lines)  and $\nue \rightarrow \num$ (red lines) for different zenith angles. The solid (dashed) lines are for NH (IH).}
+\end{center}
+\end{figure}
+
+Once the atmospheric neutrino fluxes and the neutrino-nucleon cross-section are taken into account, bidimensional plots of event rates as a function of neutrino energy and zenith angle are built as shown in Fig.~\ref{fig:orcaasym}. Although the asymmetry is partially washed out once the systematic uncertainties and particularly the direction and energy resolution, there is still a non negligible sensitivity to the mass ordering that can be exploited. It should be noticed here that the smearing on tracks crossing the ice is larger than the one suffered by tracks crossing the water thus giving some advantages in terms of sensitivity to mass ordering to ORCA.
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=12cm]{figures/orca_true2d.pdf}
+\includegraphics[width=12cm]{figures/orca_smear2d.pdf}
+\caption{\label{fig:orcaasym} Asymmetry as a function of neutrino energy and zenith angle for \num (left) and \nue (right) in ORCA. On the bottom plots a 25\% smearing on the energy and angle reconstruction is applied.}
+\end{center}
+\end{figure}
+
+In ORCA two categories of events are reconstructed: tracks produced by muons produced by \num charged current interactions and shower produced by neutral current interactions or \nue. Both contribute to the measurement of the mass ordering. The sensitivity mainly depends on the capability of reconstructing the energy and the angle of the incident neutrino from the observation of a shower or a track on the PMTs. The resolution depends on the spacing between the PMTs and, once the total number of PMTs is fixed, the optimal vertical spacing is 9~m. 
+
+Assuming this configuration, the sensitivity of ORCA to the mass ordering after three years of run is shown in Fig.~\ref{fig:orcasensi}. The sensitivity depends on other PMNS oscillation parameters, in particular \thatm and \dcp but in general a sensitivity of $\sim3\sigma$ will be obtained. Similar results will be reached by PINGU after four years of running as shown in Fig.~\ref{fig:pingusensi}
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/orca_sensi.pdf}
+\caption{\label{fig:orcasensi} ORCA sensitivity to the mass ordering after three years of running as a function of the true value of \thatm and for different values of \dcp.}
+\end{center}
+\end{figure}
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/pingu_sensi.pdf}
+\caption{\label{fig:pingusensi} PINGU sensitivity to the mass ordering after three years of running as a function of the true value of \thatm.}
+\end{center}
+\end{figure}
+
 
 INO distinguishes btw numu and numubar status ? 
 
 
-\subsection{Long term: HyperKamiokande, DUNE}
+\subsection{Next generation of long baseline experiments}
+A next generation of long-baseline experiments will be built in the coming years and will be operational around the second half of the years 2020 with the main goal of producing precise measurements of the neutrino mixing parameters accessible to long-baseline experiments, namely \thatm, \thint, \dmsq, and \dcp. 
+
+The main goal of these projects will be the discovery of CP violation in the leptonic sector and the determination of the mass ordering if it will have not been determined by the experiments described earlier. 
+
+
+
+
 
 DUNE new technology LAr 40 kt new beam
 
