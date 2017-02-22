@@ -1,55 +1,110 @@
+\section{Three neutrino effects}
 \subsection{\nue appearance in long baseline experiments and the quest for \dcp}
-As mentioned in~\ref{sec:theta13}, the main goal of long baseline experiments is nowadays the search for \nue and \nueb appearance. The \nue appearance is in fact a sub-leading effect of the disappearance of muon neutrinos depending on a combination of \thint, \thatm, \dcp, and mass hierarchy as shown in Eq.~\ref{eq:theta13app}.
 
-The \nue appearance phenomenon has been observed for the first time by T2K in 2012~\cite{Abe:2013hdq}. A total of 28 electron neutrino candidates were detected in Super-Kamiokande while $4.92\pm0.55$ background events were expected for $\thint=0$. The \ptheta distribution for these events is shown in Fig~\ref{fig:t2kapp} and the significance of this measurement correspond to $7.3\sigma$. In 2016 also the NOVA experiment has reported the observation of \nue appearance, by observing 33 e-like candidates to be compared with an expected background of 8 events (see Fig.~\ref{fig:novaapp}.
+The measurement of the three large angles $\theta_{12}$,$\theta_{23}$,$\theta_{13}$ opens the possibility to measure the CP violation parameter $\delta$.
+The electron neutrino appearance in a beam of muon neutrino can be written 
+(mettre une formule sans effet de matière)
+\begin{eqnarray*}
+\papp & = & 4C^2_{13}S^2_{13}S^2_{23}\sin^2\phi_{31} \\
+& + & 8 C^2_{13}S_{12}S_{13}S_{23}(C_{12}C_{23} \cos \dcp - S_{12}S_{13}S_{23}) \cos\phi_{32}\sin\phi_{31}\sin\phi_{21} \\
+& - & 8C^2_{13}C_{12}C_{23}S_{12}S_{13}S_{23} \sin \dcp \sin \phi_{32} \sin \phi_{31} \sin \phi_{21} \\
+& + & 4S^2_{12}C^2_{13} (C^2_{12}C^2_{23} + S^2_{12}S^2_{23}S^2_{13} - 2C_{12}C_{23}S_{12}S_{23}S_{13} \cos \dcp ) sin^2\phi_{21}\\
+& - & 8C^2_{13} S^2_{13} S^2_{23} \frac{aL}{4E_{\nu}} (1 - 2S^2_{13} ) \cos\phi_{32} \sin \phi_{31} \\
+& + & 8C^2_{13}S^2_{13}S^2_{23}\frac{a}{\dmsqtwo}(1-2S^2_{13})\sin^2\phi_{31} \\
+\end{eqnarray*}
+\begin{equation}
+\label{eq:theta13app}
+\end{equation}
 
-\begin{figure} [h!]
-\begin{center}
-\includegraphics[width=8cm]{figures/nueapp_ptheta.pdf}
-\caption{\label{fig:t2kapp} \ptheta distribution for the \nue candidates events~\cite{Abe:2013hdq}.}
-\end{center}
-\end{figure}
+where $C_{ij} = \cos \theta_{ij}$, $S_{ij} = \sin \theta_{ij}$ and $\phi_{ji}~= \Delta m^2_{ji} L / 4 E_{\nu}$. The terms that include $a$ are a consequence of the matter effects with $a=2\sqrt 2 G_F n_e E_{\nu}~=~7.56\times10^{-5} [eV^2](\rho/(g/cm^3)(E_{\nu}/GeV)$. 
+The equivalent term for \pappb can be obtained by reversing the signs of the terms proportional to sin\dcp and to $a$. The term proportional to cos\dcp is invariant for $\nu$ and \nub whilst the term proportional to sin\dcp contains the CP violating part and is proportional to the Jarlskog invariant $J=8C^2_{13}C_{12}C_{23}S_{12}S_{13}S_{23} \sin \dcp $ (verifier). 
+The different terms contributing to \papp are plotted in Fig~\ref{fig:t2kappprob}.
+The relative size of the effect on the appearance probability due to \dcp and to the mass ordering depends on the baseline. The matter effect is in fact proportional to the amount of matter crossed by neutrinos before reaching the detector.
+ 
+The matter effects enhance the appearance probability for neutrinos and reduce it for antineutrinos, depending on mass ordering (Fig.~\ref{fig:t2kappnub}). Therefore there is a degeneracy between mass ordering and CP violation effect at shorter baselines. This degeneracy can be lifted either by performing measurements at very long baselines or by measuring the mass ordering in a different experiment, as explained later~\ref{sec:future}.
 
-\begin{figure} [h!]
-\begin{center}
-\includegraphics[width=8cm]{figures/nueapp_NOVA.pdf}
-\caption{\label{fig:novaapp} Reconstructed neutrino energy for \nue candidates in \nova in three bins of the Convolutional Visual Network (CVN) discrimination variable.}
-\end{center}
-\end{figure}
-
-By combining the observation of \nue apperance in long-baseline experiments with the precise measurement of \nueb disappearance with reactors it is possible to extract information on the sub-leading terms entering the appearance probability, particularly the CP violation term \dcp and the mass hierarchy sign. 
-The relative size of the effect on the apperance probability due to \dcp and to the mass ordering depends on the baseline. The effect of the hierarchy is in fact proportional to the amount of matter crossed by neutrinos before reaching the detector. 
-
-In the case of T2K the baseline is relatively short (295 km) and the matter effects contribute to $\sim\pm10\%$ of the oscillation probability while the effect due to \dcp can be as large as $\pm30\%$ for the extreme values of \dcp as shown in Fig.~\ref{fig:t2kappprob}. In the case of NOVA the baseline is 810 km and the effect of the mass ordering and of \dcp on \papp is roughly equal and it corresponds to $\sim20\%$ for each source.
-
-\begin{figure} [h!]
+\begin{figure} [htbp!]
 \begin{center}
 \includegraphics[width=8cm]{figures/papp_prob_2.pdf}
 \caption{\label{fig:t2kappprob} Oscillation probabilities as a function of neutrino energy with L=295 km, \stot = 0.1, \dcp=$\pi/2$ and normal hierarchy. The contribution of the different terms of the oscillation probability is shown separately.}
 \end{center}
 \end{figure}
 
-It is important to notice that for \nueb appearance the signs are reverted. In neutrino mode the appearance probability is maximized for normal hierarchy and $\dcp=-\pi/2$ while in anti-neutrino mode the appearance probability is maximized for inverted hierarchy and $\dcp=\pi/2$ as it is shown in Fig.~\ref{fig:t2kappnub} for the case of T2K. This figure clearly show the complementarity between \papp and \pappb and illustrates the importance of taking data also focusing anti-neutrino to fully exploit the asymmetry between \nue and \nueb apperance to measure \dcp.
 
-\begin{figure} [h!]
+\begin{figure} [htbp!]
 \begin{center}
 \includegraphics[width=14cm]{figures/papp_prob.pdf}
 \caption{\label{fig:t2kappnub} Oscillation probabilities as a function of neutrino energy for \papp (left) and \pappb (right) with L=295 km and \stot = 0.1. The different line colors correspond to different values of \dcp while the solid (dashed) lines represent the normal (inverted) hierarchy.   }
 \end{center}
 \end{figure}
 
-Finally Eq.~\ref{eq:theta13app} shows that the appearance probability also depends on the value of \thatm. Long-baseline accelerator experiments searching for \nue appearance are also sensitive to \thatm through \num disappearance. To fully take into account the correlations between oscillation parameters it is preferable to perform a joint analysis of appearance and disappearance. This procedure was used by T2K in~\cite{ } and for the most recent results presented at Neutrino2016 also the \numb disappearance and the \nueb apperarance channels are included into the same fit.
+
+The \nue appearance phenomenon in this channel has been observed for the first time by T2K in 2012~\cite{Abe:2013hdq}. A total of 28 electron neutrino candidates were detected in Super-Kamiokande while $4.92\pm0.55$ background events were expected for $\thint=0$. The selection of these events in Super-Kamiokande is performed requiring fully contained, one ring electron-like events. The background due to NC interactions with $\pi^0$ production is reduced by a factor 9 with a special algorithm testing the hypothesis of two electromagnetic showers, corresponding to $\pi⁰ \rightarrow \gamma \gamma$. The purity of the final sample is 80\% for $\nu_\mu \rightarrow \nu_e$ oscillated events, while the remaining background is mainly due to the irreducible beam $\nu_e$ background (15\%) and to NC events (4.4 \%). 
+The \ptheta distribution for these events is shown in Fig~\ref{fig:t2kapp} and the significance of this measurement correspond to $7.3\sigma$. 
+
+In 2016 also the NOVA experiment has reported the observation of \nue appearance, by observing 33 e-like candidates to be compared with an expected background of 8 events (see Fig.~\ref{fig:novaapp}.
+
+\begin{figure} [htbp!]
+\begin{center}
+\includegraphics[width=8cm]{figures/nueapp_ptheta.pdf}
+\caption{\label{fig:t2kapp} \ptheta distribution for the \nue candidates events~\cite{Abe:2013hdq}.}
+\end{center}
+\end{figure}
+
+%\begin{figure} [h!]
+%\begin{center}
+%\includegraphics[width=8cm]{figures/nueapp_NOVA.pdf}
+%\caption{\label{fig:novaapp} Reconstructed neutrino energy for \nue candidates in \nova in three bins of the Convolutional Visual Network (CVN) discrimination variable.}
+%\end{center}
+%\end{figure}
+
+In principle, a precise measurement of $Prob(\nu_\mu \rightarrow \nu_e$ and 
+$Prob(\bar{\nu}_\mu \rightarrow \bar{\nu}_e$ allows to determine all the remaining unknown parameters related to the neutrino oscillation, namely: the angle
+$\theta_{13}$ (appears in the leading term of Eq.\ref{eq:theta13app}), the octant of $\theta_{23}$ (the leading term of Eq.\ref{eq:theta13app} being proportional to $\sin (\theta^2_{23}$), the CP violation phase $\delta$ and the mass ordering from matter effects. 
+
+The combination of experiments with different baselines is particularly useful as it allows to remove degeneracies among the parameters.
+Indeed, in the case of T2K the baseline is relatively short (295 km) and the matter effects contribute to $\sim\pm10\%$ of the oscillation probability while the effect due to \dcp can be as large as $\pm30\%$ for the extreme values of \dcp as shown in Fig.~\ref{fig:t2kappprob}. In the case of NOVA the baseline is 810 km and the effect of the mass ordering and of \dcp on \papp is roughly equal and it corresponds to $\sim20\%$ for each source.
+
+At the moment, the precision of the long baseline results is insufficient to completely carry out this program and the precise measurement of \nueb disappearance with reactors is still needed to extract information on the sub-leading terms entering the appearance probability, particularly the CP violation term \dcp and the mass ordering. 
+
+%It is important to notice that for \nueb appearance the signs are reverted. In neutrino mode the appearance probability is maximized for normal hierarchy and $\dcp=-\pi/2$ while in anti-neutrino mode the appearance probability is maximized for inverted hierarchy and $\dcp=\pi/2$ as it is shown in Fig.~\ref{fig:t2kappnub} for the case of T2K. This figure clearly show the complementarity between \papp and \pappb and illustrates the importance of taking data also focusing anti-neutrino to fully exploit the asymmetry between \nue and \nueb apperance to measure \dcp.
+
+
+Finally equation~\ref{eq:theta13app} shows that the appearance probability also depends on the value of \thatm. Long-baseline accelerator experiments searching for \nue appearance are also sensitive to \thatm through \num disappearance. To fully take into account the correlations between oscillation parameters it is preferable to perform a joint analysis of appearance and disappearance data. This procedure was used by T2K in~\cite{t2kprd} and for the most recent results\cite{t2k2016} also the \numb disappearance and the \nueb appearance channels are included into the same fit.
  
-\subsubsection{Search for \dcp in T2K and \nova}
-In the coming years, before new projects, that will be described in~\cite{sec:future}, will come online, the quest for the missing parameters in the PMNS scheme (\dcp, mass ordering, \thatm octant) will be lead by the two long-baseline accelerator experiments that are currently taking data, namely T2K and NOVA.
+\subsection{Search for \dcp in T2K and \nova}
 
-T2K has recently published its first analysis of neutrino oscillations obtained combining data taken with neutrinos and antineutrinos beam with approximately the same amount of POT. With this data set 32 e-like candidates are observed at SK in neutrino mode and 4 in antineutrino mode. The expected number of events depends on the value of \dcp and of the mass ordering, varying between 19.6 and 28.7 (17.1 and 25.4) for normal (inverted) ordering in neutrino mode and between 6.0 and 7.7 (6.5 and 7.4) in antineutrino mode. The maximum values of CP violation, when \dcp is equal to $\pi/2$ or $-\pi/2$ have different behavior for neutrinos and anti-neutrinos. $\dcp=-\pi/2$ maximize the \nue appearance probability and minimize the \nueb appearance probability while the opposite happens for $\dcp=\pi/2$. 
+In the coming years, before new projects, that will be described in~\ref{sec:future}, will come online, the quest for the missing parameters in the PMNS scheme (\dcp, mass ordering, \thatm octant) will be led by the two long-baseline accelerator experiments that are currently taking data, namely T2K and NOVA.
 
-Since T2K observes a mild excess of \nue candidates even respect to the most favorable value and a deficit of \nueb candidates, a value of \dcp close to $-\pi/2$ and the normal ordering is preferred by these data even without the inclusion of the reactor constraint for the measurement of \thint. This is shown in Fig.~\ref{fig:t2kjoint}. For the first time, long-baseline experiments have sensitivity to \dcp without considering independent informations from reactors and a good agreement between the value of \thint measured by the reactors and the one measured by T2K is observed. 
+T2K has recently published its first analysis of neutrino oscillations obtained combining data taken with neutrinos and antineutrinos beam with approximately the same amount of POT\cite{t2k2016}. With this data set 32 e-like candidates are observed at SK in neutrino mode and 4 in antineutrino mode. The expected number of events depends on the value of \dcp and of the mass ordering as shown in Table~\ref{tab:evtnue}, varying between 19.6 and 28.7 (17.1 and 25.4) for normal (inverted) ordering in neutrino mode and between 6.0 and 7.7 (6.5 and 7.4) in antineutrino mode. The value $\dcp=-\pi/2$ maximize the \nue appearance probability and minimize the \nueb appearance probability while the opposite happens for $\dcp=\pi/2$. 
+
+\begin{table}[htbp]
+    \centering
+    \caption{Number of $\nu_e$ and $\overline{\nu}_e$ events expected for various values of $\delta_{CP}$ and both mass orderings 
+    compared to the observed numbers.}
+    \label{tab:evtnue}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        Normal & $\delta_{CP}= -\pi/2$ & $\delta_{CP}= 0 $ & $\delta_{CP}= \pi/2$ &  $\delta_{CP}= \pi$  & Observed\\
+        \hline 
+        $\nu_e$ &   28.7 & 24.2& 19.6& 24.1& 32 \\
+        $\overline{\nu}_e$ &  6.0 &6.9& 7.7 &6.8 &4 \\     
+        \hline
+        \hline
+        Inverted & $\delta_{CP}= -\pi/2$ & $\delta_{CP}= 0 $ & $\delta_{CP}= \pi/2$ &  $\delta_{CP}= \pi$  & Observed\\
+        \hline 
+        $\nu_e$ 			& 25.4 	& 21.3	& 17.1	& 21.3	& 32 \\
+        $\overline{\nu}_e$ 	& 6.5 	& 7.4		& 8.4		& 7.4		&4 \\    
+\hline
+    \end{tabular}
+\end{table}
+
+
+Since T2K observes a mild excess of \nue candidates with respect to the most favourable value and a deficit of \nueb candidates, a value of \dcp close to $-\pi/2$ and the normal ordering is preferred by these data even without the inclusion of the reactor constraint for the measurement of \thint. This is shown in Fig.~\ref{fig:t2kjoint}. For the first time, long-baseline experiments have sensitivity to \dcp without considering independent informations from reactors and a good agreement between the value of \thint measured by the reactors and the one measured by T2K is observed. 
 
 \begin{figure} [h!]
 \begin{center}
-\includegraphics[width=14cm]{figures/t2k_joint_th13dcp.pdf}
+\includegraphics[width=10cm]{figures/t2k_joint_th13dcp.pdf}
 \caption{\label{fig:t2kjoint} 68\% and 90\%  constant $-2\Delta ln L$}
 \end{center}
 \end{figure}
@@ -69,12 +124,13 @@ When the average value of \thint as measured by the reactor experiments is used 
 
 \begin{figure} [h!]
 \begin{center}
-\includegraphics[width=14cm]{figures/nova_dcp.pdf}
+\includegraphics[width=10cm]{figures/nova_dcp.pdf}
 \caption{\label{fig:novadcp}  }
 \end{center}
 \end{figure}
 
 
 
-\subsubsection{ Search for \dcp in Super-Kamiokande}
+\subsection{ Search for \dcp and 3-nu effects in atmospheric neutrinos (SK)}
 SK effect in atm due to delta
+(look for a reference)
