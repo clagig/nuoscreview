@@ -1,5 +1,36 @@
-\subsection{Measurements of \thint in reactor experiments}
+\section{The 1-3 sector}
 
+\subsection{Early limits and first indications}
+
+The search for neutrino oscillation was performed using short baseline experiment at nuclear reactors: Gosgen (1986), Krasnoyarsk, Bugey, CHOOZ and Palo Verde searched for $\bar{\nu}_e$ disappearance and did not find any evidence for oscillations.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+  \hline
+  Exp. & N (cores) & Power (GW) & L (m) & Mass (t) & Overburden \\ 
+  \hline
+  Gösgen & & 2.8 & 37.9, 45.9, 64.7 & & \\
+  Krasnoyarsk & 3 & 2.8 & 37.9, 45.9, 64.7 & & \\
+  Bugey 1 & & 2.8 & 13.6-18.3 & & \\
+    Bugey & & 2.8 & 37.9, 45.9, 64.7 & & \\
+      Bugey 3 & & 2.8 & 15-40 & & \\
+        Bugey & & 2.8 & 37.9, 45.9, 64.7 & & \\
+  Chooz & 2 & 8.5 & 1050  & & \\
+  Palo Verde & 3 & 11.6 & 750-890 & & \\
+  \hline
+\end{tabular}
+\caption{Parameters of the first generation short baseline nuclear reactor experiments.
+}
+\end{table}
+
+
+After the discovery of atmospheric and solar neutrino oscillation, it became clear that the relevant oscillation length was governed by $\Delta m²_{atm} L/(4E)$ and that the  optimal baseline for a reactor neutrino experiment to see important spectral distortions due to this effect was around 1 km.  Therefore, among the previous experiment, only Chooz, with a baseline of 1 km, could set relevant limits in the context of three neutrino oscillations. The best limit on $\theta_{13}$ $\sin^2 (2 \theta_{13})>0.17 $ at 90\% CL for $\Delta m^2_{31}=2.4 10^{-3}$ eV$^2$ was held by the Chooz experiment\cite{apollonio2003} for several years. 
+
+Long baseline experiments also searched for $\theta_{13}$ in the appearance mode. At leading order, as we will describe in xx, the appearance probability $P(\nu_\mu \rightarrow \nu_e) = \sin^2 (2 \theta_13) \sin² \frac {\Delta m^2_{31} L}{4E}$. After the negative results by K2K and MINOS, T2K was the first experiment to report an indication of non zero $\theta_{13}$ in 2011. The $\theta_{13}$ was subsequently measured with excellent precision by the reactor experiments Daya Bay, Reno and Double Chooz.
+
+
+\subsection{Reactor neutrinos: flux and detection}
 Nuclear reactors are intense sources of electron antineutrinos. Indeed the fission processes, starting from uranium enriched in the $^{235}U$ isotope, generate unstable neutron-rich nuclei that undergo $\beta -$ decays. The typical antineutrino energy is of the order of a few MeV. (Add flux estimate)
 
 At these energies, an antineutrino interacting on a proton can initiate an Inverse Beta Decay (IBD) process $\bar{\nu} p \rightarrow n e^+$ which has a threshold of 1.8 MeV. The cross-section of this process can be reliably calculated from the related neutron decay process. The visible energy $E_v$ produced by the positron, neglecting the small nuclear recoil, is related to the antineutrino energy $E_\nu$ by $E_v =  E_{\nu} -(m_n - m_p) + m_e$ where $m_e$ is the electron mass. The convolution of the $\beta$ decay spectrum of antineutrinos, rapidly falling off with the energy, with the IBD cross section rising with energy results in a detected antineutrino spectrum peaking at approximately 4 MeV. 
@@ -9,6 +40,8 @@ The production of the positron can be easily detected in a scintillating medium 
 The IBD and following neutron capture, taking place for instance in a liquid scintillator doped with gadolinium, is then a very clean experimental method to detect antineutrinos. The positron signal followed by the signal related to the neutron capture in a delayed coincidence offers a clear and clean signature to distinguish it from other background reactions. This experimental technique has been used since the discovery of neutrino in the historic Savannah River experiment \cite{reines56}. Since then, this technique has been used by numerous experiments located close to nuclear reactors and searching for neutrino oscillation.
 
 The precise calculation of the antineutrino flux from a reactor is a difficult task since it involves more than thousand beta decay branches involving unstable nuclei. For some of these little or no data is available. A series of experiments took place in the 1980 at the ILL facility (ref) measuring the electron spectrum emitted by the $beta$ decays taking place in foils containing the various uranium and plutonium isotopes present in a reactor core, under a thermal neutron flux. The antineutrino spectrum can then be computed from the electron spectrum under some assumptions with the so-called inversion method (ref), with a precision ranging from 2\% at 2 MeV to 10\% at 8 MeV. Ab-initio calculations were performed recently (add discussion).   
+
+\subsection{Results from reactor experiments}
 
 Several experiments at different distances from the reactor core and using the IBD technique for the antineutrino detection have set limits on the electron antineutrino disappearance (add figure) with precisions on the total antineutrino rate measurement at the few \% level.
 
@@ -23,12 +56,14 @@ P (\bar \nu_e \rightarrow \bar \nu_e) \simeq 1 -\sin^2 (2 \theta_{13}) \sin^2 \D
 \end{equation}
 where $\Delta m^2_{ee} = \cos² (\theta_{12} \Delta m^2_{31} + \sin² (\theta_{12} \Delta m^2_{32}$. The disappearance due to the atmospheric oscillation reaches a maximum at 2 km for $E_\nu=4$ MeV. A reactor neutrino experiment with a baseline of the order of 1-2 km is therefore a clean probe of the $\theta_{13}$ mixing angle.
 
-While the 1980 generation of experiments, among which we can name Bugey, Palo Verde, searched for $\bar{\nu}_e$ disappearance at short baseline, (generically indicated that the $\theta_{13}$ angle was small?), the best limit $\sin^2 (2 \theta_{13})>0.17 $ at 90\% CL for $\Delta m^2_{31}=2.4 10^{-3}$ eV$^2$ was reported by the Chooz experiment\cite{apollonio2003}.
 
 
 In the last decade, a new generation of reactor experiments has been built to push the sensitivity even further: Double Chooz in France, RENO in South Corea and Daya Bay in China. The experimental features of these experiments are similar and here we will describe the Daya Bay experiment.
 
 The Daya Bay nuclear complex comprises six nuclear reactors with a total thermal power of 17.4 GW, grouped in two areas. Three underground experimental halls, two near sites close to the reactors and one far site, host eight identical antineutrino detectors (AD).
+The flux-averaged baselines
+for the three experimental halls are 520, 570, and 1590 m,
+respectively.
 
 Each AD consists of three concentric cylindrical volumes separated by acrylic vessels. The innermost volume contains 20 tons of gadolinium loaded liquid scintillator, providing the target for the neutrino interactions. Most of the neutrons are captured inside this volume. The next volume is filled with liquid scintillator to detect the gammas and thereby reduce the energy leakage. The outermost volume is filled with mineral oil and provides a shield against radioactivity produced by the PMT and the walls of the tank, on which a total of 192 PMT are mounted. The tank itself is immersed in ultra-pure water providing a shield against external radiation and cosmic rays that can be tagged by additional PMT. 
 
