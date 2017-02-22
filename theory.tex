@@ -1,22 +1,1341 @@
 \section{Theory and phenomenology of oscillations 15 pg SL}
 \label{sec:th}
 
-\subsection{Preliminary}
 
-Lagrangian NC and CC, nu in SM, m ?
+Neutrino oscillations are a quantum-mechanical phenomenon that is made possible
+by the existence of non-degenerate neutrino masses and lepton flavour mixing.
+As for quarks, the origin of flavour mixing in the lepton sector is the mismatch between
+the basis of (weak) gauge eigenstates %(also called {\it flavour eigenstates})
+and the basis of mass eigenstates,
+namely the fact that the neutrino mass matrix is not diagonal when written in the flavour basis
+(i.e. the weak eigenstate basis corresponding to the charged lepton mass eigenstates
+$e$, $\mu$ and $\tau$).
+%the neutrino to which a given charged lepton (electron, muon or tau) couples
+%via the charged current is not a mass eigenstate, but a coherent superposition
+%of mass eigenstates.
+The relative rotation between the flavour and the mass eigenstate left-handed neutrino fields
+is the {\it lepton mixing matrix}, known as the PMNS (Pontecorvo-Maki-Nakagawa-Sakata) matrix:
+%
+\be
+  \left(\!\! \begin{array}{c} \nu_e(x) \\ \nu_\mu(x) \\ \nu_\tau(x) \end{array}\!\! \right)_{\!\!L}
+  =\, U\, \left(\!\! \begin{array}{c} \nu_1(x) \\ \nu_2(x) \\ \nu_3(x) \end{array}\!\! \right)_{\!\!L}
+  =\, \left(\! \begin{array}{ccc} U_{e1} & U_{e2} & U_{e3} \\ U_{\mu1} & U_{\mu2} & U_{\mu3} \\ U_{\tau 1}
+    & U_{\tau2} & U_{\tau3} \end{array}\! \right)\! \left(\!\!
+    \begin{array}{c} \nu_1(x) \\ \nu_2(x) \\ \nu_3(x) \end{array}\!\! \right)_{\!\!L}\, .
+\label{eq:flavour_mass_relation_long}
+\eeq
+%
+In Eq.~(\ref{eq:flavour_mass_relation_long}),
+$\nu_{e L} (x)$, $\nu_{\mu L} (x)$ and $\nu_{\tau L} (x)$ are the fields describing
+the left-handed {\it flavour eigenstate} neutrinos,
+defined as the neutrinos that couple via charged weak current to the electron, the muon
+and the tau, respectively,
+and $\nu_{1 L} (x)$, $\nu_{2 L} (x)$ and $\nu_{3 L} (x)$ describe the left-handed
+mass eigenstate neutrinos with masses $m_1$, $m_2$ and $m_3$.
+%%
+%\be
+%  \left(\! \begin{array}{c} \nu_e(x) \\ \nu_\mu(x) \\ \nu_\tau(x) \end{array}\! \right)_{\!\!L}
+%  =\, U_{\rm PMNS} \left(\! \begin{array}{c} \nu_1(x) \\ \nu_2(x) \\ \nu_3(x) \end{array}\! \right)_{\!\!L}
+%  =\, \left(\! \begin{array}{ccc} U_{e1} & U_{e2} & U_{e3} \\ U_{\mu1} & U_{\mu2} & U_{\mu3} \\ U_{\tau 1}
+%    & U_{\tau2} & U_{\tau3} \end{array}\! \right)\! \left(\!
+%    \begin{array}{c} \nu_1(x) \\ \nu_2(x) \\ \nu_3(x) \end{array}\! \right)_{\!\!L}\, .
+%\eeq
+%%
+In shorthand notations, the relation~(\ref{eq:flavour_mass_relation_long}) reduces to
+%between the flavour and mass eigenstate neutrino fields
+%
+\be
+  \nu_{\alpha L} (x)\, =\, \sum_i U_{\alpha i} \nu_{i L} (x)\, ,
+\label{eq:flavour_mass_relation}
+\eeq
+%
+where $\alpha = e, \mu, \tau$ and $i=1,2,3$.
+In the following, we shall omit the subscript ``$L$'' for simplicity.
+As a consequence of flavour mixing,
+the neutrino that couples to a charged lepton of a given flavour (an electron,
+a muon or a tau) is not a mass eigenstate, but a {\it coherent superposition of mass eigenstates}:
+%%
+%\be
+%  {\cal L}_{\rm CC}\, =\, \frac{g}{\sqrt{2}}\ W^-_\mu \sum_\alpha\, \bar e_{\alpha L} \gamma^\mu \nu_{\alpha L}\,
+%    =\, \frac{g}{\sqrt{2}}\ W^-_\mu \sum_{\alpha, i}\, U_{\alpha i}\, \bar e_{\alpha L} \gamma^\mu \nu_{i L}\, .
+%\ee
+%%
+%
+\be
+  {\cal L}_{\rm CC}\, =\, \frac{g}{\sqrt{2}}\ W^-_\mu
+    \sum_{\alpha = e, \mu, \tau}\! \bar e_{\alpha L} \gamma^\mu \nu_{\alpha L}\,
+  =\, \frac{g}{\sqrt{2}}\ W^-_\mu \sum_{\alpha = e, \mu, \tau}\! \bar e_{\alpha L} \gamma^\mu
+    \sum_{i = 1,2,3}\! U_{\alpha i}\, \nu_{i L}\, .
+\label{eq:L_CC}
+\eeq
+%
+%%
+%\be
+%  {\cal L}_{\rm CC}\, =\, \frac{g}{\sqrt{2}}\ W^-_\mu\!
+%    \sum_{\alpha = e, \mu, \tau}\! \bar e_{\alpha L} \gamma^\mu \nu_{\alpha L}\,
+%  =\, \frac{g}{\sqrt{2}}\ W^-_\mu\! \sum_{\alpha = e, \mu, \tau}\! \bar e_{\alpha L} \gamma^\mu\,
+%    \sum_i\, U_{\alpha i} \nu_{i L}\, .
+%\label{eq:L_CC}
+%\eeq
+%%
+%%
+%\be
+%  {\cal L}_{\rm CC}\, =\, \frac{g}{\sqrt{2}}\ W^-_\mu \sum_\alpha\, \bar e_{\alpha L} \gamma^\mu \nu_{\alpha L}\,
+%    =\, \frac{g}{\sqrt{2}}\ W^-_\mu \sum_\alpha\, \bar e_{\alpha L} \gamma^\mu \sum_i\, U_{\alpha i} \nu_{i L}\, .
+%\eeq
+%%
+It is this coherence that makes neutrino oscillations possible.
+%\omi{Neutral current, on the contrary,
+%is not sensitive to flavour mixing, since $\sum_\alpha \bar \nu_{\alpha L} \gamma^\mu \nu_{\alpha L}
+%= \sum_{i,j} \sum_\alpha U^*_{\alpha j} U_{\alpha i}\, \bar \nu_{j L} \gamma^\mu \nu_{i L}
+%= \sum_{i,j} \delta_{i j}\, \bar \nu_{j L} \gamma^\mu \nu_{i L} = \sum_i \bar \nu_{i L} \gamma^\mu \nu_{i L}$.}
 
-\subsection{Basis}
+Being associated with a change of basis, the PMNS matrix is a unitary matrix. Like the CKM matrix,
+it satisfies unitary relations, derived from $U U^\dagger = U^\dagger U = \mathbf{1}$:
+%
+\be
+  \sum_i\, U_{\alpha i} U^*_{\beta i}\, =\, \delta_{\alpha \beta} \quad \left( \alpha, \beta = e, \mu, \tau \right) ,
+  \qquad  \sum_\alpha\, U^*_{\alpha i} U_{\alpha j}\, =\, \delta_{ij} \quad \left( i, j = 1,2,3 \right) .
+\eeq
+%
+Like any $3 \times 3$ unitary matrix, $U$ can be parametrized by 3 mixing angles and 6 phases.
+However, not all of these phases are physical, since lepton fields can be rephased
+to absorb some of them. Namely, if neutrinos are Dirac fermions, one can rephase
+both the charged lepton and the neutrino fields, $e_\alpha (x) \to e^{i\phi_\alpha}\, e_\alpha (x)$
+and $\nu_i (x) \to e^{i\phi_i}\, \nu_i (x)$, where $e_\alpha (x)$ and $\nu_i (x)$ denote
+the 4-component Dirac fields (i.e. the phases of the left-handed and right-handed lepton fields
+are shifted by the same amount, in order not to affect the mass terms
+$- \sum_\alpha m_{\ell_\alpha} \bar e_{R \alpha} e_{L \alpha} - \sum_i m_i  \bar \nu_{R i} \nu_{L i} + \mbox{h.c.}$).
+%This leaves the Lagrangian invariant, including the charged current
+%term~(\ref{eq:L_CC}), provided that the PMNS matrix is redefined in the following way:
+This leaves the charged current term~(\ref{eq:L_CC}) invariant, provided that one redefines
+the PMNS matrix in the following way:
+%
+\be
+  U_{\alpha i}\, \to\, e^{i (\phi_\alpha - \phi_i)}\, U_{\alpha i}\, .
+\eeq
+%
+Since there are 5 independent phase differences $\phi_\alpha - \phi_i$, one can
+remove 5 phases from the PMNS matrix, leaving only one physical CP-violating
+phase, as in the CKM matrix. If neutrinos are Majorana fermions, however, it is
+not possible to rephase the left-handed neutrino fields, because this would make
+their masses complex (indeed, Majorana mass terms are of the form
+$- \frac{1}{2}\, m_i\, \nu^T_{L i} C \nu_{L i} + \mbox{h.c.}$, where $C$ is the charge
+conjugation matrix satisfying $C \gamma_\mu C^{-1} = - \gamma^T_\mu$).
+%Thus only the charged lepton fields can be rephased and only 3 phases can be removed
+%from the PMNS matrix (as $U_{\alpha i}\, \to\, e^{i \phi_\alpha}\, U_{\alpha i}$),
+%leaving 3 physical CP-violating phases.
+Thus only the charged lepton fields can be rephased, leading to
+%
+\be
+  U_{\alpha i}\, \to\, e^{i \phi_\alpha}\, U_{\alpha i}\, .
+\eeq
+%
+One is therefore left with 3 physical CP-violating phases in the Majorana case,
+instead of a single one in the Dirac case\footnote{This parameter counting can be
+generalized to an arbitrary number $N$ of lepton flavours,
+%but this exercise is of rather academic interest, given that the number of active neutrinos
+%is known to be 3 without ambiguity (sterile neutrinos may however exist, but the counting
+although the number of active neutrinos
+is known to be 3 without ambiguity (sterile neutrinos may exist, but the counting
+of physical mixing parameters is different in this case, see Section~\ref{subsec:steriles}).
+One finds, in the Dirac case, $N(N-1)/2$ mixing angles
+and $(N-1)(N-2)/2$ phases, and $N-1$ additional phases in the Majorana case.
+Thus, at variance with the quark sector, CP violation is possible already with 2 generations
+of leptons if neutrinos are Majorana fermions. Nevertheless, for reasons that will become clear below,
+CP violation in oscillations requires at least 3 generations.}.
 
-U PMNS : D vs M, oscillation independent of D/M
-vacuum N=2 N=3
 
-\subsection{matter}
-n=const  $\rightarrow$ MH determination 
+%The standard parametrization of the PMNS matrix is
+%The PMNS matrix can therefore be written as the product of three rotations
+Based on this parameter counting, the PMNS matrix can be written as the product of three rotations
+through angles $\theta_{23}$, $\theta_{13}$ and $\theta_{12}$,  where the second
+(unitary) rotation depends on a phase $\delta$, and of a diagonal matrix of phases $P$:
+%
+\bea
+  U\! & =\! & \left( \begin{array}{ccc} 1 & 0 & 0 \\ 0 & c_{23} & s_{23} \\ 0 & - s_{23} & c_{23} \end{array} \right)
+    \left( \begin{array}{ccc} c_{13} & 0 & s_{13} e^{-i \delta} \\ 0 & 1 & 0 \\ - s_{13} e^{i \delta} & 0 & c_{13} \end{array} \right)
+    \left( \begin{array}{ccc} c_{12} & s_{12} & 0 \\ - s_{12} & c_{12} & 0 \\ 0 & 0 & 1 \end{array} \right) P  \nn \\
+  & =\! & \left( \begin{array}{ccc} c_{12} c_{13} & s_{12} c_{13} & s_{13} e^{-i \delta} \\
+    - s_{12} c_{23} - c_{12} s_{13} s_{23} e^{i \delta} & c_{12} c_{23} - s_{12} s_{13} s_{23} e^{i \delta} & c_{13} s_{23} \\
+    s_{12} s_{23} - c_{12} s_{13} c_{23} e^{i \delta} & - c_{12} s_{23} - s_{12} s_{13} c_{23} e^{i \delta} & c_{13} c_{23} 
+   \end{array} \right) P\ .
+\label{eq:PMNS}
+\eea
+%
+In Eq.~(\ref{eq:PMNS}), $c_{ij} \equiv \cos \theta_{ij}$, $s_{ij} \equiv \sin \theta_{ij}$ and $P$
+is either the unit matrix $\mathbf{1}$ in the Dirac case, or a diagonal matrix containing
+the two phases associated with the Majorana nature of neutrinos in the Majorana case.
+Without loss of generality, one can take $\theta_{ij} \in \left[ 0, \frac{\pi}{2} \right]$ and
+$\delta \in \left[ 0, 2 \pi \right[$.
+%Except for the explicit form of $P$ in the Majorana case, this parametrization has now become
+%standard. The following conventions for the Majorana phases can be found in the literature:
+This parametrization has now become standard, except for the explicit form of the matrix $P$
+in the Majorana case, for which different conventions can be found in the literature, e.g.
+%
+\be
+  P_{\rm Majorana}\, =\, \left( \begin{array}{ccc} e^{i \alpha_1} & 0 & 0 \\ 0 & e^{i \alpha_2} & 0 \\ 0 & 0 & 1 \end{array} \right) ,
+    \quad %\mbox{or} \quad
+  \left( \begin{array}{ccc} 1 & 0 & 0 \\ 0 & e^{i \phi_2} & 0 \\ 0 & 0 & e^{i \phi_3} \end{array} \right) ,
+    \quad %\mbox{or} \quad
+  \left( \begin{array}{ccc} e^{i \rho} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & e^{i \sigma} \end{array} \right) .
+    %\quad \mbox{or \dots}  \hskip .3cm
+\eeq
+%
+All these choices are related by rephasings of the charged lepton fields and are
+therefore physically equivalent.
+%All these conventions are physically equivalent, since one can change from one to another
+%by an overall rephasing of the charged lepton fields, $e_\alpha (x) \to e^{i\phi}\, e_\alpha (x)$.
+The phase $\delta$ is often called the ``Dirac phase'' of the PMNS matrix, while
+the phases contained in $P$, which can be restricted to the range $\left[ 0, \pi \right[$
+without loss of generality, are dubbed ``Majorana phases''. 
+We will not be concerned with Majorana phases in this review because, as we are
+going to see, they do not enter oscillation probabilities.
+They appear only in lepton number violating processes like neutrinoless double beta decay,
+in which the Majorana nature of neutrinos plays a crucial role.
+The phase $\delta$, on the contrary, is relevant to neutrino oscillations and gives
+rise to an asymmetry between neutrino and antineutrino oscillations in vacuum,
+as will be discussed in Section~\ref{subsec:CPV}.
 
-\subsection{MSW}
-adiabatic regime
+%The parameter counting performed in the three-generation case can be
+%generalized to an arbitrary number $N$ of lepton flavours,
+%although the number of active neutrinos
+%is known to be 3 without ambiguity (sterile neutrinos may exist, but the counting
+%of physical mixing parameters is different in this case, see Section~\ref{subsec:steriles}).
+%One finds, in the Dirac case, $N(N-1)/2$ mixing angles
+%and $(N-1)(N-2)/2$ phases, and $N-1$ additional phases in the Majorana case.
+%Thus, at variance with the quark sector, CP violation is possible already with 2 generations
+%of leptons if neutrinos are Majorana fermions. Nevertheless, CP violation in oscillations
+%requires at least 3 generations.
 
 
-\subsection{CP violation}
+%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\it Oscillations in vacuum     %
+\label{subsec:vacuum}}                          %
+%%%%%%%%%%%%%%%%%%%%%%
 
-CP violation vacuum (+ CP with matter ?)
+Schematically, an (idealized) oscillation experiment involves three steps.
+The first one is the production of a pure flavour state from a charged current process,
+e.g. a $\nu_\mu$ from a charged pion decay $\pi^+ \to \mu^+ \nu_\mu$. This flavour eigenstate
+is a coherent superposition of mass eigenstates determined by the PMNS matrix\footnote{Note
+that the relation between the flavour and mass eigenstate neutrino {\it states} involves the
+complex conjugate of the PMNS matrix, as opposed to the PMNS matrix itself for neutrino
+{\it fields}, Eq.~(\ref{eq:flavour_mass_relation}). This is because the quantum neutrino field
+$\nu_\alpha(x)$ annihilates a neutrino of flavour $\alpha$, while the neutrino state
+$\left| \nu_\alpha (\vec{p}) \right>$ is obtained by acting with the creation operator
+$a^\dagger_\alpha (\vec{p})$ on the vacuum. For antineutrinos, one has
+$\bar \nu_\alpha(x) = \sum_i U^*_{\alpha i} \bar \nu_i(x)$ and
+$|\bar \nu_\alpha \rangle = \sum_i U_{\alpha i} |\bar \nu_i\rangle$.}:
+%
+\be
+  |\nu (t=0) \rangle\, =\, |\nu_\alpha \rangle\, =\, \sum_i U^*_{\alpha i} |\nu_i\rangle\, .
+\eeq
+%
+The second step is the propagation of the neutrino. Each mass eigenstate,
+being en eigenstate of the Hamiltonian in vacuum, evolves with its own phase factor
+$e^{-i E_i t}$ (in the standard convention $\hbar = 1$),
+where $E_i = \sqrt{p^2 + m^2_i}$ is the energy of the $i$-th mass eigenstate.
+This modifies the coherent superposition, which is no longer a pure flavour eigenstate:
+%
+\be
+  |\nu (t) \rangle\, =\, \sum_i U^*_{\alpha i}\, e^{-i E_i t}\, |\nu_i \rangle\,
+    =\, \sum_i U^*_{\alpha i}\, e^{-i E_i t} \sum_\beta U_{\beta i} |\nu_\beta \rangle\, .
+\eeq
+%
+The last step is the detection of a specific flavour via a charged current interaction.
+The probability amplitude for the flavour $\alpha$ neutrino to have oscillated into
+a different flavour $\beta$ at the time $t$ is given by $\langle \nu_\beta |\nu (t) \rangle$,
+yielding an oscillation probability
+%
+\be
+  P (\nu_\alpha \to \nu_\beta)\, =\, \left| \langle \nu_\beta |\nu (t) \rangle \right|^2\,
+    =\, \left| \sum_i U_{\beta i} U^*_{\alpha i}\, e^{-i E_i t} \right|^2\, .
+\eeq
+%
+Since neutrinos are ultra-relativistic in all practical experimental conditions, one
+can expand $E_i = \sqrt{p^2 + m^2_i}\, \simeq\, p + m^2_i/(2E)$ (using $E \simeq p$).
+The neutrino oscillation formula then reads\footnote{In deriving the oscillation
+formula~(\ref{eq:oscillation_probability}), we made several simplifying assumptions:
+the propagating mass eigenstates were described by plane waves with well-defined
+momenta $\vec{p}_i$, which were further assumed to be equal ($\vec{p}_i = \vec{p}$).
+The proper treatment of neutrino oscillations should be done in the wave-packet
+formalism, or even in the framework of quantum field theory. However, under appropriate
+coherence conditions, these approaches lead to the same oscillation probability
+as the standard derivation presented here. See e.g. [Akhmedov, Smirnov] for a discussion.}
+%
+\bea
+  P (\nu_\alpha \to \nu_\beta)\ = &\! \delta_{\alpha \beta}\!\! &
+    -\ 4 \sum_{i < j}\, \mbox{Re} \left[ U_{\alpha i} U^*_{\beta i} U^*_{\alpha j} U_{\beta j} \right]
+    \sin^2 \left( \frac{\Delta m^2_{ji} L}{4 E} \right)  \nn \\
+    && +\ 2 \sum_{i < j}\, \mbox{Im} \left[ U_{\alpha i} U^*_{\beta i} U^*_{\alpha j} U_{\beta j} \right]
+    \sin \left( \frac{\Delta m^2_{ji} L}{2 E} \right) ,
+\label{eq:oscillation_probability}
+\eea
+%
+in which $\Delta m^2_{ji} \equiv m^2_j - m^2_i$ and $L \simeq c t$ is the distance
+travelled by the neutrino. For antineutrino oscillations, one must replace $U$ by
+$U^*$ in Eq.~(\ref{eq:oscillation_probability}), which amounts to change the sign
+of the last term.
+
+From Eq.~(\ref{eq:oscillation_probability}), a few obvious comments can be made
+about the properties of neutrino oscillations. First of all, oscillations require neutrinos
+to have non-degenerate masses ($\Delta m^2_{ji} \neq 0$) and non-trivial flavour
+mixing ($U \neq \mathbf{1}$). The oscillation probability $P (\nu_\alpha \to \nu_\beta)$
+depends on the three mixing angles $\theta_{12}$, $\theta_{23}$, $\theta_{13}$
+and on two independent squared-mass differences, which can be chosen to be
+$\Delta m^2_{21}$ and $\Delta m^2_{31}$ (then $\Delta m^2_{32}$ is determined
+by $\Delta m^2_{32} = \Delta m^2_{31} - \Delta m^2_{21}$).
+Oscillations also depend on the ``Dirac'' CP-violating phase $\delta$, but not
+on the ``Majorana phases'', as can be seen from the fact that the PMNS matrix
+entries appear in Eq.~(\ref{eq:oscillation_probability}) only
+in the combinations $U_{\alpha i} U^*_{\beta i}$, to which the phases contained
+in the diagonal matrix $P$ in Eq.~(\ref{eq:PMNS}) do not contribute.
+Therefore, Dirac and Majorana
+neutrinos have the same oscillation probabilities. This fact can be understood
+on more general grounds, since oscillations %violate lepton flavour but
+conserve total lepton number,
+while the Majorana nature of neutrinos manifests itself in processes that violate
+lepton number, like neutrinoless double beta decay.
+%
+Another consequence of formula~(\ref{eq:oscillation_probability}) is that
+CP violation (namely, the fact that
+$P (\bar \nu_\alpha \to \bar \nu_\beta) \neq P (\nu_\alpha \to \nu_\beta)$)
+is possible only in appearance channels ($\beta \neq \alpha$), not in disappearance
+channels ($\beta = \alpha$). Indeed, the survival (i.e. non-oscillation) probability
+is the same for neutrinos and antineutrinos:
+%
+\bea
+  P (\nu_\alpha \to \nu_\alpha)\, =\, 1 - 4 \sum_{i < j}\, \left| U_{\alpha i} U_{\alpha j} \right|^2
+    \sin^2 \left( \frac{\Delta m^2_{ji} L}{4 E} \right) =\, P (\bar \nu_\alpha \to \bar \nu_\alpha) \, ,
+\eea
+%
+because the combination $U_{\alpha i} U^*_{\beta i} U^*_{\alpha j} U_{\beta j}$
+is real for $\alpha = \beta$.
+
+While a detailed description of neutrino oscillations, including subleading and
+CP-violation effects, necessitates the use of the full three-flavour formula,
+it is a good aproximation in some experimental situations to neglect the subleading
+terms in Eq.~(\ref{eq:oscillation_probability}). One is then left with effective
+two-flavour oscillations, governed by a single $\Delta m^2$ and a single mixing
+angle $\theta$:
+%%
+%\be
+%  P (\nu_\alpha \to \nu_\beta)\, =\, \left\{ \begin{array}{cl}
+%    \sin^2 2 \theta\, \sin^2 \left( \frac{\Delta m^2 L}{4E} \right) & \mbox{appearance mode}\ (\beta \neq \alpha)  \\
+%    1 - \sin^2 2 \theta\, \sin^2 \left( \frac{\Delta m^2 L}{4E} \right) & \mbox{disappearance mode}\ (\beta = \alpha)
+%    \end{array} \right.\ .
+%\eeq
+%%
+%
+\be
+  P (\nu_\alpha \to \nu_\beta)\, =\, P (\bar \nu_\alpha \to \bar \nu_\beta)\, =\,
+    \sin^2 2 \theta\, \sin^2 \left( \frac{\Delta m^2 L}{4E} \right) \qquad (\beta \neq \alpha)\, ,
+\label{eq:2f_oscillations}
+\eeq
+%
+(we note in passing that oscillations do not violate the  CP symmetry in the two-flavour case).
+%as the probabilities are the same for neutrinos and antineutrinos).
+In this case, the amplitude of oscillations is simply given by $\sin^2 2 \theta$,
+and the oscillation length is proportional to the neutrino energy $E$ and inversely
+proportional to $\Delta m^2$:
+%
+\be
+  L_{\rm osc.} \mbox{(km)}\, =\, 2.48\, E \mbox{(GeV)} / \Delta m^2 (\mbox{eV}^2)\, , \qquad
+  P (\nu_\alpha \to \nu_\beta)\, =\, \sin^2 2 \theta\, \sin^2 \left( \pi L / L_{\rm osc.} \right) .
+\eeq
+%
+%Another useful formula is
+%%
+%\be
+%  P (\nu_\alpha \to \nu_\beta)\, =\, \sin^2 2 \theta\,
+%    \sin^2 \left( 1.27\ \frac{\Delta m^2 (\mbox{eV}^2) L (\mbox{km})}{4E (\mbox{GeV})} \right) .
+%\eeq
+%%
+This is the well-known two-flavour oscillation formula, which has been used
+in phenomenological studies for decades, before experiments reached
+a level of precision that made them sensitive to subdominant effects.
+In particular, the oscillations of solar and atmospheric neutrinos turned out
+to be well described by the two-flavour formula~(\ref{eq:2f_oscillations}) with parameters
+($\Delta m^2_\odot$, $\theta_\odot$) and ($\Delta m^2_\oplus$, $\theta_\oplus$),
+respectively, such that $\Delta m^2_\odot \ll \Delta m^2_\oplus$ and both mixing
+angles $\theta_\odot$ and $\theta_\oplus$ are large. In order to interpret these
+results in the framework of three-flavour oscillations, the following conventions
+were adopted: {\it (i)} $\Delta m^2_\odot$ is identified with the squared-mass splitting
+between $\nu_1$ and $\nu_2$; {\it (ii)} these mass eigenstates are labelled
+in such a way that $m_2 > m_1$, i.e. $\Delta m^2_{21} = \Delta m^2_\odot > 0$.
+%{\it (i)} the smaller squared-mass difference $\Delta m^2_\odot$
+%is identified with $|\Delta m^2_{21}|$; {\it (ii)} the corresponding mass eigenstates
+%$\nu_1$ and $\nu_2$ are labelled in such a way that $m_2 > m_1$,
+%i.e. $\Delta m^2_{21} = \Delta m^2_\odot > 0$.
+%Once this is done, there is no other choice than identifying $\Delta m^2_\oplus$
+Then $\Delta m^2_\oplus$ must be identified with $|\Delta m^2_{31}|$ or $|\Delta m^2_{32}|$.
+Since $\Delta m^2_\odot \ll \Delta m^2_\oplus$, this implies
+%
+\be
+  \Delta m^2_\odot = \Delta m^2_{21}\, \ll\, |\Delta m^2_{31}| \simeq |\Delta m^2_{32}| \simeq \Delta m^2_\oplus\, .
+\label{eq:Delta_m2}
+\eeq
+%
+%%
+%\be
+%  \Delta m^2_{21}\, \ll\, |\Delta m^2_{31}| \simeq |\Delta m^2_{32}|\, .
+%\label{eq:Delta_m2}
+%\eeq
+%%
+We are left with two possibilities for the mass spectrum: either $m_1 < m_2 < m_3$,
+which is referred to as the normal mass ordering or {\it normal hierarchy}, characterized by
+$\Delta m^2_{31} > 0$; or $m_3 < m_1 < m_2$, which is known as the inverted mass ordering
+or {\it inverted hierarchy}, characterized by $\Delta m^2_{31} < 0$. The mass ordering
+$m_1 < m_3 < m_2$ is excluded, as it is not consistent with Eq.~(\ref{eq:Delta_m2}).
+%not allowed, as it would imply $|\Delta m^2_{31}| < \Delta m^2_{21}$.
+%\com{faut-il ajouter un sch\'ema?}
+
+Experiments characterized by a baseline $L$ and a beam energy $E$ such that $\Delta m^2_{21} L / E \ll 1$
+can be described to a good approximation by setting $\Delta m^2_{21} = 0$ in the
+three-flavour formula~(\ref{eq:oscillation_probability}), so that one is left with a single
+oscillation ``frequency'' $\Delta m^2_{31} = \Delta m^2_{32}$. The oscillation (appearance)
+probability becomes
+%
+\be
+  P (\nu_\alpha \to \nu_\beta)\, =\, \sin^2 2 \theta^{\rm eff}_{\alpha \beta}\,
+    \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) ,  \qquad
+    \sin^2 2 \theta^{\rm eff}_{\alpha \beta}\, \equiv\, 4 \left| U_{\alpha 3} U_{\beta 3} \right|^2 \qquad (\beta \neq \alpha)\, ,
+\eeq
+%
+while for the non-oscillation (disappearance) probability:
+%
+\be
+  P (\nu_\alpha \to \nu_\alpha)\, =\, 1 - \sin^2 2 \theta^{\rm eff}_{\alpha \alpha}\,
+    \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) ,  \qquad  \sin^2 2 \theta^{\rm eff}_{\alpha \alpha}\,
+    \equiv\, 4 \left| U_{\alpha 3} \right|^2 \left( 1 - \left| U_{\alpha 3} \right|^2 \right) .
+\eeq
+%
+These formulae describe the dominant oscillations in atmospheric neutrinos,
+long-baseline accelerator neutrino experiments and short-baseline reactor experiments.
+For instance, the probability of muon neutrino disappearance is
+%
+\bea
+  P (\nu_\mu \to \nu_\mu)\!\! & =\!\! &  1 - 4 \cos^2 \theta_{13} \sin^2 \theta_{23}\!
+    \left( 1 - \cos^2 \theta_{13} \sin^2 \theta_{23} \right) \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right)  \\
+  & \simeq\!\! & 1 - \sin^2 2 \theta_{23}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) ,
+\eea
+%
+where terms proportional to $\sin^2 \theta_{13}$ were neglected in the second line.
+This justifies the widely-used terminology ``atmospheric mixing angle'' for $\theta_{23}$
+and ``atmospheric $\Delta m^2$'' for $\Delta m^2_{31}$ (or $\Delta m^2_{32}$).
+For electron and tau neutrino appearance in a muon neutrino beam, one has
+%
+\bea
+  P (\nu_\mu \to \nu_e)\!\! & =\!\! & \sin^2 \theta_{23} \sin^2 2 \theta_{13}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) ,  \\
+  P (\nu_\mu \to \nu_\tau)\!\! & =\!\! & \cos^4 \theta_{13} \sin^2 2 \theta_{23}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) ,
+\eea
+%
+while for short-baseline disappearance of reactor antineutrinos:
+%
+\be
+  P (\bar \nu_e \to \bar \nu_e)\, =\, 1 - \sin^2 2 \theta_{13}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4E} \right) .
+\eeq
+%
+It should be kept in mind that the above expressions receive corrections from three-flavour effects,
+which must be taken into account to comply with the precision of present-day experiments.
+
+%When instead $\Delta m^2_{31} L / E \gg 1$ and $\Delta m^2_{21} L / E \gtrsim 1$,
+%$\Delta m^2_{31}$-driven oscillations are averaged and oscillations of electron neutrinos
+%are dominated by $\Delta m^2_{21}$ rather than $\Delta m^2_{31}$.
+%%
+%\bea
+%  P (\nu_e \to \nu_e)\, =\, P (\bar \nu_e \to \bar \nu_e) & = & \sin^4 \theta_{13}
+%    + \cos^4 \theta_{13} \left( 1 - \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4E} \right) \right)  \\
+%  & \simeq & 1 - \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4E} \right) ,
+%\eea
+%%
+%where again terms suppressed by $\sin^2 \theta_{13}$ were neglected in the second line.
+
+When instead $\Delta m^2_{31} L / E \gg 1$ and $\Delta m^2_{21} L / E \gtrsim 1$,
+$\Delta m^2_{31}$-driven oscillations are averaged and oscillations of electron neutrinos
+are dominated by $\Delta m^2_{21}$ rather than $\Delta m^2_{31}$.
+Neglecting terms suppressed by $\sin^2 \theta_{13}$, one obtains
+%
+\be
+  P (\nu_e \to \nu_e)\, =\, P (\bar \nu_e \to \bar \nu_e)\, \simeq\,
+    1 - \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4E} \right) .
+\eeq
+%
+This formula applies to the long-baseline reactor neutrino experiment KamLAND and to
+low-energy solar neutrinos (with the oscillating term averaged), for which matter effects
+are subdominant compared with vacuum oscillations. This justifies the popular terminology
+``solar mixing angle'' for $\theta_{12}$ and ``solar $\Delta m^2$'' for $\Delta m^2_{21}$.
+Restoring $\theta_{13}$, one obtains the more accurate expression
+%
+\be
+  P (\nu_e \to \nu_e)\, =\, P (\bar \nu_e \to \bar \nu_e)\, =\, \sin^4 \theta_{13}
+    + \cos^4 \theta_{13} \left( 1 - \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4E} \right) \right) .
+\label{eq:nue_nue_2f_improved}
+\eeq
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\it CP violation in oscillations and three-flavour effects    %
+\label{subsec:CPV}}                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+As we have seen in Section~\ref{subsec:vacuum}, oscillations depend on the
+phase $\delta$ of the PMNS matrix, making it possible to observe the violation of the CP
+symmetry in neutrino oscillations -- namely, the fact that neutrinos and antineutrinos
+oscillate with different probabilities. Before discussing this possibility in detail, let us
+summarize the action of the different discrete symmetries on oscillation probabilities\footnote{It
+should be stressed that $P (\bar \nu_\alpha \to \bar \nu_\beta)$ is the image of
+$P (\nu_\alpha \to \nu_\beta)$ by CP, not by the charge conjugation C. Indeed,
+$\nu_\alpha$ and $\nu_\beta$ are left-handed neutrinos, whose antiparticles
+$\bar \nu_\alpha$ and $\bar \nu_\beta$ are right-handed antineutrinos, i.e. the
+CP conjugates of $\nu_\alpha$ and $\nu_\beta$. Their charge conjugates would be
+hypothetical left-handed antineutrinos, which do not couple to the $W$ and $Z$ bosons
+and are not produced in weak processes.}:
+%
+\bea
+  P (\nu_\alpha \to \nu_\beta) & \xrightarrow{\mbox{  CP  }} & P (\bar \nu_\alpha \to \bar \nu_\beta)\ ,  \\
+  & \xrightarrow{\mbox{\phantom{P}T\phantom{P}}} & P (\nu_\beta \to \nu_\alpha)\ ,  \\
+  & \xrightarrow{\mbox{CPT}} & P (\bar \nu_\beta \to \bar \nu_\alpha)\ .
+\eea
+%
+Thus, if CPT conservation is assumed, $P (\nu_\alpha \to \nu_\beta) = P (\bar \nu_\beta \to \bar \nu_\alpha)$,
+implying that the CP and T asymmetries in neutrino oscillations are equal:
+%
+\be
+  A_{\alpha \beta}\, \equiv\, \frac{P (\nu_\alpha \to \nu_\beta) - P (\bar \nu_\alpha \to \bar \nu_\beta)}
+    {P (\nu_\alpha \to \nu_\beta) + P (\bar \nu_\alpha \to \bar \nu_\beta)}\,
+  =\, \frac{P (\nu_\alpha \to \nu_\beta) - P (\nu_\beta \to \nu_\alpha)}
+    {P (\nu_\alpha \to \nu_\beta) + P (\nu_\beta \to \nu_\alpha)}\ .
+\eeq
+%
+Another implication of CPT conservation is $P (\nu_\alpha \to \nu_\alpha) = P (\bar \nu_\alpha \to \bar \nu_\alpha)$,
+i.e. there is no CP violation in disappearance experiments, a fact we have
+already deduced from the general three-flavour oscillation formula.
+
+In order to study the effect of CP violation in neutrino oscillations, it is convenient
+to introduce the quantity
+$\Delta P_{\alpha \beta} \equiv P (\nu_\alpha \to \nu_\beta) - P (\bar \nu_\alpha \to \bar \nu_\beta)$,
+which is nothing but twice the CP-odd part in the three-flavour oscillation
+probability~(\ref{eq:oscillation_probability}). One can show that it can be expressed as
+%
+\be
+  \Delta P_{\alpha \beta}\, =\, \pm 16 J\, \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right)
+    \sin \left( \frac{\Delta m^2_{31} L}{4 E} \right) \sin \left( \frac{\Delta m^2_{32} L}{4 E} \right) ,\ \ \quad
+    J\, \equiv\, \mbox{Im} \left[ U_{e 1} U^*_{\mu 1} U^*_{e 2} U_{\mu 2} \right] ,
+\label{eq:CP_asymmety}
+\eeq
+%
+%which is a rewriting of
+%%
+%\be
+%  \Delta P_{\alpha \beta}\, =\, \pm 4\, J
+%    \left( \sin \left( \frac{\Delta m^2_{21} L}{2 E} \right) - \sin \left( \frac{\Delta m^2_{31} L}{2 E} \right)
+%    + \sin \left( \frac{\Delta m^2_{32} L}{2 E} \right) \right) .
+%\eeq
+%%
+with a $+$ sign when $(\alpha, \beta, \gamma)$ (with $\gamma \neq \alpha, \beta$)
+is an even permutation of $(e, \mu, \tau)$, and a $-$ sign when it is an odd permutation.
+The quantity $J$ in Eq.~(\ref{eq:CP_asymmety}) is a measure of CP violation from the
+``Dirac'' phase of the PMNS matrix and is called {\it Jarlskog invariant}~\!\footnote{The name
+``invariant'' refers to the fact that $J$ does not depend on the phase convention of the PMNS
+matrix, i.e. it is invariant under rephasings of the lepton fields. Historically, the Jarlskog
+invariant has been introduced to parametrize CP violation in the quark sector;
+%There it can be expressed as $J = \mbox{Im} \left[ V_{ud} V^*_{c d} U^*_{us} V_{cs} \right]$,
+%where $V$ denotes the CKM matrix.
+the invariant $J$ in Eq.~(\ref{eq:CP_asymmety}) is its generalization to the lepton sector.}.
+Using the standard parametrization of the PMNS matrix, one can write
+%
+\be
+  J\, =\, \frac{1}{8}\, \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23} \sin \delta\, .
+\eeq
+%
+Therefore, a necessary condition for CP violation in neutrino oscillations
+is that all three mixing angles $\theta_{ij}$ are nonzero and that the phase
+$\delta$ is different from $0$ and $\pi$.
+Furthermore, one can see from Eq.~(\ref{eq:CP_asymmety}) that $\Delta m^2_{21}$,
+$\Delta m^2_{31}$ and $\Delta m^2_{32}$ must be non vanishing, i.e. all neutrinos masses
+should be different:
+%
+\bea
+  \mbox{\it Conditions for CPV in oscillations :} \qquad
+  \theta_{ij} \neq 0\, , \quad \delta \neq 0, \pi\, , \quad m_1 \neq m_2\, , \ m_2 \neq m_3\, , \ m_3 \neq m_1\, .
+\eea
+%
+These criteria parallel the ones for CP violation in the quark sector.
+They are of rather academic interest now that all $\theta_{ij}$'s and
+$\Delta m^2_{ji}$'s have been measured, but until 2011 the only
+experimental information we had on $\theta_{13}$ was an upper bound.
+A value of $\theta_{13}$ below $1^\circ$ would have made it extremely
+difficult to observe CP violation in oscillation experiments, even if the CP-violating
+phase $\delta$ were maximal.
+
+The formula~(\ref{eq:CP_asymmety}) contains a lot of information. First of all, it tells us
+that the CP-violating term in neutrino oscillations is universal, i.e. it does not depend
+on the oscillation channel (up to a sign). This follows from the unitarity of the PMNS
+%matrix ($\sum_\alpha U_{\alpha 1} U^*_{\alpha 2} = 0$), which implies
+matrix, which implies
+%
+\bea
+  \mbox{Im} \left[ U_{e 1} U^*_{\mu 1} U^*_{e 2} U_{\mu 2} \right]
+    = - \mbox{Im} \left[ U_{e 1} U^*_{\tau 1} U^*_{e 2} U_{\tau 2} \right]
+    = \mbox{Im} \left[ U_{\mu 1} U^*_{\tau 1} U^*_{\mu 2} U_{\tau 2} \right] .
+\eea
+%
+Another important information contained in Eq.~(\ref{eq:CP_asymmety}) is that
+the effect of CP violation is proportional to $\sin ( \Delta m^2_{21} L / 4 E )$,
+i.e. it can be observed only in experiments that are sensitive to the subdominant
+oscillations governed by $\Delta m^2_{21}$. This is why experiments searching
+for CP violation involve long baselines (several hundreds of km),
+intense neutrino beams and large detectors.
+%(e.g. a 50 kton liquid scintillator detector, a 100 kton liquid Argon TPC
+%or a Mton-class water \v{C}erenkov detector).
+Typically, the experimental conditions are such that $\Delta m^2_{31} L / E \sim 1$
+and $\Delta m^2_{21} L / E \ll 1$, hence Eq.~(\ref{eq:CP_asymmety}) can be simplified to,
+at second order in the small parameters $\sin \left( \Delta m^2_{21} L / 4 E \right)$ and $\sin \theta_{13}$:
+%at second order in the small parameters $\Delta m^2_{21} / \Delta m^2_{31}$ and $\theta_{13}$:
+%%
+%\be
+%  \Delta P_{\alpha \beta}\, \simeq\, \pm 16 J
+%    \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right) .
+%\label{eq:CP_asymmety_approx}
+%\eeq
+%%
+%
+\be
+  \Delta P_{\alpha \beta}\, \simeq\, \pm 16 J\,
+    \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right) .
+\label{eq:CP_asymmety_approx}
+\eeq
+%
+Long baselines however imply that neutrinos propagate in the Earth crust, so that
+their oscillations are affected by their interactions with matter (see Section~\ref{subsec:constant}).
+This in turn creates, in the $\nu_\mu$--$\nu_e$ channel relevant to long-baseline experiments,
+an asymmetry between neutrino and antineutrino oscillations
+whose sign is related to the type of mass hierarchy,
+normal ($\Delta m^2_{31} > 0$) or inverted ($\Delta m^2_{31} < 0$).
+%It is therefore necessary to disentangle matter effects from CP violation
+%in the experimental data.
+It is therefore necessary to disentangle the effect of neutrino interactions with matter
+from the one of CP violation in the experimental data.
+%from the one of the CP-violating phase $\delta$ in the experimental data.
+
+Neglecting matter effects (which is a reasonable approximation for a long-baseline experiment
+like T2K), one can expand the full $\nu_\mu \to \nu_e$ oscillation probability to second order
+%in the small quantities $\Delta m^2_{21} / \Delta m^2_{31}$ and $\sin \theta_{13}$:
+in the small quantities $\sin \left( \Delta m^2_{21} / \Delta m^2_{31} \right)$ and $\sin \theta_{13}$:
+%One thus obtains, for the channel $\nu_\mu \to \nu_e$ relevant to long-baseline experiments:
+%
+%\bea
+%  P (\nu_\mu \to \nu_e)\!\! & \simeq\!\! & \sin^2 \theta_{23} \sin^2 2 \theta_{13}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right)
+%    + \cos^2 \theta_{23} \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4 E} \right)  \nn \\
+%  && +\, \frac{1}{2} \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23} \cos \delta
+%    \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin \left( \frac{\Delta m^2_{31} L}{2 E} \right)  \nn \\
+%  && -\, \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23} \sin \delta
+%    \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right) .
+%\label{eq:numu_nue}
+%\eea
+%%
+%
+\bea
+  P (\nu_\mu \to \nu_e)\!\! & \simeq\!\! & \sin^2 \theta_{23} \sin^2 2 \theta_{13}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right)
+    + \cos^2 \theta_{23} \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4 E} \right)  \nn \\
+  && +\, \frac{1}{2} \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23} \cos \delta\,
+    \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin \left( \frac{\Delta m^2_{31} L}{2 E} \right)  \nn \\
+  && -\, \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23} \sin \delta\,
+    \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right) .
+\label{eq:numu_nue}
+\eea
+%
+The first term corresponds to the dominant, $\Delta m^2_{31}$-driven oscillations;
+the second one to the $\Delta m^2_{21}$-driven oscillations; the third and fourth terms involve
+both $\Delta m^2_{21}$ and $\Delta m^2_{31}$ and are CP-even and CP-odd, respectively.
+Eq.~(\ref{eq:numu_nue}) can be rewritten in the more compact form
+%
+\be
+  P (\nu_\mu \to \nu_e)\, \simeq\, A^2_\oplus + A^2_\odot + 2 \cos \theta_{13} A_\oplus A_\odot
+    \cos \left( \frac{\Delta m^2_{31} L}{4 E} + \delta \right) ,
+\label{eq:numu_nue_compact}
+\eeq
+%
+where $A_\oplus \equiv \sin \theta_{23} \sin 2 \theta_{13}\, \sin \left( \frac{\Delta m^2_{31} L}{4 E} \right)$
+and $A_\odot \equiv \cos \theta_{23} \sin 2 \theta_{12}\, \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right)$.
+%
+%%
+%\bea
+%  P (\nu_\mu \to \nu_e)\!\! & \simeq\!\! & \sin^2 \theta_{23} \sin^2 2 \theta_{13}\, \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right)
+%    + \cos^2 \theta_{23} \sin^2 2 \theta_{12}\, \sin^2 \left( \frac{\Delta m^2_{21} L}{4 E} \right)  \nn \\
+%  & +\!\! & \! \cos \theta_{13} \sin 2 \theta_{12} \sin 2 \theta_{13} \sin 2 \theta_{23}\,
+%    \cos \left( \frac{\Delta m^2_{31} L}{4 E} + \delta \right)
+%    \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin \left( \frac{\Delta m^2_{31} L}{2 E} \right) .  \hskip .5cm
+%\label{eq:numu_nue_compact}
+%\eea
+%%
+The corresponding formulae for $P (\bar \nu_\mu \to \bar \nu_e)$ can be derived by
+switching the sign of the phase $\delta$ in the above expressions, which amounts
+in particular to change the sign of the last term in Eq.~(\ref{eq:numu_nue}).
+%and of the phase $\delta$
+%in the argument of the cosine in the second line of Eq.~(\ref{eq:numu_nue_compact}).
+One can quantify the amount of CP violation in the $\nu_\mu$--$\nu_e$ channel
+with the CP asymmetry parameter
+%
+\be
+  A_{\mu e}\, \equiv\, \frac{P (\nu_\mu \to \nu_e) - P (\bar \nu_\mu \to \bar \nu_e)}
+    {P (\nu_\mu \to \nu_e) + P (\bar \nu_\mu \to \bar \nu_e)}\ \simeq\,
+%    \frac{- 8\, J \left( \frac{\Delta m^2_{21} L}{4 E} \right)}{\sin^2 \theta_{23} \sin^2 2 \theta_{13}}\, =\,
+    -\, \frac{ \cos \theta_{23} \sin 2 \theta_{12}}{\sin \theta_{23} \sin \theta_{13}}\
+    \sin \left( \frac{\Delta m^2_{21} L}{4 E} \right) \sin \delta\, .
+\eeq
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\it Other three-flavour effects    %
+\label{subsec:3-flavour}}                              %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+%As discussed in Section~\ref{subsec:vacuum}, long-baseline reactor neutrino experiments
+Long-baseline reactor neutrino experiments
+such that $\Delta m^2_{21} L / E \sim 1$ are sensitive to $\Delta m^2_{21}$-driven oscillations,
+while $\Delta m^2_{31}$- and $\Delta m^2_{32}$-driven oscillations are averaged
+due to the limited energy resolution of the detector, leading to the survival
+probability~(\ref{eq:nue_nue_2f_improved}). However, an improvement of the energy
+resolution could in principle render such experiments sensitive to the subdominant
+oscillations governed by $\Delta m^2_{31}$ and $\Delta m^2_{32}$. In this case, the survival
+probability of the reactor antineutrinos is given by the three-flavour formula
+%
+\bea
+  P (\bar \nu_e \to \bar \nu_e)\!\! & =\!\! & 1
+    - \cos^4 \theta_{13} \sin^2 2 \theta_{12} \sin^2 \left( \frac{\Delta m^2_{21} L}{4 E} \right)
+    - \cos^2 \theta_{12} \sin^2 2 \theta_{13} \sin^2 \left( \frac{\Delta m^2_{31} L}{4 E} \right)  \nn \\
+  && \phantom{1 } - \sin^2 \theta_{12} \sin^2 2 \theta_{13} \sin^2 \left( \frac{\Delta m^2_{32} L}{4 E} \right) .
+\label{eq:nue_nue}
+\eea
+%
+Eq.~(\ref{eq:nue_nue}) describes fast, small-amplitude oscillations governed by
+$\Delta m^2_{31}$ and $\Delta m^2_{32}$ developping on top of the dominant
+$\Delta m^2_{21}$-driven oscillations. It has been suggested that a precision measurement
+of the energy spectrum of reactor antineutrinos at a far detector would make it possible
+to distinguish between the normal and inverted mass hierarchies. Indeed, the last two terms
+in Eq.~(\ref{eq:nue_nue}) lead to different distorsions of the energy spectrum
+depending on whether the hierarchy is normal (in which case $|\Delta m^2_{31}| > |\Delta m^2_{32}|$)
+or inverted (in which case $|\Delta m^2_{32}| > |\Delta m^2_{31}|$).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{\it Neutrino propagation in matter    %
+\label{subsec:matter}}                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The interactions of neutrinos with matter (electrons, protons and neutrons) affect
+their propagation. This leads to two distinct phenomena: oscillations in matter with
+modified parameters with respect to vacuum oscillations, and adiabatic flavour conversion
+in a medium of varying density.
+
+Neutrino propagation in matter can be described by a Schr\"odinger-like equation:
+%
+\be
+  i \frac{d}{dt} \left| \nu(t) \right>\, =\, H \left| \nu(t) \right> ,
+\label{eq:Schroedinger}
+\eeq
+%
+where $\left| \nu(t) \right>$ is the neutrino state vector at time $t$, and the Hamiltonian $H$
+can be split into a free (kinetic energy) part $H_0$ describing neutrino propagation in vacuum,
+and a potential term $V$ induced by the interactions of neutrinos in the medium:
+%
+\be
+  H\, =\, H_0 + V\, .
+\eeq
+%
+It is convenient to write the evolution equation~(\ref{eq:Schroedinger}) in
+the flavour eigenstate basis $\{\, \left| \nu_e \right>, \left| \nu_\mu \right>, \left| \nu_\tau \right>, \cdots \}$,
+where the dots stand for possible additional neutrino species, i.e. sterile neutrinos:
+%
+\be
+  i \frac{d}{dt}\, \nu_\beta(t)\, =\, \sum_\gamma H_{\beta \gamma}\, \nu_\gamma(t)\, , \qquad \qquad
+    \beta, \gamma = e, \mu, \tau, \cdots\ .
+\label{eq:Schroedinger_components}
+\eeq
+%
+In Eq.~(\ref{eq:Schroedinger_components}),
+%where
+the $H_{\beta \gamma} \equiv \left< \nu_\beta \right| H \left| \nu_\gamma \right>$ are
+the Hamiltonian matrix elements in the flavour basis,
+and $\nu_\beta(t) \equiv \left< \nu_\beta | \nu(t) \right>$ %is the component of the neutrino
+%state vector along the basis vector $\left| \nu_\beta \right>$,
+is the projection of the neutrino state vector onto the basis vector $\left| \nu_\beta \right>$,
+%($\left| \nu(t) \right> = \sum_\beta \nu_\beta(t) \left| \nu_\beta \right>$)
+i.e. the probability amplitude to find
+the neutrino in the flavour eigenstate $\left| \nu_\beta \right>$ at time $t$.
+Thus, if the neutrino is produced at $t=0$ in the flavour eigenstate $\left| \nu_\alpha \right>$,
+the oscillation probability
+%probability of flavour transition
+is given by $P(\nu_\alpha \to \nu_\beta; t) = |\nu_\beta(t)|^2$.
+
+Let us first consider the vacuum Hamiltonian. In the flavour basis, it is given by\footnote{This expression
+can be easily derived by noting that, in the mass eigenstate basis, the vacuum Hamiltonian is
+diagonal with eigenvalues $E_i$:  $\left< \nu_i \right| H \left| \nu_j \right> = E_i \delta_{ij}$.
+Using $\left|\nu_\beta \right> = \sum_i U^*_{\beta i} \left|\nu_i \right>$, one then arrives at
+$H_{\beta \gamma} = \left< \nu_\beta \right| H \left| \nu_\gamma \right>
+= \sum_{i,j} U_{\beta i} U^*_{\gamma j} \left< \nu_i \right| H \left| \nu_j \right>
+= \sum_i U_{\beta i} U^*_{\gamma i} E_i$.}:
+%\be
+%  i \frac{d}{dt}\, \nu_i(t)\, =\, E_i\, \nu_i(t)\, ,
+%\eeq
+%where $\nu_i (t) \equiv \left< \nu_i | \nu(t) \right>$.
+%
+\be
+  H_0\, =\, U\, \mbox{Diag}\, (E_1, E_2, E_3, \cdots)\, U^\dagger ,  \qquad \qquad  E_i = \sqrt{p^2 + m^2_i}\ ,
+\eeq
+%
+%%
+%\be
+%  H_0\, =\, U \left(\!\! \begin{array}{ccc} E_1 & 0 & \cdots \\ 0 & E_2 & \cdots \\ \vdots & \vdots & \ddots \end{array}\!\! \right)
+%    U^\dagger ,  \qquad \qquad  E_i = \sqrt{p^2 + m^2_i}\ .
+%\eeq
+%%
+%%%  2x2 CaSE   %%%
+%\be
+%  H_0\, =\, U \left(\!\! \begin{array}{cc} E_1 & 0 \\ 0 & E_2 \end{array}\!\! \right) U^\dagger , \qquad \qquad
+%    E_i = \sqrt{p^2 + m^2_i}\ .
+%\eeq
+%%%%%%%
+%
+where $p$ is the modulus of the neutrino momentum,
+$m_i$ is the mass of the $i^{\rm th}$ neutrino mass eigenstate ($i = 1,2, \cdots n$, with
+$n>3$ in the presence of sterile neutrinos) and $U$ is the $n \times n$ lepton mixing matrix.
+Assuming ultrarelativistic neutrinos, one can expand
+%$E_i = \sqrt{p^2 + m^2_i}\, \simeq\, p +  \frac{m^2_i}{2p}\, \simeq p + \frac{m^2_i}{2E}$
+%$E_i = \sqrt{p^2 + m^2_i}\, \simeq\, p + m^2_i/(2p) \simeq p + m^2_i/(2E)$ (identifying $E \simeq p$)
+$E_i \simeq p + m^2_i/(2E)$ (in which $E \simeq p$)
+and redefine $H_0 \to H_0 - p \mathbf{1}$ to obtain:
+%
+\be
+  H_0\, =\, \frac{1}{2E}\ U\, \mbox{Diag}\, (m^2_1, m^2_2, m^2_3, \cdots)\, U^\dagger\,
+    =\, \frac{M^\dagger_\nu M_\nu}{2E}\ ,
+\label{eq:H0}
+\eeq
+%
+where $M_\nu$ is the neutrino mass matrix in the flavour basis.
+Indeed, removing a piece proportional to the unit matrix from $H$ only affects the overall
+%phase of the neutrino state vector, which leaves oscillation probabilities unchanged
+phase of the neutrino state vector\footnote{This is true even if this piece is time-dependent.
+If $\nu_\beta(t)$ satisfies the evolution equation~(\ref{eq:Schroedinger_components})
+with Hamiltonian $H$, then
+$\nu'_\beta(t) = e^{i \int_0^t E_0(t')dt'}\, \nu_\beta(t)$ satisfies the same equation  
+with the shifted Hamiltonian $H' = H - E_0(t) \mathbf{1}$. $H$ and $H'$ lead to the same
+oscillation probabilities since $|\nu'_\beta(t)|^2 = |\nu_\beta(t)|^2$.}, which is unobservable.
+%Note that Majorana phases do not affect neutrino oscillations, since the PMNS
+%entries appear in the combination $U_{\beta i} U^*_{\gamma i}$ in $H_0$.
+In the 2-flavour case, Eq.~(\ref{eq:H0}) reduces to (after subtracting another piece
+%$(m^2_1 \sin^2 \theta + m^2_2 \cos^2 \theta)\, \mathbf{1} /(2p)$
+proportional to $\mathbf{1}$ from $H_0$):
+%
+\be
+  H_0\, = \left(\!\! \begin{array}{cc}
+    - \frac{\Delta m^2}{2E} \cos 2 \theta &  \frac{\Delta m^2}{4E} \sin 2 \theta  \\
+    \frac{\Delta m^2}{4E} \sin 2 \theta & 0  \end{array}\!\! \right) ,
+\eeq
+%
+where $\Delta m^2 = m^2_2 - m^2_1$ and $\theta$ is the angle that parametrizes the
+$2 \times 2$ lepton mixing matrix.
+
+
+The matter potential $V$ is induced by coherent forward scatterings of neutrinos
+on electrons and nucleons in the medium, which leave the neutrino momentum
+unchanged and can therefore interfere with the propagation of the unscattered neutrinos.
+It receives a contribution from W boson exchange (charged current) that
+%It receives two contributions: one from W boson exchange (charged current), which
+is present only for electron neutrinos, as ordinary matter does not contain muons nor taus,
+and another one from Z boson exchange (neutral current) that is identical for all neutrino flavours.
+%Since lepton flavour is conserved by weak interactions,
+The matter potential is diagonal in the flavour basis:
+%
+\be
+  V_{\alpha \beta}\, =\, V_\alpha\, \delta_{\alpha \beta}\,
+    = \left( V^{\rm CC}_\alpha + V^{\rm NC}_\alpha \right) \delta_{\alpha \beta}\, ,
+\eeq
+%
+%\be
+%  V^{\rm CC}_\alpha\, =\, \begin{cases} \sqrt{2}\, G_F n_e(x) & \alpha = e \\ 0 & \alpha = s \end{cases}\, ,
+%    \qquad  V^{\rm NC}_\alpha\, =\, \begin{cases} - \sqrt{2}\, \frac{G_F}{\sqrt{2}}\, n_n(x) & \alpha = e \\ 0 & \alpha = s \end{cases}\, ,
+%\eeq
+%
+where $V^{\rm CC}_\alpha$ and $V^{\rm NC}_\alpha$ depend on the neutrino flavour $\alpha$
+($\alpha = e, \mu, \tau$ for active neutrinos, $\alpha = s$ for a sterile neutrino):
+%
+\be
+  V^{\rm CC}_\alpha\, =\, \left\{\!\! \begin{array}{cl}
+      \sqrt{2}\, G_F n_e(x) & \quad \alpha = e \\ 0 & \quad \alpha = \mu, \tau, s \end{array} \right. ,  \qquad
+  V^{\rm NC}_\alpha\, =\, \left\{\!\! \begin{array}{cl}
+%      - G_F n_n(x) / \sqrt{2} & \quad \alpha = e, \mu, \tau \\ 0 & \quad \alpha = s \end{array} \right.\! ,
+      - \frac{G_F}{\sqrt{2}}\, n_n(x) & \quad \alpha = e, \mu, \tau \\ 0 & \quad \alpha = s \end{array} \right.\! .
+\label{eq:V_CC_NC}
+\eeq
+%
+%%
+%\be
+%  V^{\rm CC}_\alpha\, =\, \cases{
+%      \sqrt{2}\, G_F n_e(x) & $\quad \alpha = e$ \cr 0 & $\quad \alpha = \mu, \tau, s$ } ,  \qquad
+%  V^{\rm NC}_\alpha\, =\, \cases{
+%%%%      - G_F n_n(x) / \sqrt{2} & $\quad \alpha = e, \mu, \tau$ \cr 0 & $\quad \alpha = s$ } ,
+%      - \frac{G_F}{\sqrt{2}}\, n_n(x) & $\quad \alpha = e, \mu, \tau$ \cr 0 & $\quad \alpha = s$ } ,
+%\eeq
+%%
+In Eq.~(\ref{eq:V_CC_NC}), $G_F = 1.166 \times 10^{-5}\, \mbox{GeV}^{-2}$
+is the Fermi constant and $n_e(x)$, $n_n(x)$ are the electron and neutron densities
+in the medium\footnote{Note that the neutral current contribution to the matter potential
+only depends on the neutron density: the proton and electron contributions cancel out
+in $V^{\rm NC}$ due to the assumed neutrality of the medium, which implies $n_p = n_e$.},
+which a priori depend on the spatial position $x$. For antineutrinos,
+the matter potential has the opposite sign:
+%
+\be
+  V_\alpha (\bar \nu)\, =\, - V_\alpha (\nu)\, .
+\eeq
+%
+Summing up, the matter Hamiltonian for neutrinos is given by, in the flavour basis:
+%%
+%\be
+%  H_{\beta \gamma}\, =\, \sum_i U_{\beta i} U^*_{\gamma i} E_i + V_\beta\, \delta_{\beta \gamma}\, .
+%\eeq
+%%
+%
+\be
+  H_{\beta \gamma}\, =\, \frac{1}{2E}\, \sum_i U_{\beta i} U^*_{\gamma i} m^2_i + V_\beta\, \delta_{\beta \gamma}\, .
+\label{eq:H_components}
+\eeq
+%
+%%
+%\be
+%  H\, =\, \frac{1}{2E}\ U \left(\!\! \begin{array}{ccc} m^2_1 & 0 & \cdots \\ 0 & m^2_2 &  \\ \vdots &  & \ddots \end{array}\!\! \right)
+%    U^\dagger + \left(\!\! \begin{array}{ccc} V_e & 0 & \cdots \\ 0 & V_\mu &  \\ \vdots &  & \ddots \end{array}\!\! \right) .
+%\eeq
+%%
+For antineutrinos, the following replacements should be made in Eq.~(\ref{eq:H_components}):
+%
+\be
+  U\, \to\, U^*\, ,  \qquad  V\, \to\, - V\, .
+\eeq
+%
+%as $\left| \nu_\beta \right> = \sum_i U^*_{\beta i} \left| \nu_i \right>$ implies
+%$\left| \bar \nu_\beta \right> = \sum_i U_{\beta i} \left| \bar \nu_i \right>$.
+
+
+%In vacuum, the propagation eigenstates, i.e. the eigenstates of the Hamiltonian,
+%coincide with the mass eigenstates $\left|\nu_i \right>$. They are related to the flavour
+%eigenstates $\left|\nu_\alpha \right>$ by the lepton mixing matrix $U$, which diagonalizes
+%the vacuum Hamiltonian $H_0$:
+%%
+%\be
+%  H_0\, =\, U \left(\!\! \begin{array}{ccc} E_1 & 0 & \cdots \\ 0 & E_2 &  \\ \vdots &  & \ddots \end{array}\!\! \right) U^\dagger\, ,
+%%%%%  \qquad  E_i = \sqrt{p^2 + m^2_i}\ ,
+%  \qquad \qquad  \left(\!\! \begin{array}{c} \left|\nu_e \right> \\ \left|\nu_\mu \right> \\ \vdots \end{array}\!\! \right)
+%    =\, U^* \left(\!\! \begin{array}{c} \left|\nu_1 \right> \\ \left|\nu_2 \right> \\ \vdots \end{array}\!\! \right) ,
+%\eeq
+%%
+%where $E_i = \sqrt{p^2 + m^2_i}\,$.
+%Similarly, in matter, the propagation eigenstates $\left|\nu^m_i \right>$ (dubbed {\it matter eigenstates})
+%are the eigenstates of the matter Hamiltonian $H$.
+
+In matter, the propagation eigenstates are not the mass eigenstates $\left|\nu_i \right>$ as in vacuum,
+but the eigenstates of the matter Hamiltonian $\left|\nu^m_i \right>$, dubbed {\it matter eigenstates}. 
+They are related to the flavour eigenstates
+by the mixing matrix in matter $U_m$, which diagonalizes $H$:
+%
+\be
+  H\, =\, U_m \left(\!\! \begin{array}{ccc} E^m_1 & 0 & \cdots \\ 0 & E^m_2 &  \\
+    \vdots &  & \ddots \end{array}\!\! \right) U^\dagger_m\, ,
+  \qquad  \qquad  \left(\!\! \begin{array}{c} \left|\nu_e \right> \\ \left|\nu_\mu \right> \\ \vdots \end{array}\!\! \right)
+    =\, U^*_m \left(\!\! \begin{array}{c} \left|\nu^m_1 \right> \\ \left|\nu^m_2 \right> \\ \vdots \end{array}\!\! \right) .
+\label{eq:H_diagonalization}
+\eeq
+%
+The eigenvalues $E^m_i$ of the matter Hamiltonian $H$ are called the {\it energy levels in matter}.
+%Similarly to $\nu_\beta(t)$, one can define $\nu^m_i(t) = \left< \nu^m_i | \nu(t) \right>$
+%as the probability amplitude to find the neutrino in the matter eigenstate $\left| \nu^m_i \right>$
+%at the time $t$.
+The amplitude of probability to find the neutrino in the matter eigenstate $\left| \nu^m_i \right>$
+at the time $t$, $\nu^m_i(t) = \left< \nu^m_i | \nu(t) \right>$, is related to the amplitude
+of probability $\nu_\beta(t)$ to find it in the flavour eigenstate $\left| \nu_\beta \right>$
+%$\nu_\beta(t) \equiv \left< \nu_\beta | \nu(t) \right>$
+by the mixing matrix in matter:
+%%
+%\be
+%  \left(\!\! \begin{array}{c} \nu_e(t) \\ \nu_\mu(t) \\ \vdots \end{array}\!\! \right)
+%    =\, U_m \left(\!\! \begin{array}{c} \nu^m_1(t) \\ \nu^m_2(t) \\ \vdots \end{array}\!\! \right) .
+%\eeq
+%%
+%
+\be
+  \nu_\beta(t)\, =\, \sum_i (U_m)_{\beta i}\, \nu^m_i(t)\, .
+\label{eq:nu^m_i-nu_alpha}
+\eeq
+%
+Eq.~(\ref{eq:nu^m_i-nu_alpha}) is nothing but the generalization of the vacuum relation
+$\nu_\beta(t)\, =\, \sum_i U_{\beta i}\, \nu_i(t)$.
+
+
+In many physical contexts, such as neutrino propagation in the Sun, it is a good approximation
+to consider the 2-flavour case.
+%It is instructive to discuss in greater detail the 2-flavour case, which is a good approximation
+%%%To understand the phenomenology of neutrino propagation in matter, it is convenient
+%%%to consider the 2-flavour case, which is a good approximation
+%to many physical situations, such as the propagation of neutrinos in the Sun.
+In the flavour eigenstate basis $\{\, \left| \nu_\alpha \right>, \left| \nu_\beta \right> \}$:
+%Assuming that the two flavours are $\alpha = e$ and $\beta = \mu, \tau$ or $s$, one has:
+%
+\be
+  H\, = \left(\!\! \begin{array}{cc}
+    - \frac{\Delta m^2}{2E} \cos 2 \theta \pm \sqrt{2}\, G_F n&  \frac{\Delta m^2}{4E} \sin 2 \theta  \\
+    \frac{\Delta m^2}{4E} \sin 2 \theta & 0  \end{array}\!\! \right) ,
+\eeq
+%
+with a $+$ sign for neutrinos and a $-$ sign for antineutrinos, and
+%%
+%\be
+%  n\ = \left\{ \begin{array}{ll} n_e(x) & \quad \mbox{if}\ \, \beta = \mu, \tau \\
+%    n_e(x) - \frac{1}{2}\, n_n(x) & \quad \mbox{if}\ \, \beta = s \end{array} \right. .
+%\eeq
+%%
+%(if we had considered instead $\alpha = \mu$ or $\tau$ and $\beta = s$, one would
+%have $n = - \frac{1}{2}\, n_n(x)$.)
+%
+\be
+  n\ = \left\{ \begin{array}{ll} n_e(x) & \quad \mbox{if}\ \, \alpha = e\ \mbox{and}\ \beta = \mu, \tau \\
+    n_e(x) - \frac{1}{2}\, n_n(x) & \quad \mbox{if}\ \, \alpha = e\ \mbox{and}\ \beta = s \\
+    - \frac{1}{2}\, n_n(x) & \quad \mbox{if}\ \, \alpha = \mu, \tau\ \mbox{and}\ \beta = s \end{array} \right. .
+\eeq
+%
+The Hamiltonian $H$ is diagonalized by the mixing angle in matter $\theta_m$:
+%
+\be
+  H\, =\, U_m \left(\!\! \begin{array}{cc} E^m_1 & 0 \\ 0 & E^m_2 \end{array}\!\! \right) U^\dagger_m\ , \qquad \qquad
+  U_m\, = \left(\!\! \begin{array}{cc} \cos \theta_m & \sin \theta_m \\ - \sin \theta_m & \cos \theta_m \end{array}\!\! \right) ,
+\eeq
+%
+%where (the $-$ sign refers to neutrinos, and the $+$ sign to antineutrinos)
+%%
+%\bea
+%  && E^m_2 - E^m_1\, =\, \frac{\Delta m^2}{2E}\,
+%    \sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}\ ,  \\
+%  && \sin 2 \theta_m\, =\, \frac{\sin 2 \theta}
+%    {\sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}}\ ,  \\
+%  && \cos 2 \theta_m\, =\, \frac{\left( 1 \mp \frac{n}{n_{\rm res}} \right) \cos 2 \theta}
+%    {\sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}}\ ,
+%\eea
+%%
+where (with a $-$ sign for neutrinos and a $+$ sign for antineutrinos)
+%(the corresponding formulae for antineutrinos can be obtained
+%by replacing $1 - \frac{n}{n_{\rm res}} \to 1 + \frac{n}{n_{\rm res}}$)
+%
+\bea
+  && E^m_2 - E^m_1\, =\, \frac{\Delta m^2}{2E}\,
+    \sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}\ ,  \label{eq:Delta_Em}  \\
+  && \sin 2 \theta_m\, =\, \frac{\sin 2 \theta}
+    {\sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}}\ ,  \label{eq:sin_theta_m}  \\
+  && \cos 2 \theta_m\, =\, \frac{\left( 1 - \frac{n}{n_{\rm res}} \right) \cos 2 \theta}
+    {\sqrt{\left( 1 \mp \frac{n}{n_{\rm res}} \right)^2 \cos^2 2 \theta + \sin^2 2 \theta}}\ ,  \label{eq:cos_theta_m}
+\eea
+%
+in which we have introduced the {\it resonance density}
+%
+\be
+  n_{\rm res}\, =\, \frac{\Delta m^2 \cos 2 \theta}{2 \sqrt{2}\, G_F E}\ .
+\eeq
+%
+If $\Delta m^2 \cos 2 \theta > 0$ (resonance condition for neutrinos), the mixing angle
+in matter $\theta_m$ is maximal when $n = n_{\rm res}$, irrespective of the (nonzero) value
+of the vacuum mixing angle $\theta$:
+%
+\be
+  \sin^2 2 \theta_m\, =\, 1 \quad \mbox{for}\ n = n_{\rm res}  \qquad \qquad
+    \mbox{(case $\Delta m^2 \cos 2 \theta > 0$)}\, .
+\eeq
+%
+This the well-known {\it MSW (Mikheev-Smirnov-Wolfenstein) resonance}. For antineutrinos,
+the resonance condition is $\Delta m^2 \cos 2 \theta < 0$, and the resonance occurs
+for $n = - n_{\rm res}$ (in this case, it is $- n_{\rm res}$ that is positive and can be
+interpreted as a resonance density).
+
+%Note that neutrino interactions with matter have
+%only a small effect on oscillation parameters when the vacuum mixing angle $\theta$
+%is close to maximal ($\sin 2 \theta \simeq 1$), while their effects can be spectacular
+%for $\sin 2 \theta \ll 1$.
+
+%Depending on whether the matter density is constant or not, the physics of neutrino
+%flavour conversion in matter can be very different. We discuss both cases in turn below.
+
+The physics of neutrino flavour transitions in matter depends on whether the matter density
+is constant or not. We discuss both cases in turn below.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\it Medium with constant matter density: oscillations in matter  %
+\label{subsec:constant}}                                                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Let us first discuss the case where neutrino propagation in a medium with constant matter density,
+%$n(x) = \mbox{const.}$. 
+Let us first consider the case of a medium with constant matter density, $n(x) = n = const$.
+In this case, the Hamiltonian remains constant during the propagation of the neutrinos;
+hence the matter eigenstates $\left|\nu^m_i \right>$, the energy levels $E^m_i$ and the mixing
+matrix $U_m$ do not depend on time.
+%We can therefore rewrite the evolution
+%equation~(\ref{eq:Schroedinger_components}) in the basis of matter eigenstates
+Inserting Eq.~(\ref{eq:nu^m_i-nu_alpha}) into Eq.~(\ref{eq:Schroedinger_components}), one
+then obtains $n$ decoupled evolution equations for the probability amplitudes $\nu^m_i(t)$:
+%%
+%\be
+%   i \frac{d}{dt} \left(\!\! \begin{array}{c} \nu^m_1(t) \\ \nu^m_2(t) \\ \vdots \end{array}\!\! \right)
+%    = \left(\!\! \begin{array}{ccc} E^m_1 & 0 & \cdots \\ 0 & E^m_2 & \\ \vdots & & \ddots \end{array}\!\! \right)
+%    \left(\!\! \begin{array}{c} \nu^m_1(t) \\ \nu^m_2(t) \\ \vdots \end{array}\!\! \right) ,
+%\eeq
+%%
+%
+\be
+   i \frac{d}{dt}\, \nu^m_i(t)\, =\, E^m_i \nu^m_i(t)\, ,
+\eeq
+%
+%in which $\nu^m_i(t) = \left< \nu^m_i | \nu(t) \right>$ is the amplitude of probability to find
+%the neutrino in the matter eigenstate $\left| \nu^m_i \right>$ at the time $t$, and we have used
+%%
+%\be
+%  \nu_\beta(t)\, =\, \sum_i (U_m)_{\beta i}\, \nu^m_i(t)\, .
+%\eeq
+%%
+which are trivially solved by $\nu^m_i (t) = e^{-i E^m_i t}\, \nu^m_i(0)\, $. Using again
+Eq.~(\ref{eq:nu^m_i-nu_alpha}), one arrives at the oscillation probability in matter:
+%
+\be
+  P_m (\nu_\alpha \to \nu_\beta)\, =\, \left| \nu_\beta (t) \right|^2\, =\, \left| \sum_i (U_m)_{\beta i}\, \nu^m_i (t) \right|^2\,
+    =\, \left| \sum_i (U_m)_{\beta i} (U_m)^*_{\alpha i}\, e^{-i E^m_i t} \right|^2\, .
+%    =\, \sin^2 2 \theta_m \sin^2 \frac{(E^2_m - E^1_m) t}{2}\ .
+\label{eq:Pm_alpha_beta}
+\eeq
+%
+%Comparing this expression with the one valid in vacuum, one concludes that neutrino
+%oscillations in a medium of constant density are governed by the same formula
+Thus neutrino oscillations in a medium of constant density are governed by the same formula
+as vacuum oscillations, with the oscillation parameters in vacuum replaced by the
+oscillation parameters in matter. More specifically, in the 2-flavour case:
+%
+\be
+  P_m (\nu_\alpha \to \nu_\beta)\, =\, \sin^2 2 \theta_m \sin^2 \frac{(E^2_m - E^1_m) t}{2}
+    \qquad \qquad (\alpha \neq \beta)\ .
+\eeq
+%
+%%%As can be seen from Eqs.~(\ref{eq:Delta_Em}--\ref{eq:cos_theta_m}), neutrino interactions
+%While neutrino interactions with matter have a rather limited effect on oscillations when the vacuum mixing
+%angle $\theta$ is close to maximal ($\sin^2 2 \theta \simeq 1$), their impact can be spectacular
+%for $\sin^2 2 \theta \ll 1$ (a condition that is met only by $\theta_{13}$ in practice).
+Matter effects can have a spectacular impact on oscillations when the vacuum
+mixing angle is small (this is the case only for $\theta_{13}$ in practice).
+%(which can be said only from $\theta_{13}$)
+%
+%Assuming $\sin^2 2 \theta < 1$, one can identify three noticeable regimes:
+%{\it (i)} low density ($n \ll |n_{\rm res}|$):
+%$\sin^2 2 \theta_m \simeq \sin^2 2 \theta \left( 1 \pm \frac{2 n}{n_{\rm res}}\, \cos^2 2 \theta \right)$,
+%(the $+$ sign is for neutrinos, the $-$ sign is for antineutrinos)
+%vacuum oscillations dominate, with subleading matter effects;
+%{\it (ii)} close to the resonance ($n \simeq |n_{\rm res}|$), oscillations are enhanced
+%with respect to vacuum oscillations ($\sin^2 2 \theta_m \simeq 1$) if the resonance condition
+%is satisfied, while they are suppressed if it is not satisfied
+%($\sin^2 2 \theta_m \simeq \tan^2 2 \theta / (4 + \tan^2 2 \theta)$);
+%{\it (iii)} high density ($n \gg |n_{\rm res}|$):
+%$\sin^2 2 \theta_m \simeq \tan^2 2 \theta / (\frac{n}{n_{\rm res}})^2$
+%oscillations are suppressed by matter effects.
+%
+Assuming $\sin^2 2 \theta < 1$, one can identify three noticeable regimes:
+%
+\begin{itemize}
+%
+\item[{\it (i)}] low density ($n \ll |n_{\rm res}|$):
+$\sin^2 2 \theta_m \simeq \sin^2 2 \theta \left( 1 \pm \frac{2 n}{n_{\rm res}}\, \cos^2 2 \theta \right)$,
+where the $+$ sign is for neutrinos, and the $-$ sign for antineutrinos.
+Vacuum oscillations dominate, with subleading matter effects;
+%{\it (ii)} close to the resonance ($n \simeq \pm n_{\rm res}$), if the resonance condition is
+%staisfied: $\sin^2 2 \theta_m \simeq 1$ oscillations are enhanced with respect to vacuum oscillations;
+%
+\item[{\it (ii)}] close to the resonance ($n \simeq |n_{\rm res}|$), oscillations are enhanced
+with respect to vacuum oscillations ($\sin^2 2 \theta_m \simeq 1$) if the resonance condition
+%$\sin^2 2 \theta_m \simeq 1 - (1 - \frac{n}{n_{\rm res}})^2 / \tan^2 2 \theta$
+is satisfied, while they are suppressed if it is not satisfied
+($\sin^2 2 \theta_m \simeq \tan^2 2 \theta / (4 + \tan^2 2 \theta)$);
+%
+\item[{\it (iii)}] high density ($n \gg |n_{\rm res}|$):
+$\sin^2 2 \theta_m \simeq \tan^2 2 \theta / (\frac{n}{n_{\rm res}})^2$.
+Oscillations are suppressed by matter effects.
+%(except if the vacuum angle is close to maximum, i.e. $\sin^2 2 \theta \approx 1$).
+%
+\end{itemize}
+
+%A remarkable property of matter effects is that they lead to different oscillation probabilities
+%for neutrinos and antineutrinos, even in the absence of CP violation. This is a noticeable
+%difference with oscillations in vacuum. The matter-induced asymmetry between
+%neutrino and antineutrino oscillations is maximal at the resonance.
+%This property is used by experiments aiming at determining the mass hierarchy, i.e. whether
+%$\Delta m^2_{31} > 0$ or $\Delta m^2_{31} < 0$. In the first case, $n_{\rm res} > 0$
+%and neutrino oscillations are enhanced over antineutrino oscillations, while the opposite
+%is true in the second case.
+
+%A remarkable difference between oscillations in matter and oscillations in vacuum is that
+%the former are different for neutrinos and antineutrinos, even in the absence of CP violation.
+
+%While, in the absence of CP violation, neutrinos and antineutrinos oscillate with the same
+%proba\-bility in vacuum, this is not the case in matter.
+Due to their different interactions with matter, neutrinos and antineutrinos oscillate with unequal
+probabilities when they travel through a medium, even in the absence of CP violation.
+This effect %The matter-induced asymmetry
+is maximal at the resonance, where depending on the sign of $\Delta m^2 \cos 2 \theta$
+either neutrino or antineutrino oscillations are resonantly enhanced.
+%but not both.
+This property is used by experiments aiming at determining the mass hierarchy, i.e. whether
+$\Delta m^2_{31} > 0$ or $\Delta m^2_{31} < 0$. In the first case (normal mass ordering),
+%$n_{\rm res} > 0$ and
+%$n_{\rm res} = \Delta m^2_{31} \cos 2 \theta_{13} / (2 \sqrt{2} G_F E) > 0$ and
+neutrino oscillations are enhanced over antineutrino oscillations,
+while the opposite is true in the second case (inverted mass ordering).
+
+Earth matter effects must be taken into account in the analysis of solar and atmospheric
+neutrino data\footnote{While the electron density is not constant in the Earth, it is a good
+approximation to consider it as made of layers of constant density (the crust, the mantle,
+the outer core and the inner core).}.
+%hence the above formalism applies in each of these layers.}.
+Indeed, at night, neutrinos emitted by the Sun travel through the Earth
+before reaching the detector, leading to the so-called {\it Earth regeneration effect}:
+part of the solar neutrinos that have oscillated into muon or tau
+neutrinos are converted back to electron neutrinos in the Earth. As a result, one can
+observe a day-night asymmetry in the solar neutrino data (which is numerically small
+in practice, see Section~\ref{subsec:solar}). %\com{modifier cette r\'ef\'erence le cas \'ech\'eant}
+The origin of this effect
+is simply that oscillation parameters in matter differ from oscillation parameters in vacuum.
+In particular, high-energy solar neutrinos exit the Sun in the mass eigenstate
+$\left| \nu_2 \right>$ (see Section~\ref{subsec:varying}), which is a propagation eigenstate
+in vacuum, but not in matter; %thus they undergo oscillations when they travel through the Earth.
+hence they remain in the same state on their way from the Sun to the Earth,
+but they oscillate when they travel through the Earth.
+Upward-going atmospheric neutrinos are also subject to Earth matter effects,
+%as they propagate in the Earth before reaching the detector. This affects
+which affects the angular distribution of atmospheric neutrinos. 
+The size of the effect is related to the value of the mixing angle $\theta_{13}$
+(which controls $\nu_\mu \leftrightarrow \nu_e$ oscillations) and of $\Delta m^2_{21}$,
+and also depends on the mass hierarchy and on the precise value of the atmospheric
+mixing angle $\theta_{23}$.
+%\com{commenter l'importance de ces effets? r\'ef\'erer \`a la section~\ref{subsec:atm}?}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\it Medium with varying matter density: adiabatic flavour conversion    %
+\label{subsec:varying}}                                                                                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+When the density of the medium varies along the neutrino trajectory, $n(x) \neq const$,
+the Hamiltonian governing the evolution of the system becomes time-dependent. As a result,
+the matter eigenstates, energy levels and mixing angles in matter all depend on time,
+and are called {\it instantaneous} quantities. 
+The relations~(\ref{eq:H_diagonalization}) and~(\ref{eq:nu^m_i-nu_alpha}) are still valid,
+but with instantaneous energy levels $E^m_i(t)$, mixing matrix $U_m(t)$ and matter
+eigenstates $\left|\nu^m_i(t) \right>$. It follows that the evolution equations for the probability
+amplitudes $\nu^m_i(t) = \left< \nu^m_i(t) | \nu(t) \right>$ are now coupled:
+%%
+%\be
+%  i \frac{d}{dt}\, \nu^m_i(t)\, =\, E^m_i(t) \nu^m_i(t)
+%    + i \sum_\gamma\, \frac{d(U^*_m)_{\gamma i}}{dt}\,  (U_m)_{\gamma j}(t)\, \nu^m_j(t)\, ,
+%\eeq
+%%
+%
+\be
+  i \frac{d}{dt}\, \nu^m_i(t)\, =\, E^m_i(t) \nu^m_i(t)
+    - i \sum_\gamma\, (U^*_m)_{\gamma i}(t) (\dot{U}_m)_{\gamma j}(t)\, \nu^m_j(t)\, ,
+\eeq
+%
+where a dot on a quantity means derivative with respect to time, e.g. $\dot{U}_m(t) \equiv \frac{d}{dt}\, U_m(t)$.
+In the 2-flavour case, these equations reduce to
+%
+\be
+  i \frac{d}{dt} \left(\!\! \begin{array}{c} \nu^m_1(t) \\ \nu^m_2(t) \end{array}\!\! \right)
+    = \left(\!\! \begin{array}{cc} E^m_1(t) & -i \dot{\theta}_m(t) \\ i \dot{\theta}_m(t) & E^m_2(t) \end{array}\!\! \right)
+    \left(\!\! \begin{array}{c} \nu^m_1(t) \\ \nu^m_2(t) \end{array}\!\! \right) .
+\eeq
+%
+The terms proportional to $\sum_\gamma\, (U^*_m)_{\gamma i}(t) (\dot{U}_m)_{\gamma j}(t)$
+(or $\dot{\theta}_m(t)$ in the 2-flavour case) in the evolution equations induce transitions between
+different matter eigenstates $\left|\nu^m_i(t) \right>$ and $\left|\nu^m_j(t) \right>$, which are therefore
+no longer propagation eigenstates: a neutrino has a certain probability to ``jump'' from one matter
+eigenstate to another while travelling through a medium of varying density.
+However, it turns out that in most physical environments (in particular in the Sun), the variation of the
+matter density is slow enough that these off-diagonal terms can be neglected.
+%these transitions between matter eigenstates occur rarely;
+In this case, the evolution of the neutrino system is said to be {\it adiabatic}\footnote{One can define
+an adiabaticity criterion by introducing the parameter
+$\gamma\ \equiv\ \left. \frac{E^m_2 - E^m_1}{2 |\dot \theta_m(t)|} \right|_{\rm res}\,
+    =\ \frac{\Delta m^2 \sin^2 2 \theta}{2 E \cos 2 \theta}\
+    \left| \frac{1}{n_{res}} \left( \frac{d n}{d x} \right)_{\rm res} \right|^{-1}$,
+where the subscript ``res'' on a quantity means that it should be evaluated in the resonance layer.
+The evolution is adiabatic when $\gamma \gg 1$. Given the electron density profile
+in the Sun and the values of the oscillation parameters $\Delta m^2_{21}$ and $\theta_{12}$,
+this criterion is satisfied for all solar neutrino energies.}: a neutrino produced
+in a given instantaneous matter eigenstate will follow the change in matter density during its
+propagation and remain in the same matter eigenstate. However,
+%the crucial difference with the case of a constant matter density is that the neutrino
+its flavour composition will evolve, since the instantaneous matter eigenstates change
+as the matter density varies along the neutrino trajectory. This mechanism of neutrino flavour
+transition is qualitatively different from oscillations in a medium with constant matter density,
+and is called {\it (MSW) adiabatic flavour conversion}.
+
+A particular situation, realized in dense astrophysical environments like supernovae or the Sun,
+is the one of {\it level-crossing}. It arises when the electron density in the neutrino production
+region (e.g. the center of the Sun) is much larger than the resonant density\footnote{The
+terminology ``level-crossing'' is justified by the fact that the asymptotes (corresponding to
+the limit $n \to \infty$) of the energy levels cross at the resonance.}. When this
+is the case, matter eigenstates approximately coincide with flavour eigenstates.
+%For instance, in the two-flavour framework which is well suited to the study of solar neutrinos
+%(with $\nu_\alpha = \nu_e$ and $\nu_\beta$ a combination of $\nu_\mu$ and $\nu_\tau$),
+%one has $\left|\nu_e\right> \simeq \left|\nu^m_2 (r=0) \right>$ and
+%$\left|\nu_\beta\right> \simeq - \left|\nu^m_1 (r=0) \right>$.
+For instance, in the center of the Sun, one has $\left|\nu_e\right> \simeq \left|\nu^m_2 (r=0) \right>$
+and $\left|\nu_\beta\right> \simeq - \left|\nu^m_1 (r=0) \right>$ (with $\left| \nu_\beta \right>$
+a combination of $\left| \nu_\mu \right>$ and $\left| \nu_\tau \right>$) for neutrino energies
+$E \gtrsim 5\, \mbox{MeV}$, for which the condition $n_e(r=0) \gg n_{\rm res}$ is satisfied.
+Hence high-energy solar neutrinos are produced as quasi pure eigenstates of propagation in matter,
+and since their evolution is adiabatic, they remain in the instantaneous matter eigenstate
+$\left|\nu^m_2 (r) \right>$ during their propagation. Eventually, they exit the Sun in the mass
+eigenstate $\left|\nu_2 \right>$, since by continuity $\left|\nu^m_2 (r) \right> = \left|\nu_2 \right>$
+at the radial coordinate $r$ where the electron density vanishes.
+%since by continuity $\left|\nu^m_2 (r=R_\odot) \right> = \left|\nu_2 \right>$,
+%assuming the electron density vanishes at the Sun radius $R_\odot$.
+%
+%since by continuity $\left|\nu^m_2 (r=R_\odot) \right> = \left|\nu_2 \right>$,
+%where $R_\odot$ is the Sun radius.
+In other words, their flavour composition has changed as a result of the evolution
+of the instantaneous matter eigenstates: produced as pure electron neutrinos,
+they exit the Sun as mass eigenstates, i.e. as admixtures of all neutrino flavours.
+Finally, mass eigenstates being eigenstates of propagation in vacuum, they reach
+the Earth in the state $\left|\nu_2 \right>$, leading to a survival probability
+$P_{ee} = | \langle \nu_e | \nu_2 \rangle |^2 \simeq \sin^2 \theta_{12}$.
+Let us add for completeness that low-energy solar neutrinos ($pp$ neutrinos) do not undergo
+adiabatic flavour conversions, but rather vacuum oscillations. Indeed, they
+are characterized by a higher resonant density for which $n_e(r=0) \ll n_{\rm res}$,
+so that matter effects %play a subdominant role.
+can be neglected to a good approximation.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{\it Three-flavour oscillations with matter effects   %
+\label{subsec:matter_3f}}                                                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\com{Give and comment the formula by Freund?}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%
+\subsection{\it Sterile neutrinos     %
+\label{subsec:steriles}}                  %
+%%%%%%%%%%%%%%%%%%%
+
