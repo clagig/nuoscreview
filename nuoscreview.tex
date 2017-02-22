@@ -1,70 +1,69 @@
-%% 
-%% Copyright 2007, 2008, 2009 Elsevier Ltd
-%% 
-%% This file is part of the 'Elsarticle Bundle'.
-%% ---------------------------------------------
-%% 
-%% It may be distributed under the conditions of the LaTeX Project Public
-%% License, either version 1.2 of this license or (at your option) any
-%% later version.  The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.2 or later is part of all distributions of LaTeX
-%% version 1999/12/01 or later.
-%% 
-%% The list of all files belonging to the 'Elsarticle Bundle' is
-%% given in the file `manifest.txt'.
-%% 
-%% Template article for Elsevier's document class `elsarticle'
-%% with harvard style bibliographic references
-%% SP 2008/03/01
+%stylefile for "Progress in Particle and Nuclear Physics" from 20. March 2003
+\documentclass[twoside,12pt]{article}
+\usepackage{epsfig}
+%\usepackage{amssymb}
+\usepackage{amsmath, amssymb}
 
-%\documentclass[preprint,12pt,authoryear]{elsarticle}
-\documentclass[preprint,12pt]{elsarticle}
+%%%%%%% TEMPORARY %%%%%%%%%
+\usepackage{color}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\newcommand{\com}[1]{{\color{red} \sffamily (#1)}}
+\newcommand{\omi}[1]{{\color{gray}\tiny\bfseries [#1]}}
+\newcommand{\add}[1]{{\bfseries #1}}
+%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Use the option review to obtain double line spacing
-%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+\def\Journal#1#2#3#4{{#1} {#2} (#4) #3 }
+\def\NCA{{\em Nuovo Cimento} A}
+\def\PHYS{{\em Physica}}
+\def\NPA{{\em Nucl. Phys.} A}
+\def\MATH{{\em J. Math. Phys.}}
+\def\PRO{{\em Prog. Theor. Phys.}}
+\def\NPB{{\em Nucl. Phys.} B}
+\def\PLA{{\em Phys. Lett.} A}
+\def\PLB{{\em Phys. Lett.} B}
+\def\PLD{{\em Phys. Lett.} D}
+\def\PL{{\em Phys. Lett.}}
+\def\PRL{\em Phys. Rev. Lett.}
+\def\PREV{\em Phys. Rev.}
+\def\PREP{\em Phys. Rep.}
+\def\PRA{{\em Phys. Rev.} A}
+\def\PRD{{\em Phys. Rev.} D}
+\def\PRC{{\em Phys. Rev.} C}
+\def\PRB{{\em Phys. Rev.} B}
+\def\ZPC{{\em Z. Phys.} C}
+\def\ZPA{{\em Z. Phys.} A}
+\def\ANNP{\em Ann. Phys. (N.Y.)}
+\def\RMP{{\em Rev. Mod. Phys.}}
+\def\CHEM{{\em J. Chem. Phys.}}
+\def\INT{{\em Int. J. Mod. Phys.} E}
+\def\r{\vec r}
+\def\R{\vec R}
+\def\p{\vec p}
+\def\P{\vec P}
+\def\q{\vec q}
+\def\ss{\mbox{\boldmath $\sigma$}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\nn}{\nonumber}
+\topmargin-2.8cm
+\oddsidemargin-1cm
+\evensidemargin-1cm
+\textwidth18.5cm
+\textheight25.0cm
 
-%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
-%% for a journal layout:
-%% \documentclass[final,1p,times,authoryear]{elsarticle}
-%% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
-%% \documentclass[final,3p,times,authoryear]{elsarticle}
-%% \documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
-%% \documentclass[final,5p,times,authoryear]{elsarticle}
-%% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
-
-%% For including figures, graphicx.sty has been loaded in
-%% elsarticle.cls. If you prefer to use the old commands
-%% please give \usepackage{epsfig}
 
 \input symbols
 
 
-%\usepackage[english]{babel}
-%\usepackage[backend=bibtex]{biblatex}
-
-%\usepackage{etoolbox}
-%\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
-
-
+%%% ??????
 \bibliographystyle{elsarticle-harv} 
 
 
-%% The amssymb package provides various useful mathematical symbols
-\usepackage{amssymb}
-%% The amsthm package provides extended theorem environments
-%% \usepackage{amsthm}
-
-%% The lineno packages adds line numbers. Start line numbering with
-%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
-%% for the whole article with \linenumbers.
-%% \usepackage{lineno}
-
-\journal{Nuclear Physics B}
-
 \begin{document}
 
-\begin{frontmatter}
+%\begin{frontmatter}
 
 %% Title, authors and addresses
 
@@ -92,24 +91,30 @@
 %% \author[label1,label2]{}
 %% \address[label1]{}
 %% \address[label2]{}
+\author{C. Giganti$^1$ S.\ Lavignac,$^2$ M.\ Zito$^3$ \\
+\\
+$^1$ LPNHE, CNRS/IN2P3, UPMC, Universit\'{e} Paris Diderot, Paris 75252, France\\
+$^2$Institut de Physique Th\'{e}orique,
+Universit\'e Paris Saclay, CNRS, CEA,\\
+Gif-sur-Yvette, France\footnote{Unit\'e Mixte de Recherche
+du CEA/DRF et du CNRS (UMR 3681).}\\
+$^3$IRFU/SPP, CEA-Saclay, Gif-sur-Yvette, France}
 
-\author{Claudio Giganti}
-\address{LPNHE, CNRS/IN2P3, UPMC, Universit\'{e} Paris Diderot, Paris 75252, France}
-
-\author{St\'ephane Lavignac}
-
-\address{IPhT, CEA Saclay, 91191 Gif-sur-Yvette CEDEX, France}
-
-\author{Marco Zito}
-
-\address{IRFU/SPP, CEA Saclay, 91191 Gif-sur-Yvette CEDEX, France}
-
+\maketitle
 \begin{abstract}
 %% Text of abstract
-This is the abstract
+
+In the last two decades neutrino physics has undergone a tremendous progress related to the discovery of neutrino oscillations. 
+Since this milestone, experimental progress has been very fast with the first indications in 2011 by T2K of the last mixing angle $\theta_{13}$ and then its discovery by the reactor experiments Double Chooz, RENO and Daya Bay. 
+
+Today a very large set of experimental results obtained with a variety of experimental configurations and techniques can be interpreted in the framework of the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) framework, consisting of a 3 $\times$ 3 unitary mixing matrix and the mass squared differences of the mass eigenstates. This review covers the rise of this PMNS three neutrinos mixing paradigm and the current status of the experimental determination of its parameters.
+
+The next years will continue to see a rich program of experimental endeavour coming to fruition and addressing the three last missing pieces of the puzzle, namely the precision determination of the $\theta_{23}$ value and octant, the unveiling of the neutrino mass ordering and the measurement of the CP-violating phase $\delta$.
+
+
 \end{abstract}
 
-\begin{keyword}
+%\begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
 
 %% PACS codes here, in the form: \PACS code \sep code
@@ -117,15 +122,15 @@ This is the abstract
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
 
-\end{keyword}
+%\end{keyword}
 
-\end{frontmatter}
+%\end{frontmatter}
 
 %% \linenumbers
 
 %% main text
 
-
+\tableofcontents
 %% Introduction
 \input{intro.tex}
 
@@ -133,33 +138,38 @@ This is the abstract
 \input{theory.tex}
 
 
-\section{Oscillation parameters: current status 30pg}
-\label{sec:status}
+%\section{Oscillation parameters: current status 30pg}
+%\label{sec:status}
 
 %% Solar sector
 \input{solar.tex}
 
+\clearpage
 %% Atmospheric sector
 \input{atmospheric.tex}
 
+%\newpage
 %% Long baseline
 \input{longbaseline.tex}
 
+\clearpage
 %% Strategy to measure th13
-\input{theta13.tex}
+%\input{theta13.tex}
 
 %% Measurements of th13 with reactors
 \input{theta13_exp.tex}
 
+\clearpage
 %% deltaCP with accelerators
 \input{deltacp.tex}
 
+\clearpage
 %% global fits and summary of PMNS
 \input{summaryPMNS.tex}
-
+\clearpage
 %% sterile neutrinos
 \input{anomalies.tex}
-
+\clearpage
 %% future experiments
 \input{future.tex}
 
@@ -249,6 +259,6 @@ This is the abstract
 %
 \end{document}
 
-\endinput
+%\endinput
 %%
 %% End of file `elsarticle-template-harv.tex'.
