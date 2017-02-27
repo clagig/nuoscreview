@@ -46,8 +46,8 @@ The main goal of \nova is instead to profit of the longer baseline with respect 
 \begin{figure} [h!]
 \begin{center}
 %add plot!!!
-%\includegraphics[width=8cm]{figs/t2kpre_t23dm32_point1_wreactorthrow.pdf}
-\caption{\label{fig:novaellipse} Equiprobabilities curves for T2K and \nova}
+\includegraphics[width=8cm]{figures/t2k_nova_dune_ellipse.pdf}
+\caption{\label{fig:novaellipse} Equiprobabilities curves for T2K, \nova, and DUNE baseline}
 \end{center}
 \end{figure}
 
@@ -151,21 +151,67 @@ Assuming this configuration, the sensitivity of ORCA to the mass ordering after 
 \end{figure}
 
 
-INO distinguishes btw numu and numubar status ? 
+Another proposed experiment to look for the mass ordering is the ICAL (Iron Calorimeter)~\cite{Ahmed:2015jtv} detector to be built at the India-based Neutrino Observatory (INO). ICAL will be a 50 kton magnetized detector that will be mainly sensitive to 1-10 GeV atmospheric neutrinos: 5.6 cm thick iron layers are interleaved with Resistive Plate Chambers (RPC) used for tracking the charged particles. Thanks to the 1.5 Tesla magnetic field, ICAL will be capable to reconstruct the charge of the muons, hence separating interaction induced by muon neutrinos from the ones induced by muon antineutrinos.
+In order to determine the mass ordering \num and \numb will be binned in momentum and angle, exploiting the matter effects in a similar way as it is proposed by ORCA and PINGU. In the case of INO only muon tracks are used and a sensitivity to the mass ordering of 3 sigma after 10 years of data taking can be obtained.
 
 
 \subsection{Next generation of long baseline experiments}
 A next generation of long-baseline experiments will be built in the coming years and will be operational around the second half of the years 2020 with the main goal of producing precise measurements of the neutrino mixing parameters accessible to long-baseline experiments, namely \thatm, \thint, \dmsq, and \dcp. 
+The main goal of these projects will be the discovery of CP violation in the leptonic sector. They will be also able to measure the mass ordering if this will not have been determined by the dedicated experiments described earlier. 
 
-The main goal of these projects will be the discovery of CP violation in the leptonic sector and the determination of the mass ordering if it will have not been determined by the experiments described earlier. 
+The two existing projects for the next generation of long-baseline are the DUNE experiment, based in the US and the Hyper-Kamiokande experiment based in Japan. Hyper-Kamiokande builds up on the experience with the T2K experiment and the SuperKamiokande detector. It will be composed by two large water Cherenkov detectors, with a total mass 10 times larger than SK, and it will be exposed to the off-axis neutrino beam produced at JPARC. 
+DUNE will use a different and innovative technology by using Liquid Argon as target for neutrino interactions, performing a calorimetric measurement of the tracks produced in neutrino interactions. The collaboration plans to build four modules for a total fiducial mass of 40 kiloton. Neutrinos will be produced at Fermilab, by extracting protons from the Main Ring and will be sent to the Sanford Underground Research Facility (SURF), 1300 km away from Fermilab.
+
+Both experiments will be multi-purpose detectors, searching for example for proton decays, neutrinos produced in supernova explosions or in supernova remnants, measuring solar and atmospheric neutrinos, etc. In the context of this review we will concentrate on the measurements that will be done by these experiments and that are important for a better understanding of the PMNS matrix.
+
+DUNE will build four large (10 kton of fiducial mass) Liquid Argon time projection chambers as target for neutrino interactions. When neutrinos interact with the Argon, charged particles are produced that cross the medium, exciting Argon nuclei. This produce both, ionization and scintillation signals that are detected by a readout system. The careful collection of the ionization signal allows for a three dimensional reconstruction of the charged tracks and so of the neutrino responsible for the interaction. The collection of the ionization is done with a readout system. Two options are contemplated for the readout of the ionization signals: single-phase readout where the ionization is collected using wire planes in the liquid argon volume and dual-phase approach where the ionization signals are amplified and detected in a gaseous argon region above the liquid. The single-phase readout was the technology used for the ICARUS detector~\cite{icarus} while for the dual-phase readout several small-scale prototypes have been built in the last years~\cite{}. An extended R\&D program is on-going to demonstrate that both technologies are suitable to build a 10 kton module. Two prototypes, one for the single phase (ProtoDUNE-SP) and one for the dual phase (ProtoDUNE-DP or WA105) of roughly 300 tons and scalable to higher masses are being built at CERN and will be exposed to charged particles beam in 2018.  
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/dune_flux.pdf}
+\caption{\label{fig:duneflux} Oscillation probabilities for different values of mass ordering and \dcp at 1300 km superimposed to the expected DUNE neutrino flux.}
+\end{center}
+\end{figure}
 
 
+The neutrino beam used for DUNE will be a broad band beam produced at the Long Baseline Neutrino Facility (LBNF) at Fermilab. The foreseen beampower is of 1.2~MW. The neutrino flux will cover both, the first and the second oscillation maxima, that at 1300 km will be at 2.5~GeV and 0.8~GeV respectively as shown in Fig.~\ref{fig:duneflux}. At energy above 2~GeV, multiple tracks are produced in charged current neutrino interactions and high efficiency to reconstruct all the final state particles is required: the high granularity of a liquid Argon is then better suited at these energies with respect to Water Cherenkov detectors for which most of the charged particles are below the Cherenkov threshold and so cannot be reconstructed.
+%In addition the sensitivity to neutrinos at the second maximum is particularly useful because it allows to measure the CP phase from distortions in the energy spectrum.  
+Thanks to the very long baseline of DUNE, effects from mass ordering and CP violation are decoupled as shown in Fig.~\ref{fig:novaellipse}. The strategy is to collect neutrino and anti-neutrino data, by changing the sense of the current in the magnetic horns, and measure \num and \numb disappearance and \nue and \nueb appearance probabilities.  
+The combination of the four samples allow to have a clean measurement of the mass ordering for any value of \dcp and in both the ordering hypotheses as shown in Fig.~\ref{fig:dunesensi}. As far as the measurement of CP violation is concerned, the sensitivity depends on the value of \dcp. The requirement for the experiment is to have a sensitivity larger than $5~\sigma$ for 50\% of the values of \dcp and larger than $3~\sigma$ for the 75\% of the values of \dcp. Such sensitivities will be reached after XX years of running.
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+%\includegraphics[width=8cm]{figures/dune_flux.pdf}
+\caption{\label{fig:dunesensi} DUNE expected sensitivity to the mass ordering and the CP violation phase.}
+\end{center}
+\end{figure}
 
 
+The other proposed long-baseline experiment is Hyper-Kamiokande (HK). The current design of HK is to have a staged construction of two 187~kton fiducial volume mass modules near the current Super-Kamiokande site at a distance of 295~km and 2.5 degrees off-axis from the J-PARC site where neutrinos are produced. The neutrino beam is the same currently used by the T2K experiment but, thanks to an upgrade of the Main Ring power supplies, it will be able to operate at more than 1.3~MW  by 2025 (the beam power today is 470~kW).
 
-DUNE new technology LAr 40 kt new beam
+The design baseline for Hyper-Kamiokande is to have the two modules at Kamioka but an alternative design is being pursued to install the second module in South Korea. This second detector would be operated at a baseline of roughly 1100~km and a smaller off-axis angle. In this configuration HK would be sensitive to the first and the second oscillation maxima, with the first taking place at $\sim2~GeV$ and the second at $0.6~GeV$ as shown in Fig.~\ref{fig:HKfluxKorea}. In this configuration the first oscillation maximum would give sensitivity to the mass ordering while the second would allow to exploit the larger CP asymmetry, improving the measurement of \dcp.  If both detectors will be installed at Kamioka, external measurements of the mass ordering will be used in the search for \dcp. If no measurements of mass ordering will be available by the time HK is collecting data, the mass ordering can still be determined at more than $3~\sigma$ by measuring matter effects in the large atmospheric neutrino sample that will be collected in HK.    
 
-decouples CP violation from MH with nu/nubar beam
+After 10 years of data taking  HK will collect $\sim1000$ ($\sim130$) \nue and \nueb signal events per tank at 295 km (1100 km and 2.0 degrees off-axis) assuming a 3:1 ratio of antineutrino mode to neutrino mode operation. The sensitivity of the experiment for different options for the location of the second tank is shown in Fig.~\ref{fig:hkcpv}. From the figure it is clear the benefit of the second detector in Korea if no measurements of the mass ordering will be available by 2025. On average, the second detector in Korea, also allows for a more precise measurement of the value of \dcp, thanks to the exploitation of the second maximum. Finally the sensitivity in Korea will be limited by statistical uncertainties even after 10 years of data taking while in Kamioka the measurements will be limited by systematic uncertainties.
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=15cm]{figures/hk_cpv_sensi.pdf}
+\caption{\label{fig:hkcpv} Significance to reject CP conservation as a function of \dcp for normal ordering (left) and inverted ordering (right) and different hypotheses for the location of the second tank. On the top row the mass ordering is assumed to be known independentely from accelerator based neutrinos, on the bottom row the mass ordering is unknown.}
+\end{center}
+\end{figure}
+
+\begin{figure} [h!]
+\begin{center}
+%add plot!!!
+\includegraphics[width=8cm]{figures/hk_precision_no.pdf}
+\includegraphics[width=8cm]{figures/hk_precision_io.pdf}
+\caption{\label{fig:hkcpv} The $1\sigma$ precision of the \dcp measurement as a function of the true \dcp value.}
+\end{center}
+\end{figure}
+
 
 HyperK 500 kt fiducial (finance ?) upgraded T2K beam
 
