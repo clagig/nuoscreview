@@ -5,7 +5,7 @@
 
 The Sun is a star of the main sequence in the stable hydrogen fusion regime. It produces its energy by nuclear fusion reactions in its core described by the overall equation
 \begin{equation}
-4p \rightarrow {^4}He + 2 e^+ + 2 \nu_e
+4p \rightarrow {}{^4}{\rm He} + 2 e^+ + 2 \nu_e
 \end{equation}
 After positron annihilation with electrons, the energy balance is equal to $E_s =26.73$ MeV per helium nucleus produced, including the mean energy of the neutrinos, amounting to approximately $E_\nu =$ 0.6 MeV. The total flux $\phi$ of solar neutrinos on Earth can be estimated from the solar constant (or solar irradiance) F = 1.36 kW/m$^2$  as
 $\phi = \frac{2F}{E_s - E_\nu} = 6.5 \times 10^{10} cm^{-2} s^{-1}$.
@@ -15,7 +15,7 @@ The main reactions and the corresponding neutrino fluxes are shown in Table~\ref
 In addition to the pp chain, the catalytic CNO cycle involving carbon, nitrogen and oxygen nuclei is also present contributing about 1.6\% to the energy production.
 This cycle is dominant in massive stars.
 It must be noticed that these reactions have different dependence on the temperature and density and therefore the core regions were they take place differs. The $^8$B neutrinos are produced in the inner part of the core peaking at 0.05 of the solar radius. 
-Two representative SSM models, GS98-SFII and AGSS09-SFII, differ in their assumptions for the abundance of heavier elements, the so called metallicity, which can only indirectly be evaluated from the solar atmosphere: $Z/X=0.023$ for GS98-SFII and $Z/X=0.018$ for AGSS09-SFII. 
+Two representative SSM models~\cite{serenelli}, GS98-SFII and AGSS09-SFII, differ in their assumptions for the abundance of heavier elements, the so called metallicity, which can only indirectly be evaluated from the solar atmosphere: $Z/X=0.023$ for GS98-SFII and $Z/X=0.018$ for AGSS09-SFII. 
 The lower metallicity SSM AGSS09-SFII, using more recent data, predicts a 1\% cooler core which results in a 10\% lower flux of $^8$B. These models have also been confronted with results from helio-seismology studies showing good agreement for GS98-SFII but some discrepancy for AGSS09-SFII. This problem is known as the solar abundance problem.
 
 \begin{figure}[htbp]
@@ -28,20 +28,20 @@ Solar neutrino spectra and SSM uncertainties \cite{serenellif}.
  \end{figure}
 
 \begin{table}
-\caption{Nuclear fusion reactions in the Sun and their neutrino fluxes (in units cm$^{-2}$ s$^{-1}$) according to the SSM GS98-SFII and AGSS09-SFII~\cite{serenelli}. The first five reactions are part of the pp chain, the last three reactions are part of the CNO cycle.}
+\caption{Nuclear fusion reactions in the Sun and their neutrino fluxes (in units cm$^{-2}$ s$^{-1}$ to be multiplied by the factor in the fifth column) according to the SSM GS98-SFII and AGSS09-SFII~\cite{serenelli}, with relative uncertainties shown in the column labeled $\sigma$. The first five reactions are part of the pp chain, the last three reactions are part of the CNO cycle.}
 \centering
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|}
   \hline
-  Reaction & $E_{MAX}$ (MeV) & GS98 & AGSS09& rel. unc. (\%) &name \\ 
+  Reaction & $E_{MAX}$ (MeV) & GS98 & AGSS09& exp. & $\sigma$ (\%) &name \\ 
   \hline
-$ p + p \rightarrow {^2}H + e ^+ + \nu_e$ & 0.42 & 5.98 $10^{10}$ & 6.03    $10^{10}$ & 0.6 &pp \\
-$ p + e^- + p \rightarrow {^2}H  + \nu_e$ & 1.44 & 1.44 $10^{9}$ &1.47 $10^{9}$  & 1.2 &pep \\
-$ {^7}Be + e^- \rightarrow {^7}Li + \nu_e$ & 0.86 & 5.00  $10^{9}$ &4.56$10^{9}$  & 7 &$ {^7}$Be \\
-$ {^8}B \rightarrow {^8}Be + e ^+ + \nu_e$ & $\simeq$ 15 & 5.58 $10^{6}$ &4.59    $10^{6}$  & 14 &$ {^8}$B\\
-$  {^3}He + p \rightarrow {^4}He + e ^+ + \nu_e$ & 18.77 & 8.04 $10^{3}$ &8.31 $10^{3}$  & 30 &hep \\
-$ {^{13}}N \rightarrow {^{13}}C + e ^+ + \nu_e$ & 1.2 & 2.96 $10^{8}$&2.17    $10^{8}$  &14  &$ {^{13}}$N\\
-$ {^{15}}O \rightarrow {^{15}}N + e ^+ + \nu_e$ & 1.73 & 2.23 $10^{8}$&1.56    $10^{8}$  & 15& $ {^{15}}$O\\
-$ {^{17}}F \rightarrow {^{17}}O + e ^+ + \nu_e$ & 1.74 & 5.52 $10^{6}$ &3.40   $10^{6}$  & 16 &$ {^{17}}$F\\
+$ p + p \rightarrow {^2}H + e ^+ + \nu_e$ & 0.42 & 5.98  & 6.03   & $10^{10}$ & 0.6 &pp \\
+$ p + e^- + p \rightarrow {^2}H  + \nu_e$ & 1.44 & 1.44  &1.47& $10^{9}$  & 1.2 &pep \\
+$ {^7}Be + e^- \rightarrow {^7}Li + \nu_e$ & 0.86 & 5.00 & 4.56& $10^{9}$  & 7 &$ {^7}$Be \\
+$ {^8}B \rightarrow {^8}Be + e ^+ + \nu_e$ & $\simeq$ 15 & 5.58  &4.59  &  $10^{6}$  & 14 &$ {^8}$B\\
+$  {^3}He + p \rightarrow {^4}He + e ^+ + \nu_e$ & 18.77 & 8.04  &8.31 &$10^{3}$  & 30 &hep \\
+$ {^{13}}N \rightarrow {^{13}}C + e ^+ + \nu_e$ & 1.2 & 2.96 &2.17    &$10^{8}$  &14  &$ {^{13}}$N\\
+$ {^{15}}O \rightarrow {^{15}}N + e ^+ + \nu_e$ & 1.73 & 2.23 &1.56    &$10^{8}$  & 15& $ {^{15}}$O\\
+$ {^{17}}F \rightarrow {^{17}}O + e ^+ + \nu_e$ & 1.74 & 5.52  &3.40   &$10^{6}$  & 16 &$ {^{17}}$F\\
   \hline
 \end{tabular}
 \label{tab:snuflux}
@@ -63,7 +63,7 @@ The result of the Homestake chlorine experiment~\cite{cleveland} for the capture
 \begin{equation}
 (\sigma \phi)_{Cl} = 2.56 \pm 0.16 \pm 0.16 \: SNU
 \end{equation}
-where SNU is Solar Neutrino Units (a SNU equals 10$^{-36}$ captures/nucleus/second) while the prediction from the solar model is $8.00 \pm 0.97$ SNU, that is the measured rate was about 30 \% of the predicted rate.  
+where SNU is Solar Neutrino Units (a SNU equals 10$^{-36}$ captures/nucleus/second) while the prediction from the GS98-SFII solar model is $8.00 \pm 0.97$ SNU, that is the measured rate was about 30 \% of the predicted rate.  
 Starting from the first result in 1968 this major deficit triggered a thirty years long debate, where many particle physicists were convinced that the reason of the discrepancies lied with the SSM. Indeed the production rate of $ {^8}$B neutrinos depends critically on the temperature of the Sun core as T$^{22}$ and helioseismological data were not yet available at that time to confirm the validity of SSM. 
 
 \begin{table}
@@ -86,7 +86,7 @@ Borexino & C$_9$H$_{12}$ & 278t &  0.2  \\
 \label{tab:snudet}
 \end{table}
 
-It took more than twenty years before other radiochemical experiments could probe solar neutrinos~(Table~\ref{tab:snudet}). SAGE (1989-2007)~\cite{abdurashitov} in the Baksan Laboratory (Russia) and Gallex (1991-1997)~\cite{hampel}, followed by GNO (1998-2003)~\cite{altmann}, in the Gran Sasso Laboratory (Italy) used the reaction  $\nu_e  + ^{71}Ga \rightarrow ^{71}Ge + e^-$
+It took more than twenty years before other radiochemical experiments could probe solar neutrinos~(Table~\ref{tab:snudet}). SAGE (1989-2007)~\cite{abdurashitov} in the Baksan Laboratory (Russia) and Gallex (1991-1997)~\cite{hampel}, followed by GNO (1998-2003)~\cite{altmann}, in the Gran Sasso Laboratory (Italy) used the reaction  $\nu_e  + {}^{71}{\rm Ga} \rightarrow {}^{71}{\rm Ge} + e^-$
 that has a low threshold, 0.233 MeV, and provides sensitivity to the pp neutrinos, constituting the majority of the flux. 
 
 While the details of these experiments, related to the chemical properties of gallium, is different from Homestake, they follow that overall scheme of that experiment. They provided a confirmation of the solar neutrino deficit, although with a different reduction factor of approximately 50\% ~\cite{abdurashitov,hampel,altmann,kaether}:
@@ -120,7 +120,7 @@ the day-night asymmetry $A_{DN}$ is defined as $A_{DN} = \frac{2 (r_D - r_N) }{r
 A_{DN} = (−3.2 \pm 1.1 (stat) \pm 0.5 (syst)) \%,
 \end{equation} 
 deviating from zero by 2.7 $\sigma$.
-This is the effect is similar to $K_S^0$ regeneration for a beam $K_L^0$ passing through a material. It is the first indication of matter effects on neutrino propagation. 
+This is the effect is similar to $K_S^0$ regeneration for a beam $K_L^0$ passing through a material. It is the first indication of Earth matter effects on neutrino propagation. 
 
 
 \begin{figure}[htbp]
@@ -141,13 +141,13 @@ With heavy water, three channels are available to probe the solar neutrino flux:
 \item The neutral current reaction $ \nu_x + d \rightarrow \nu_x +  p + n $ which allow to count all the neutrinos, independently of their flavour, above the threshold of 2.22 MeV; 
 \item The electron scattering (ES) reaction $ \nu_x + e^- \rightarrow \nu_x + e^−$ also available in conventional water Cherenkov detectors, which is mainly sensitive to $ \nu_e$, $\sigma_{ES}(\nu_e)\simeq 6 \; \sigma_{ES}(\nu_{\mu \tau})$. 
 \end{itemize}
-SNO took data in three phases, distinguished by the technique used to detect the neutron produced in the neutral current dissociation of deuterium. Indeed, as the neutron is the only detectable particle in this reaction, this measurement is an experimental challenge and places severe requirements on the radiopurity of the whole apparatus. The different neutron detection techniques improved the sensitivity to the NC reactions. In the first phase neutrons capture on deuterium was used. In the second phase, NaCl was dissolved in the water and neutrons were detected through the neutron capture on $^{35}$ Cl followed by gamma emission. In the third phase neutron detectors containing $^3$He were inserted in the detector.
+SNO took data in three phases, distinguished by the technique used to detect the neutron produced in the neutral current dissociation of deuterium. Indeed, as the neutron is the only detectable particle in this reaction, this measurement is an experimental challenge and places severe requirements on the radiopurity of the whole apparatus. The different neutron detection techniques improved the sensitivity to the NC reactions. In the first phase neutrons capture on deuterium was used. In the second phase, NaCl was dissolved in the water and neutrons were detected through the neutron capture on $^{35}$Cl followed by gamma emission. In the third phase neutron detectors containing $^3$He were inserted in the detector.
 The results of all phases of the detector were in agreement and yielded a measurement of the total flux of solar neutrinos~\cite{aharmim}, irrespective of their flavour,
 \begin{equation}
 \phi_{NC} (\nu \; active ) = [5.25 \pm 0.16 (stat) ^{+0.11}
-_{-0.13} (syst)] \times 10^6 cm^{-2} s^{-1} 
+_{-0.13} (syst)] \times 10^6 {\rm cm^{-2} s^{-1}} 
 \end{equation}
-in agreement with the prediction of the solar models ($5.05 \times 10^6 cm^{-2} s^{-1}$),and 
+in agreement with the prediction of the solar models ($5.05 \times 10^6 {\rm cm^{-2} s^{-1}}$), and 
 \begin{equation}
 \phi_{CC} (\nu_e ) =  (0.301 \pm 0.033) \; \phi_{NC} (\nu \; active ).
 \end{equation}
@@ -156,14 +156,14 @@ As we will discuss in section
 
 Borexino(2007-present) is a 278~t liquid scintillator detector in the Gran Sasso Laboratory (Italy)
 capable of measuring low energy neutrinos with a threshold of 200 keV in real time, thanks to the high light yield of 10$^4$ photons per MeV which is much higher than in a Cherenkov detector. 
-It measured the $^7$Be neutrino flux $(3.10 \pm 0.15) \times 10^9 cm^{-2} s^{-1}$ that is 62 \% of the GS98 SSM predicted flux~\cite{bellini}. It gave the first determination of the pep flux 
-$(1.6 \pm 0.3) \times 10^8 cm^{-2} s^{-1}$ and provided an upper limit on the CNO neutrino flux.
+It measured the $^7$Be neutrino flux $(3.10 \pm 0.15) \times 10^9 {\rm cm^{-2} s^{-1}}$ that is 62 \% of the GS98 SSM predicted flux~\cite{bellini}. It gave the first determination of the pep flux 
+$(1.6 \pm 0.3) \times 10^8 { \rm cm^{-2} s^{-1}}$ and provided an upper limit on the CNO neutrino flux.
 
 
 \subsection{Confirmation with artificial neutrinos: KamLAND}
 
 KamLAND is a 1~kt liquid scintillator experiment located in the former site of the Kamiokande detector in Japan. As described in more detail in section~\ref{subsec:reactorflux}, it is capable of detecting $\bar \nu_e$ emitted by nuclear reactors through the inverse beta decay reaction $\bar{\nu}_e \; p \rightarrow n \;  e^+$. KamLAND is surrounded by 55 Japanese nuclear reactors at an average distance of 150 km. In 2002, it reported  evidence for the disappearance  of $\bar \nu_e$. In an updated report in 2008~\cite{kamland}, they observed 1609 
-events to be compared to $2179 \pm 89$ expected from reactor neutrinos and  $276 \pm 23$ from background sources (Fig.~\ref{fig:sol-kam}). This measurement was decisive for the interpretation of solar neutrino data.
+events to be compared to $2179 \pm 89$ expected from reactor neutrinos and  $276 \pm 23$ from background sources (Fig.~\ref{fig:sol-kam}). This measurement was very important for the interpretation of solar neutrino data as it showed for the first time an oscillatory behaviour as a function of L/E and because it provided an independent precise measurement of the oscillation parameters of interest.
 
 
 
@@ -186,15 +186,17 @@ KamLAND and solar neutrino experiments.}
 \subsection{Interpretation of the measurements and discussion}
 \label{subsec:solarinter}
 
-The first measurement of a deficit of the solar neutrino flux left open several interpretations. While early on Pontecorvo made the hypothesis of neutrino oscillations\cite{pontecorvo67}, modest changes to the Sun core temperature could also be invoked. 
+The first measurement of a deficit of the solar neutrino flux left open several interpretations. While early on Pontecorvo made the hypothesis of neutrino oscillations~\cite{pontecorvo67}, modest changes to the Sun core temperature could also be invoked. 
 The situation changed with the new measurements by the gallium experiments, as it was clear that the suppression factor depended on the neutrino energy. The SNO results were the first measurement of the total solar neutrino flux and were also the first solid proof of flavour conversion as the explanation of the solar neutrino puzzle. 
-Nevertheless, several different solutions were possible in term of the masses and mixing. The KamLAND result pinpointed one of them, the so-called Large Mixing Angle solution. Indeed, the results of KamLAND can be understood in term of a simple two neutrino mixing formula $ P(\bar{\nu}_e \rightarrow \bar{\nu}_e ) = 1 - \sin^2 (2 \theta_{12}^2) \sin^2 \frac{\Delta m^2_{21} L}{4 E} $, neglecting matter effects and effects related to $\theta_{13}$. As we will see later, the value of $\Delta m^2_{31}$ is much larger than $\Delta m^2_{21}$ and induces rapid oscillations that are averaged out given the $L$, $E$ and energy resolution of that experiment. The $L/E$ pattern is prominent in the KamLAND data and beautifully confirms neutrino oscillations as the origin of their observed deficit (Fig.~\ref{fig:sol-kam}). The measurement of KamLAND allows to determine $\Delta m^2_{21} = (7.59 \pm 0.21) 10^{-5}
+Nevertheless, several different solutions were possible in the early days in term of the masses and mixing. The KamLAND result pinpointed one of them, the so-called Large Mixing Angle solution which was already favoured by SNO data. Indeed, the results of KamLAND can be understood in term of a simple two neutrino mixing formula $ P(\bar{\nu}_e \rightarrow \bar{\nu}_e ) = 1 - \sin^2 2 \theta_{12}^2 \sin^2 (\frac{\Delta m^2_{21} L}{4 E}) $, neglecting matter effects and effects related to $\theta_{13}$. As we will see later, the value of $\Delta m^2_{31}$ is much larger than $\Delta m^2_{21}$ and induces rapid oscillations that are averaged out given the large $L/E$ and the energy resolution of that experiment. The $L/E$ pattern is prominent in the KamLAND data and beautifully confirms neutrino oscillations as the origin of their observed deficit (Fig.~\ref{fig:sol-kam}). The measurement of KamLAND allows to determine $\Delta m^2_{21} = (7.59 \pm 0.21) \times 10^{-5}
 eV^2$ and $\tan^2 \theta_{12} = 0.47 ^{+0.06} _{-0.05} $ in good agreement with the results of the solar neutrino experiments (Fig.~\ref{fig:sol-kam}).
 
-The explanation of the deficit observed by the solar neutrino experiments involves flavour transitions of a different kind. As explained in section~\ref{subsec:varying}, electron neutrinos are produced in the center of the Sun in a medium of high density. If the condition $n > n_{res}= \frac{\Delta m^2_{21} \cos 2 \theta_{12}}{ 2 \sqrt{2}G_F E}$ is satisfied, corresponding to energies above 3.3 MeV for pp, 2.2 MeV for $^7$Be and 1.8 MeV for $^8$B neutrinos, neutrinos are produced as the $ \nu^m_2$ matter eigenstates of the Hamiltonian and in its adiabatic evolution exits the Sun as $\nu_2$. The probability to observe them as $\nu_e$ is then $\sin^2 \theta_{12}$. For neutrinos produced with energies much below this threshold, matter effect can be neglected and they undergo vacuum oscillations. The suppression factor is then the result of the averaging of many oscillation periods    
-$ P({\nu}_e \rightarrow {\nu}_e ) = 1 - \frac{1}{2} \sin^2 (2 \theta_{12})$. 
-It can be shown that for neutrino energies far above the resonance condition the adiabatic condition does not hold any more and that the suppression factor is $\cos^2 \theta_{12} $. This leads to a characteristic "bath tub" shape for the neutrino survival probability (Fig.~\ref{fig:sol-bor}). The MSW condition is satisfied for $^8$B neutrinos, while  
-$^7$Be and pp are in the vacuum average oscillation region. The measurement of pep neutrinos would be interesting as they are in the transition region.
+The explanation of the deficit observed by the solar neutrino experiments involves flavour transitions of a different kind. As explained in section~\ref{subsec:varying}, electron neutrinos are produced in the core of the Sun in a medium of high density. 
+In the center of the Sun, the density $n(r=0)$ corresponds to the resonant density $ n_{res}= \frac{\Delta m^2_{21} \cos 2 \theta_{12}}{ 2 \sqrt{2}G_F E}$ for E = 1.9 MeV. For energies much higher than this value
+%If the condition $n(r) > n_{res}= \frac{\Delta m^2_{21} \cos 2 \theta_{12}}{ 2 \sqrt{2}G_F E}$ is satisfied, corresponding to energies above 3.3 MeV for pp, 2.2 MeV for $^7$Be and 1.8 MeV for $^8$B neutrinos, 
+neutrinos are produced as the $ \nu^m_2$ matter eigenstates of the Hamiltonian and in its adiabatic evolution exits the Sun as $\nu_2$. The probability to observe them as $\nu_e$ is then $\sin^2 \theta_{12}= 0.31$. For neutrinos produced with energies much below this threshold, matter effect can be neglected and they undergo vacuum oscillations. The suppression factor is then the result of the averaging of many oscillation periods    
+$ P({\nu}_e \rightarrow {\nu}_e ) = 1 - \frac{1}{2} \sin^2 2 \theta_{12}=0.845$. 
+This leads to a characteristic "bath tub" shape for the neutrino survival probability (Fig.~\ref{fig:sol-bor}). The MSW adiabatic flavour convrsion dominates for $^8$B neutrinos, while pp are in the vacuum average oscillation region. The measurement of pep neutrinos would be interesting as they are in the transition region.
 This interpretation fits with all the solar neutrino data. 
 
 The future of this field is twofold:
