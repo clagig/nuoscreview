@@ -38,7 +38,8 @@ As the neutrino beam is a tertiary beam, it is necessary to include in the exper
 
 For recent long baseline experiments it is especially important that the beam is very pure in $\nu_\mu$. An irreducible $\nu_e$ component, at the percent level, is always present, due to the K$_{e3}$ semileptonic decay of kaons and to the decay of muons, produced by the decay of pions.
 
-In the antineutrino mode, the fraction of neutrinos in the beam is relatively large (for instance xx\% in the T2K antineutrino beam) due to the fact that the $\pi^+$ cross-section is higher than the $\pi^-$ cross-section. These impurities in the beam need to be measured, for instance with a magnetized near detector. 
+In the antineutrino mode, the fraction of neutrino interactions is relatively large. For instance, in the case of T2K, roughly 30\% of the interactions at SK in antineutrino mode are given by neutrinos. This is due to the the fact that more $\pi^+$ than $\pi^-$ are produced in proton-carbon interactions and that \nunu cross-section are larger than \nub cross-sections. 
+These impurities in the beam need to be measured, for instance with a magnetized near detector. 
 
 \begin{table}
 \centering
@@ -96,6 +97,27 @@ For the cross-section model, the priors are based, as much as possible, on exter
 To reduce flux and cross-section uncertainties, the ND280 samples are binned in the kinematic variables \ptheta according to the muon momentum and angle with respect to the beam direction. Data and Monte Carlo are fitted using a binned likelihood, where the prediction for each bin depends on the flux, cross-section and detector systematic parameters. 
 
 The result of the fit is a set of point estimates and covariance for the systematic scaling factors for the unoscillated neutrino flux at SK. The impact of the ND280 fit on the total error budget in the T2K oscillation analysis is shown in Tab.~\ref{tab:t2ksyst}: a reduction of the systematic uncertainties from $\sim15\%$ to $\sim5\%$ is obtained thanks to the near detector fit.
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{l c c } \hline \hline
+Source of Uncertainty& $\nu_e$ & $\nu_{\mu}$ \\ 
+ &$\delta N/N$&$\delta N/N$\\ \hline
+Flux&3.7\%& 3.6\% \\ \hline
+cross-section &5.1\%& 4.0\% \\ \hline
+Flux+cross-section&& \\
+(w/o ND280 Constraint)&11.3\% &10.8\% \\
+(w/ ND280 Constraint)&4.2\% &2.9\% \\ \hline
+SK+FSI+SI+PN& 3.5\%& 4.2\% \\ \hline
+All & & \\
+(w/o ND280 Constraint)& 12.7\%& 12.0\% \\ 
+(w/ ND280 Constraint)& 6.8\%& 5.1\% \\ \hline \hline
+\end{tabular}
+\caption{Effect of 1$\sigma$ variation of the systematic uncertainties on the predicted neutrino event rates at Supe-K in T2K oscillation analyses.}
+\label{tab:t2ksyst}
+\end{center}
+\end{table}
+
 
 In the case of \nova, they profit of the fact that the near and the far detector are identical and use a calorimetric approach in which all the energy observed in the event at the near detector is reconstructed and is then unfolded to obtain the expected true neutrino energy. The far to near ratio and the oscillation probabilities are then applied to obtain the expected true energy spectrum at the far detector. This method allows to reduce the total systematic uncertainty to level similar to the ones obtained by T2K.
 
